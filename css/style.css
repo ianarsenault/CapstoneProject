@@ -4,12 +4,72 @@
  *  Github - https://github.com/GorgonsMaze/CapstoneProject
  */
 
+
+.ralewayThin {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.ralewayBold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.ralewayXBold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+
+/*******************************************
+**      Material Design Icon Styling       *
+******************************************/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff) format('woff');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
 /* Styling for Fixed Side-nav on large screens */
 header, main, footer {
     padding-left: 300px;
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1550px) {
     header, main, footer {
         padding-left: 0;
     }
@@ -26,4 +86,64 @@ header, main, footer {
 nav {
     background-color: #b7b7b7;
     color: #000;
+    box-shadow: none !important;
+}
+
+nav .button-collapse {
+    margin-left: 10px !important;
+}
+
+@media only screen
+and (min-width: 993px)
+and (max-width: 1549px) {
+    .side-nav.fixed {
+        display: none !important;
+    }
+
+}
+
+
+@media only screen
+and (min-width: 1550px) {
+    .side-nav.fixed {
+        margin-top: 0 !important;
+        -webkit-transform: translateX(-105%);
+        transform: translateX(-105%);
+    }
+    .side-nav.fixed.right-aligned {
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+    }
+    .side-nav a {
+        padding: 0 16px;
+    }
+    .side-nav .userView {
+        padding: 16px 16px 0;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .hide-on-xlarge {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (min-width: 1550px) {
+    nav .brand-logo.center-on-xlarge {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #969091;
 }
