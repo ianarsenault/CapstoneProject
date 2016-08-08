@@ -1,0 +1,29 @@
+/*
+ *   Stylesheet for Protech Solutions Website
+ *  Authors - Ian Arsenault & Jameson Arsenault
+ *  Github - https://github.com/GorgonsMaze/CapstoneProject
+ */
+
+/* Styling for Fixed Side-nav on large screens */
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}/* / fixed side-nav - large screens */
+
+/* Side-nav li divider */
+.side-nav .divider {
+    margin: 0 0 0 0 !important;
+}
+
+.side-nav.fixed {
+    margin-top: 64px;
+}
+nav {
+    background-color: #b7b7b7;
+    color: #000;
+}
