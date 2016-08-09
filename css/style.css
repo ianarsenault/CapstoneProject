@@ -4,7 +4,7 @@
  *  Github - https://github.com/GorgonsMaze/CapstoneProject
  */
 
-
+/* Raleway Font */
 .ralewayThin {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -21,8 +21,41 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
 }
+/* Abel Font */
+.abel {
+    font-family: 'Abel', sans-serif;
+}
 
+/* Titillium Web Font */
+.tWeb400 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:300;
+}
+.tWeb700 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:700;
+}
+/* Open Sans */
+.open-sans3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+.open-sans4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+.open-sans7 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
 
+/* Iconsolata Font -Chat */
+.inconsolata {
+    font-family: 'Inconsolata', sans-serif ;
+}
 /*******************************************
 **      Material Design Icon Styling       *
 ******************************************/
@@ -84,13 +117,19 @@ header, main, footer {
     margin-top: 64px;
 }
 nav {
-    background-color: #b7b7b7;
-    color: #000;
-    box-shadow: none !important;
-}
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 
+}
+nav.nav-wrapper a {
+    color: #000;
+}
+nav .brand-logo {
+    color: #000 !important;
+}
 nav .button-collapse {
     margin-left: 10px !important;
+    color: #3b3b3b !important;
 }
 
 @media only screen
@@ -137,13 +176,87 @@ and (min-width: 1550px) {
     }
 }
 
+/* Live Chat Modal - Help Center */
+.chat-action-icon {
+    margin: 5px;
+    transition: all .7s ease-in-out;
+}
+.chat-action-icon > .material-icons:hover{
+    transition: all .3s ease-in-out;
+    color: #ff0114;
+    background-color: #eeeeee;
+}
 
 
+/* Social Media Icons in footer */
+.social-icons {
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+    border-radius: 38px;
+    border-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+}
+.social-icons:hover {
+    background-color: rgba(129, 226, 35, 0.54);
+    color: black;
+}
 
+.modal-content > p.chat-header {
+    margin: 0 35px 0 35px !important;
+}
 
+.modal-footer >.btn-flat  > i.material-icons{
+    vertical-align: middle;
+}
+
+.chat-box {
+    height: 400px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow: visible;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+
+.modal .modal-footer {
+    height: 85px !important;
+}
+
+.modal.modal-fixed-footer .modal-content {
+    padding-top: 4px;
+}
+input[type=text] {
+    margin: 0 0 0;
+}
+
+/* Font Awesome Icons in footer (not in use) */
+a .fa {
+    color: #9edeff;
+}
 
 footer.page-footer {
+    border-top: 1px solid #c3c3c3;
     margin-top: 20px;
     padding-top: 20px;
-    background-color: #969091;
+    background-color: #ffffff;
+
+}
+footer.page-footer.container.foot-text h5 p {
+    color:#000000;
+}
+
+footer.page-footer .footer-copyright {
+    color: rgb(1, 1, 1);
+    background-color: rgba(51, 51, 51, 0.04);
 }
