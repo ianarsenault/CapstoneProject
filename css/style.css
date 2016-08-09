@@ -202,6 +202,9 @@ and (min-width: 1550px) {
     color: black;
 }
 
+.modal-header {
+    margin-right: -16px;
+}
 .modal-content > p.chat-header {
     margin: 0 35px 0 35px !important;
 }
@@ -212,8 +215,21 @@ and (min-width: 1550px) {
 
 .chat-box {
     height: 400px;
+    overflow: auto !important;
 }
-
+.rep-name {
+    color: #02a225;
+    font-size: larger;
+    text-decoration: underline;
+}
+.cust-name {
+    color: #2196f3;
+    font-size: larger;
+    text-decoration: underline;
+}
+div > .card-content {
+    overflow-y: scroll!important;
+}
 .modal {
     display: none;
     position: fixed;
@@ -224,7 +240,7 @@ and (min-width: 1550px) {
     max-height: 70%;
     width: 55%;
     margin: auto;
-    overflow: visible;
+    overflow: hidden!important;
     border-radius: 2px;
     will-change: top, opacity;
 }
