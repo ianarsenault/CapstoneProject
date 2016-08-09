@@ -3,6 +3,8 @@
  */
 
 $(document).ready(function () {
-    // Side-nav initialization
+    // Side-nav Initialization
     $(".button-collapse").sideNav();
+    // Modal Initialization
+    $('.modal-trigger').leanModal();
 });
