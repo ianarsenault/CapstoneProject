@@ -7,4 +7,6 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
     // Modal Initialization
     $('.modal-trigger').leanModal();
+    // Parallax Initialization
+    $('.parallax').parallax();
 });

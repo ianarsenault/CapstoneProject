@@ -15,13 +15,12 @@ Documentation Site:
 
 ##To-Do's
 * Navigation
- * Side-nav visible on Large
- * Hamburger Icon 
+ - [x] Side-nav visible on Large
+ * Hamburger Icon transition on click
  * Fadeout on scroll -> visible scroll-up or stop
 * Jumbotron
  * Video or Image
-* About
- *  
+* About 
 * Product
  * Uniqueness
  * Speed
@@ -40,8 +39,8 @@ Documentation Site:
 * Footer
  * Terms of Service
  * Privacy
- * Help
- * Social Media Icons
+ - [x] Help
+ - [x] Social Media Icons
  
 
 ## Deadline: September 21, 2016

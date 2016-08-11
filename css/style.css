@@ -96,7 +96,9 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-
+/*******************************************
+**     Header + Navigation  Styling       *
+******************************************/
 /* Styling for Fixed Side-nav on large screens */
 header, main, footer {
     padding-left: 300px;
@@ -183,6 +185,38 @@ and (min-width: 1550px) {
     }
 }
 
+/*******************************************
+**           About  Styling             *
+******************************************/
+.about-logo-container {
+    height:256px;
+    width:256px;
+}
+
+/*******************************************
+**          Product  Styling             *
+******************************************/
+/*******************************************
+**        Testimonials  Styling           *
+******************************************/
+/*******************************************
+**            Demo  Styling              *
+******************************************/
+/*******************************************
+**          Purchase/Buy  Styling        *
+******************************************/
+/*******************************************
+**           Contact  Styling             *
+******************************************/
+/*******************************************
+**          Google Map  Styling          *
+******************************************/
+/*******************************************
+**       Developer Team  Styling          *
+******************************************/
+/*******************************************
+**           Footer  Styling             *
+******************************************/
 /* Live Chat Modal - Help Center */
 .chat-action-icon {
     margin: 5px;
@@ -234,7 +268,7 @@ and (min-width: 1550px) {
     font-size: larger;
     text-decoration: underline;
 }
-div > .card-content {
+div > .chat-box > .card-content {
     overflow-y: scroll!important;
 }
 .modal {
@@ -284,6 +318,9 @@ input[type=text] {
 /* Font Awesome Icons in footer (not in use) */
 a .fa {
     color: #9edeff;
+}
+.privacy-link {
+    margin-top: 21px;
 }
 
 footer.page-footer {
