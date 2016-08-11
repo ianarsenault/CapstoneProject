@@ -141,6 +141,12 @@ nav .button-collapse {
     color: #3b3b3b !important;
 }
 
+
+
+.side-nav {
+    box-shadow: none !important;
+}
+
 @media only screen
 and (min-width: 993px)
 and (max-width: 1549px) {
@@ -168,6 +174,9 @@ and (min-width: 1550px) {
     .side-nav .userView {
         padding: 16px 16px 0;
     }
+    .side-nav {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -188,32 +197,101 @@ and (min-width: 1550px) {
 /*******************************************
 **           About  Styling             *
 ******************************************/
+
+.Message-Header-Top {
+    margin: 30px 0 10px 0;
+}
+.title-top {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.top-head-btn{
+    color: #fff;
+    background-color: #009d03;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+    margin-top: -10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:300;
+}
+.top-head-btn:hover {
+    color: #fff;
+    background-color: #00ca03;
+}
+.top-head-btn > .top-dl-btn{
+    margin-left: 10px;
+}
+
+.about-section {
+    background-color: #ECECEC;
+    padding: 30px 0 60px 0;
+}
 .about-logo-container {
     height:256px;
     width:256px;
 }
 
+
 /*******************************************
 **          Product  Styling             *
 ******************************************/
+
+/* Div for horizontal card overlay */
+.card-img-overlay {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay:after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+#horiz-one:hover .card-img-overlay:after {
+    background-color: transparent;
+
+}
+.image-overl-card {
+    display: block;
+}
+/* IMAGE SCALE
+#horiz-one:hover .image-overl-card {
+    transform: scale(1.25);
+}*/
 /*******************************************
 **        Testimonials  Styling           *
 ******************************************/
+
 /*******************************************
 **            Demo  Styling              *
 ******************************************/
+
 /*******************************************
 **          Purchase/Buy  Styling        *
 ******************************************/
+
 /*******************************************
 **           Contact  Styling             *
 ******************************************/
+
 /*******************************************
 **          Google Map  Styling          *
 ******************************************/
+
 /*******************************************
 **       Developer Team  Styling          *
 ******************************************/
+
 /*******************************************
 **           Footer  Styling             *
 ******************************************/
