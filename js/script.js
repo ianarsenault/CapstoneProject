@@ -9,4 +9,10 @@ $(document).ready(function () {
     $('.modal-trigger').leanModal();
     // Parallax Initialization
     $('.parallax').parallax();
+    // Dropdown Initialization
+    $('.dropdown-button').dropdown();
+    // Full-Width Slider
+    $('.carousel.carousel-slider').carousel({full_width: true});
+
+
 });
