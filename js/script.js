@@ -3,6 +3,8 @@
  */
 
 $(document).ready(function () {
+    // Fade in download demo section on page load 
+    $(".Message-Header-Top").fadeIn(5000);
     // Side-nav Initialization
     $(".button-collapse").sideNav();
     // Modal Initialization
@@ -26,5 +28,5 @@ $(document).ready(function () {
     setInterval(function () {
         $('.carousel.carousel-slider').carousel('next');
     }, carousel_interval);
-
+    
 });

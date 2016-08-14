@@ -162,11 +162,12 @@
     </div><!-- End Parallax Container-->
 
     <!-- Top Page Header -->
+
     <div class="Message-Header-Top">
-        <div class="row">
-            <p class="center-align "><span class="title-top">Latest Demo Here!&nbsp;</span>
-            <a class="waves-effect waves-light btn top-head-btn"><i class="material-icons right top-dl-btn">system_update_alt</i>Demo</a>
-            </p>
+        <div class="row" id="topDemo">
+            <div class="center-align"><span class="title-top">Latest Demo Here!&nbsp;</span>
+            <a class="download-demo-btn" href="#!"><i class="fa fa-download green-text text-lighten-1 fa-2x top-dl-btn" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div><!-- End Top Page Header -->
 
@@ -174,7 +175,7 @@
     <!-- Begin About -->
     <section class="about-section">
         <!-- About Us Section Card -->
-        <!--<div class="row">
+        <div class="row">
             <div class="col s12 m8 l10 offset-l1 offset-m2">
                 <div class="card z-depth-4">
                     <div class="card-content black-text">
@@ -202,10 +203,11 @@
 
                     </div>
                 </div>
-            </div>-->
+            </div>
+        </div>
     </section><!-- End About -->
 
-    <!-- Begin About -->
+    <!-- Begin Product Details -->
     <section class="product-section">
         <!-- Horizontal Card - Product -->
         <div class="row">
@@ -297,9 +299,11 @@
                 </div>
             </div>
         </div><!-- End horizontal card about -->
-    </section><!-- End About -->
 
-    <!-- Begin About -->
+
+    </section><!-- End PRODUCT Details -->
+
+    <!-- Begin TESTIMONIALS -->
     <section class="testimonials-section">
 
         <!-- CAROUSEL TESTIMONIAL -->
@@ -402,7 +406,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s3"">
+            <div class="col s3">
                 <div class="card z-depth-2">
                     <div class="card-content black-text">
                         <div class="center-align">
@@ -429,9 +433,9 @@
         </div>
 
 
-    </section><!-- End About -->
+    </section><!-- End Testimonials -->
 
-    <!-- Begin About -->
+    <!-- Begin DEMO -->
     <section class="demo-section">
         <h4>Testimonials</h4>
         <h6>Learn what our customers are saying...</h6>
@@ -534,44 +538,132 @@
             <i class="material-icons small">arrow_upward</i>
         </div>
 
-    </section><!-- End About -->
+    </section><!-- End DEMO -->
 
-    <!-- Begin About -->
+    <!-- PURCHASE -->
     <section class="buy-section">
 
         <div class="center-align">
             <i class="material-icons fa-2x">arrow_upward</i>
         </div>
 
-    </section><!-- End About -->
+    </section><!-- End PURCHASE -->
 
-    <!-- Begin About -->
+
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section scrollspy">
+
+
+
+        <!-- CONTACT ME FORM
+        <div class="row scrollspy" id="message-me">
+            <div class="col s12 m8 offset-m2 l6 form-padding">
+                <div class="card white card-form z-depth-2">
+                    <form class="col s12 contact-form">
+                        <div class="row center-align railwayBold">
+                            <h5>Send me a message</h5>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name_of" placeholder="Mr. Bigglesworth" type="text" class="validate" required="" aria-required="true">
+                                <label for="name_of">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">
+                                <label for="email_of">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l6 map-padding">
+                <div id="map"></div>
+            </div>
+
+        </div>-->
+    </section>
+
+
+    <!-- CONTACT -->
     <section class="contact-section">
+        <!-- CONTACT US FORM -->
+        <div class="row scrollspy" id="message-us">
+            <div class="col s12 m8 offset-m2 l6 offset-l3 form-padding">
+                <div class="card white card-form z-depth-2">
+                    <form class="col s12 contact-form">
+                        <div class="row center-align">
+                            <h5>Send us a message</h5>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name_of" placeholder="Mr. Reynolds" type="text" class="validate" required="" aria-required="true">
+                                <label for="name_of">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">
+                                <label for="email_of">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
 
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light send-mail-btn" id="sendMailBtn" type="submit" name="action">Send
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- GOOGLE MAP -->
+            <!--div class="col s12 m12 l6 map-padding">
+                <div id="map"></div>
+            </div>-->
+        </div>
         <div class="center-align">
             <i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i>
         </div>
+    </section><!-- End Contact -->
 
 
-    </section><!-- End About -->
-    <!-- Begin About -->
+    <!-- Google Maps -->
     <section class="googlemap-section">
-
-        <div class="center-align">
-
+        <!-- GOOGLE MAP -->
+        <div class="col s12 m12 l6 map-padding">
+            <div id="map"></div>
         </div>
+    </section><!-- End Google Maps -->
 
-    </section><!-- End About -->
 
-    <!-- Begin About -->
+
+    <!-- DEV TEAM -->
     <section class="dev-section">
-
-
         <div class="center-align">
             <i class="material-icons large">expand_less</i>
         </div>
-
-    </section><!-- End About -->
+    </section><!-- End Dev Team -->
 
 
 
@@ -584,7 +676,7 @@
 
 
 
-<!-- Begin Footer -->
+<!-- FOOTER -->
 <footer class="page-footer abel">
     <div class="container">
         <div class="row">
@@ -629,7 +721,7 @@
                                         <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                         <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</>
+                                        I am convenient because I require little markup to use effectively.</p>
 
                                         <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>

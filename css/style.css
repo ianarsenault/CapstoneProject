@@ -215,14 +215,34 @@ and (min-width: 1550px) {
 ******************************************/
 
 .Message-Header-Top {
-    margin: 30px 0 10px 0;
+    margin: 30px 0 30px 0;
+    font-family: 'Titillium Web', sans-serif;
+    /* For fade in on load */
+    display: none;
+
 }
 .title-top {
     font-size: 22px;
     margin-top: 5px;
+    vertical-align: top;
+}
+.top-dl-btn {
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease ;
+}
+.top-dl-btn:hover {
+    color: #2e7d32;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    -ms-transform:scale(.75);
+    -o-transform: scale(.75);
+    transform: scale(.75);
 }
 
-.top-head-btn{
+/*.top-head-btn{
     color: #fff;
     background-color: #009d03;
     border-radius: 3px;
@@ -237,7 +257,7 @@ and (min-width: 1550px) {
 }
 .top-head-btn > .top-dl-btn{
     margin-left: 10px;
-}
+}*/
 
 .about-section {
     background-color: #ECECEC;
@@ -409,7 +429,7 @@ blockquote {
     top: 0;
     left: 0;
     background-size: 100%;
-    background-position: 10 0;
+
 
 }
 
@@ -571,8 +591,82 @@ blockquote {
 ******************************************/
 /* Main section class */
 .contact-section {
-    background-color:#bbdefb;
-    height: 1000px;
+
+}
+.card-form {
+    margin-top: 0;
+    padding: 30px;
+    overflow: auto;
+}
+.send-mail-btn {
+    background-color: #388e3c ;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.send-mail-btn:hover {
+    background-color: #5e35b1;
+}
+/* label color */
+.input-field label {
+    color: #43a047;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #43a047 ;
+}
+/* Text &  underline color */
+.input-field input[type=text] {
+    color: #f44336;
+    border-bottom: 2px solid #000000;
+}
+/*  Text & underline focus color*/
+.input-field input[type=text]:focus {
+    color: #000000;
+    border-bottom: 2px solid #80cbc4;
+    box-shadow: 0 0 0 0 #80cbc4;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 2px solid #000;
+    box-shadow: 0 0 0 0;
+}
+/* Valid focus color */
+.input-field input[type=text]:focus.valid {
+    border-bottom: 2px solid #f44336;
+    box-shadow: 0 0 0 0 #f44336;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #f44336 ;
+}
+
+/* Text Area border size and color on focus */
+textarea.materialize-textarea:focus:not([readonly]) {
+    color: #000;
+    border-bottom: 2px solid #f44336;
+    box-shadow: 0 0 0 0 #f44336;
+}
+
+/* Text area label color on focus */
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #43a047;
+}
+
+/* Text area border and text color when not active/focuses */
+textarea.materialize-textarea {
+    color: #f44336;
+    border-bottom: 2px solid #000000;
+
 }
 /*******************************************
 **          Google Map  Styling          *
