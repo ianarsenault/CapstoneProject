@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-8%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-12%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -10,8 +10,10 @@ Documentation Site:
  This repository is for the webite portion of our teams Capstone Project.
  Tools being used are HTML5 > CSS > Javascript > PHP > MySQL
 
-#To-Do's [Main]
-* Website
+#To-Do's [Important]
+* Contact form
+* Checkout system using PHP MySQL
+* Order Confirmation page
 
 ##To-Do's
 * Navigation
@@ -19,16 +21,21 @@ Documentation Site:
  * Hamburger Icon transition on click
  * Fadeout on scroll -> visible scroll-up or stop
 * Jumbotron
+ - [x] rough outline 
  * Video or Image
+ * Overlay text / company + product
 * About 
+ - [x] Rough skeleton
+ * Final Updates
 * Product
  * Uniqueness
  * Speed
  * Data
  * Support
 * Testimonials
- *  Customers - Patients
-* Demo Request
+ - [x] slideshow of testimonials with images and fill text
+ *  Customers - Patients Reviews 
+* Demo Request/Contact -- change color of form inputs
  * Form => PHP => MySQL DB 
  * Email Recipient 
 * Google Maps - Styled
