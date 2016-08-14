@@ -14,6 +14,8 @@ Documentation Site:
 * Contact form
 * Checkout system using PHP MySQL
 * Order Confirmation page
+* Splash landing page with logo and loader animation
+   will be set as an overlay for first load of page
 
 ##To-Do's
 * Navigation

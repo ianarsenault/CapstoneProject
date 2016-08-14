@@ -808,3 +808,382 @@ footer.page-footer .footer-copyright {
     color: rgb(1, 1, 1);
     background-color: rgba(51, 51, 51, 0.04);
 }
+
+/*
+ *    Landing Page Styling
+*/
+
+.landing-load {
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    background-color: #fff8e1;
+}
+/* Transition speed for progress bar */
+.progress {
+    position: relative;
+    top: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    height:10px;
+    display: block;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* Progress bar tranformation into X */
+.progress-1-transform {
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoX1;
+    -moz-animation-name: rotateIntoX1;
+    -o-animation-name: rotateIntoX1;
+    animation-name: rotateIntoX1;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*transform: rotate(45deg) translateX(50px) translateY(50px);
+    transform-origin: left;*/
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoX1  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        -webkit-transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+@-moz-keyframes rotateIntoX1 {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        -moz-transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+@keyframes rotateIntoX1 {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+
+
+
+
+
+/* Top Loading Bar */
+.progress-bar-1 {
+    float: left;
+    height: 100%;
+    background-color: #1565c0;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+/* Progress bar tranformation into X */
+.progress-middle-transform {
+
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoXmid;
+    -moz-animation-name: rotateIntoXmid;
+    -o-animation-name: rotateIntoXmid;
+    animation-name: rotateIntoXmid;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*    transform-origin: left;
+    transform: rotate(-45deg) translateX(10px) translatey(70px);
+    */
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoXmid  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+@-moz-keyframes rotateIntoXmid {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -moz-transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+@keyframes rotateIntoXmid {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+/* Middle  Loading Bar will dissappear */
+.progress-bar-middle {
+    float: left;
+    height: 100%;
+    background-color: #f3930b;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+
+/* Progress bar tranformation into X */
+.progress-2-transform {
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoX2;
+    -moz-animation-name: rotateIntoX2;
+    -o-animation-name: rotateIntoX2;
+    animation-name: rotateIntoX2;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*        transform: rotate(-45deg) translateX(25px) translateY(40px);
+    transform-origin: left;
+     change to display none on animation completion
+    display: none; */
+
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoX2  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+
+@-moz-keyframes rotateIntoX2 {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -moz-transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+
+@keyframes rotateIntoX2{
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+/* Bottom loading bar */
+.progress-bar-2 {
+    float: left;
+    height: 100%;
+    background-color: #43a047 ;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+
+
+
+
+
+div .yellow {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    transition: transform;
+    /* Rotate div
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg); */
+
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotation;
+    -moz-animation-name: rotation;
+    -o-animation-name: rotation;
+    animation-name: rotation;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotation  {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(25deg);
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+        -moz-transform:rotate(0deg);
+    }
+    100% {
+        -moz-transform:rotate(25deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
