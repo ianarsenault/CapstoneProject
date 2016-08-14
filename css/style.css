@@ -56,6 +56,13 @@
 .inconsolata {
     font-family: 'Inconsolata', sans-serif ;
 }
+/* Signature Font -- */
+.kristi {
+    font-family: 'Kristi', cursive;
+}
+.signature {
+    font-size: 24px;
+}
 /*******************************************
 **      Material Design Icon Styling       *
 ******************************************/
@@ -141,7 +148,9 @@ nav .button-collapse {
     color: #3b3b3b !important;
 }
 
-
+nav .nav-wrapper {
+    padding-right: 20px;
+}
 
 .side-nav {
     box-shadow: none !important;
@@ -152,6 +161,13 @@ and (min-width: 993px)
 and (max-width: 1549px) {
     .side-nav.fixed {
         display: none !important;
+    }
+
+}
+@media only screen
+and (max-width: 600px) {
+    .side-nav.fixed {
+        margin-top: 56px;
     }
 
 }
@@ -236,6 +252,10 @@ and (min-width: 1550px) {
 /*******************************************
 **          Product  Styling             *
 ******************************************/
+/* Main section class */
+.product-section {
+
+}
 
 /* Div for horizontal card overlay */
 .card-img-overlay {
@@ -271,27 +291,228 @@ and (min-width: 1550px) {
 /*******************************************
 **        Testimonials  Styling           *
 ******************************************/
+/* Main section class */
+.testimonials-section {
+    background-color:#cfd8dc;
+
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #417cee;
+}
+
+.card-img-container {
+    height: 200px;
+    width:182px;
+}
+
+.test-row {
+    margin-bottom: 0 !important;
+}
+
+
+/* First Carousel slide */
+.one {
+   /* background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person1.png') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+.one:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /*background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);*/
+    /*background: -moz-linear-gradient(top, rgba(0,0,0,0.24) 0%, rgba(123,181,227,0) 98%, rgba(125,185,232,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.24) 0%,rgba(123,181,227,0) 98%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.24) 0%,rgba(123,181,227,0) 98%,rgba(125,185,232,0) 100%); */
+    background: -moz-linear-gradient(top right, rgba(30,87,153,0) 0%, rgba(0,0,0,0.63) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top right, rgba(30,87,153,0) 0%,rgba(0,0,0,0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom right, rgba(30,87,153,0) 0%,rgba(0,0,0,0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+/* Second Carousel slide */
+.two {
+    /*background: url("https://hd.unsplash.com/photo-1459499362902-55a20553e082") no-repeat;*/
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person2.png') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+/* Third Carousel slide */
+.three {
+    /*background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
+    background:rgba(205, 222, 255, 0.43) url('../images/images/person3.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+/* Fourth Carousel slide */
+.four {
+    /*background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person4.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+/* Fifth Carousel slide */
+.five {
+    /*background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person5.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+/* Save for small device
+.carousel {
+    display: none !important;
+}*/
+
+/* Carousel Indicator Active */
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(255, 255, 255, 0.19);
+    border: 1px solid white;
+}
+/* Carousel Indicator */
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0.87);
+    transition: background-color .3s;
+    border-radius: 50%;
+}
+/* Hover transition of background color on indivator */
+.carousel .indicators .indicator-item:hover {
+    background-color: rgb(89, 137, 255);
+    -webkit-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -ms-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+}
+/* Slide One Quote - Testimonial */
+.slider-quotebox1 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Two Quote - Testimonial */
+.slider-quotebox2 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Three Quote - Testimonial */
+.slider-quotebox3 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Four Quote - Testimonial */
+.slider-quotebox4 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Five Quote - Testimonial */
+.slider-quotebox5 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+
+
+/*.carousel .carousel-item {
+    display: none;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height:120%;
+}*/
 
 /*******************************************
 **            Demo  Styling              *
 ******************************************/
+/* Main section class */
+.demo-section{
+    background-color:#dcedc8;
+    height: 1000px;
+}
 
 /*******************************************
 **          Purchase/Buy  Styling        *
 ******************************************/
-
+/* Main section class */
+.buy-section {
+    background-color:#e0f2f1;
+    height: 1000px;
+}
 /*******************************************
 **           Contact  Styling             *
 ******************************************/
-
+/* Main section class */
+.contact-section {
+    background-color:#bbdefb;
+    height: 1000px;
+}
 /*******************************************
 **          Google Map  Styling          *
 ******************************************/
-
+/* Main section class */
+.googlemap-section {
+    background-color:#ffebee;
+    height: 1000px;
+}
 /*******************************************
 **       Developer Team  Styling          *
 ******************************************/
-
+/* Main section class */
+.dev-section {
+    background-color:#cfd8dc;
+    height: 1000px;
+}
 /*******************************************
 **           Footer  Styling             *
 ******************************************/
