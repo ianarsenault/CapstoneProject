@@ -47,7 +47,7 @@ Documentation Site:
  * Ian + Jameson 
 * Footer
  * Terms of Service
- * Privacy
+ - [x] Privacy Policy
  - [x] Help
  - [x] Social Media Icons
  

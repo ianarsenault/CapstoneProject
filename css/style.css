@@ -205,11 +205,42 @@ and (min-width: 1550px) {
 @media only screen and (min-width: 1550px) {
     nav .brand-logo.center-on-xlarge {
         left: 42%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        /*-webkit-transform: translateX(-50%);
+        transform: translateX(-50%);*/
+    }
+}
+/* Gives padding to company name on medium and large screens */
+@media only screen
+and (min-width: 993px)
+and (max-width: 1549px) {
+    nav .brand-logo {
+        margin-left: 25px !important;
     }
 }
 
+
+/* Breadcrumbs for Checkout and Complete Pages */
+
+.breadcrumb {
+    font-size: 13px !important;
+    color: rgb(110, 110, 110) !important;
+}
+
+.breadcrumb:before {
+    color: rgba(93, 93, 93, 0.7) !important;
+}
+
+
+.breadcrumb:last-child {
+    color: #000000;
+}
+
+.breadcrumb-nav {
+    background-color: transparent;
+    box-shadow: none !important;
+    padding-left: 25px !important;
+    height: 42px !important;
+}
 /*******************************************
 **           About  Styling             *
 ******************************************/
@@ -725,7 +756,7 @@ textarea.materialize-textarea {
 }
 
 .chat-box {
-    height: 400px;
+    height: 370px;
     overflow: auto !important;
 }
 .rep-name {
@@ -748,7 +779,7 @@ div > .chat-box > .card-content {
     right: 0;
     background-color: #fafafa;
     padding: 0;
-    max-height: 70%;
+    height: 80%;
     width: 55%;
     margin: auto;
     overflow: hidden!important;
@@ -756,13 +787,20 @@ div > .chat-box > .card-content {
     will-change: top, opacity;
 }
 
-.modal .modal-footer {
+.modal .modal-footer.chat-footer {
     height: 85px !important;
 }
 
 .modal.modal-fixed-footer .modal-content {
     padding-top: 4px;
+    overflow-y: hidden !important;
 }
+/*
+.modal.modal-fixed-footer .modal-content .chat-content {
+    padding-top: 4px;
+    overflow: hidden !important;
+
+} &*/
 
 @media only screen
 and (min-width: 300px)
