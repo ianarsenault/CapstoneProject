@@ -140,8 +140,8 @@ nav ul a {
 
 /* HOVERABLE NAV BUTTON */
 nav ul a:hover {
-    /*background-color: rgba(0, 0, 0, 0.1);*/
-    background-color: rgba(0, 184, 255, 0.16);
+    background-color: rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(0, 184, 255, 0.16);*/
 }
 /* ACTIVE NAV BUTTON */
 nav ul li.active {
@@ -330,7 +330,7 @@ and (max-width: 1549px) {
 ******************************************/
 /* Main section class */
 .product-section {
-
+    padding: 30px 0 60px 0;
 }
 
 /* Div for horizontal card overlay */
@@ -370,6 +370,7 @@ and (max-width: 1549px) {
 /* Main section class */
 .testimonials-section {
     background-color:#cfd8dc;
+    padding: 30px 0 60px 0;
 
 }
 
@@ -632,6 +633,7 @@ blockquote {
 .demo-section{
     background-color:#dcedc8;
     height: 1000px;
+    padding: 30px 0 60px 0;
 }
 
 /*******************************************
@@ -641,13 +643,14 @@ blockquote {
 .buy-section {
     background-color:#e0f2f1;
     height: 1000px;
+    padding: 30px 0 60px 0;
 }
 /*******************************************
 **           Contact  Styling             *
 ******************************************/
 /* Main section class */
 .contact-section {
-
+    padding: 30px 0 60px 0;
 }
 .card-form {
     margin-top: 0;
@@ -731,6 +734,7 @@ textarea.materialize-textarea {
 .googlemap-section {
     background-color:#ffebee;
     height: 1000px;
+    padding: 30px 0 60px 0;
 }
 /*******************************************
 **       Developer Team  Styling          *
@@ -739,6 +743,7 @@ textarea.materialize-textarea {
 .dev-section {
     background-color:#cfd8dc;
     height: 1000px;
+    padding: 30px 0 60px 0;
 }
 /*******************************************
 **           Footer  Styling             *
@@ -858,7 +863,7 @@ a .fa {
 
 footer.page-footer {
     border-top: 1px solid #c3c3c3;
-    margin-top: 20px;
+    margin-top: 0 !important;
     padding-top: 20px;
     background-color: #ffffff;
 
@@ -872,9 +877,12 @@ footer.page-footer .footer-copyright {
     background-color: rgba(51, 51, 51, 0.04);
 }
 
-/*
- *    Landing Page Styling
-*/
+#fixChatBtn {
+    display: none;
+}
+/****************************************
+ *         Landing Page Styling         *
+*****************************************/
 
 .landing-load {
     position: absolute;
