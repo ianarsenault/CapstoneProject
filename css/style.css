@@ -237,21 +237,20 @@ and (max-width: 1549px) {
     font-size: 13px !important;
     color: rgb(110, 110, 110) !important;
 }
-
 .breadcrumb:before {
     color: rgba(93, 93, 93, 0.7) !important;
 }
 
-
 .breadcrumb:last-child {
     color: #000000;
 }
-
 .breadcrumb-nav {
     background-color: transparent;
     box-shadow: none !important;
     padding-left: 25px !important;
-    height: 42px !important;
+    height: 52px !important;
+    margin-top: -10px;
+    /*height: 42px !important;*/
 }
 
 
@@ -817,7 +816,7 @@ div > .chat-box > .card-content {
     height: 85px !important;
 }
 
-.modal.modal-fixed-footer .modal-content {
+.modal.modal-fixed-footer .modal-content:not(.privacy-content) {
     padding-top: 4px;
     overflow-y: hidden !important;
 }
