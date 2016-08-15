@@ -18,78 +18,9 @@
     <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY_GOESHEREs&callback=initMap"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <!--<script type="text/javascript">
-        function init() {
-            // Basic options for google map
-            var mapOptions = {
-                // Zoomed in level
-                zoom: 10,
-
-                // The latitude and longitude to center the map
-                center: new google.maps.LatLng(41.82399, -71.41283), // New York
-
-                // How you would like to style the map.
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#c4c4c4"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#707070"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21},{"visibility":"on"}]},{"featureType":"poi.business","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#be2026"},{"lightness":"0"},{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"visibility":"off"},{"hue":"#ff000a"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#575757"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#2c2c2c"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#999999"}]},{"featureType":"road.local","elementType":"labels.text.stroke","stylers":[{"saturation":"-52"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-            };
-
-
-            // Get the HTML DOM element that will contain your map
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map');
-
-
-            // Create the Google Map using our element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-
-
-            /* Providence Marker */
-            var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(41.82399, -71.41283),
-                map: map,
-                title: 'Somewhere around here!'
-            });
-
-            google.maps.event.addListener(map, 'mousedown', function (event) {
-                this.setOptions({scrollwheel:true});
-            });
-
-            google.maps.event.addListener(map, 'mouseover', function(event){
-                self = this;
-                timer = setTimeout(function() {
-                    self.setOptions({scrollwheel:true});
-                }, 1000);
-            });
-
-            google.maps.event.addListener(map, 'mouseout', function(event){
-                this.setOptions({scrollwheel:false});
-                clearTimeout(timer);
-            });
-
-        }
-
-        function waitForMap() {
-            setTimeout(function () {
-                if($('#phone6s').is(':visible')) {
-                    initTabMap();
-                } else {
-                    waitForMap();
-                }
-            }, 100);
-        }
-
-        waitForMap();
-
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-        //google.maps.event.addDomListener(window, 'load', initTabMap);
-
-    </script>-->
+    <meta charset="UTF-8">
 </head>
 <body>
 <header>
@@ -104,7 +35,7 @@
                     <li><a href="#!">Product</a></li>
                     <li><a href="#!">Testimonials</a></li>
                     <li><a href="#!">Demo</a></li>
-                    <li><a href="#!">Buy</a></li>
+                    <li class="active-checkout"><a href="#!">Buy</a></li>
                     <li><a href="#!">Contact</a></li>
                     <!-- Extra Drop Down Trigger -->
                     <li><a class="dropdown-button" href="#!" data-activates="ddExtra" data-belowOrigin="true" data-alignment="right" data-gutter="-5" data-hover="true" data-constrainwidth="true "><i class="material-icons">more_vert</i></a></li>
@@ -134,7 +65,7 @@
                 <li><div class="divider"></div></li>
                 <li><a href="#!">Demo</a></li>
                 <li><div class="divider"></div></li>
-                <li><a href="#!">Buy</a></li>
+                <li class="active-checkout-side"><a href="#!">Buy</a></li>
                 <li><div class="divider"></div></li>
                 <li><a href="#!">Contact</a></li>
                 <li><div class="divider"></div></li>
