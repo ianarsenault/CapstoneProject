@@ -15,20 +15,18 @@ var carouselChange = function () {
 };
 
 var progressBar = function () {
+    // Blue Progress Bar
     $(".progress-bar-1").animate( {
         width: "100%"
     }, 2500 );
+    // Blue Progress Bar
     $(".progress-bar-middle").animate({
        width: "100%"
     }, 2500);
+    // Blue Progress Bar
     $(".progress-bar-2").animate( {
         width: "100%"
     }, 2500 );
-
-    /* Progress Bar Animation
-    $(".progress-bar").animate({
-        width: "100%"
-    }, 2500); */
 };
 
 // Function for scrolling effects
@@ -86,6 +84,7 @@ var scrolly = function () {
             }
         }, 500);
 
+
         /*  Bottom right hand corner button - Scroll to top function
          *   will appear when window scroll reaches a certain point
          *   - added animation to when it comes into view ********/
@@ -100,8 +99,8 @@ var scrolly = function () {
         console.log($(window).scrollTop() == ($(document).height() - $(window).height()));
 
     });
-
 };
+
 
 
 $(document).ready(function () {
@@ -118,34 +117,14 @@ $(document).ready(function () {
     // Scrollspy Initialization
     $('.scrollspy').scrollSpy();
 
-    // Full-Width Slider
-    /*$('.carousel.carousel-slider').carousel({
-        full_width: true,
-        time_constant: 300,
-        indicators: true
-    }); */
-
 
     // Carousel Slider item change
     carouselChange();
     // Landing page loading bar
     progressBar();
-
-    // Fade in fixed chat button after 5 seconds
-    setTimeout(function () {
-        $("#fixChatBtn").fadeIn(2500);
-    }, 5000);
-
     // Scroll effects
     scrolly();
 
-    // Image Carousel automatically goes to next slide every 3.5 seconds
-    // Set the carousel interval for next slide
-   /* var carousel_interval = 10000;
-    $('.carousel.carousel-slider').carousel({full_width: true});
-    setInterval(function () {
-        $('.carousel.carousel-slider').carousel('next');
-    }, carousel_interval);*/
 
 
 

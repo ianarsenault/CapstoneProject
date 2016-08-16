@@ -876,10 +876,98 @@ footer.page-footer .footer-copyright {
     color: rgb(1, 1, 1);
     background-color: rgba(51, 51, 51, 0.04);
 }
-
+/* Lower Left Fixed Chat Button */
+/*  Will animate upwards after 6 second delay */
 #fixChatBtn {
-    display: none;
+    position: fixed;
+    bottom: -70px;
+    left: 20px;
 }
+
+/* Fixed Chat Modal Button - bottom left */
+.fix-btn-transform {
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: moveUp;
+    -moz-animation-name: moveUp;
+    -o-animation-name: moveUp;
+    animation-name: moveUp;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    -o-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveUp  {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@-moz-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
 /****************************************
  *         Landing Page Styling         *
 *****************************************/
@@ -909,7 +997,7 @@ footer.page-footer .footer-copyright {
 .logo-land {
     position: relative;
     top: 220px;
-    margin-left: auto;
+    margin-left: auto;d
     margin-right: auto;
     height:10px;
     display: block;
