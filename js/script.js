@@ -13,7 +13,7 @@ var carouselChange = function () {
         $('.carousel.carousel-slider').carousel('next');
     }, carousel_interval);
 };
-
+// Function handles progress bar animations for loading div
 var progressBar = function () {
     // Blue Progress Bar
     $(".progress-bar-1").animate( {
@@ -31,7 +31,7 @@ var progressBar = function () {
 
 
 // Function for scrolling effects
-var scrolly = function () {
+var scrollChange = function () {
     /* Fixed Navbar Scroll */
     var lastScrollTop = 0;
     var navbar = $('.navbar-fixed');
@@ -70,7 +70,8 @@ var scrolly = function () {
                     opacity: 0.2
                 })
 
-            }
+            } // end else
+
             // If scroll point  is at the same last scrollpoint after .5 seconds lose opacity
             lastScrollTop = y;
             var scrolly = $('body').scrollTop();
@@ -91,20 +92,33 @@ var scrolly = function () {
 
         } // end if
 
-
-        /*  Bottom right hand corner button - Scroll to top function
-         *   will appear when window scroll reaches a certain point
-         *   - added animation to when it comes into view ********/
-       /* if (y > 600) {
-            $("#fixChatBtn").fadeIn().addClass("animated fadeInDown");
-
-        } else {
-            $("#fixChatBtn").fadeOut();
-        }*/
-
        // Displays scrollTop in console (Showing when user reached bottom of page)
         console.log($(window).scrollTop() == ($(document).height() - $(window).height()));
+    });
+};
 
+var activeScrollspy = function () {
+    // Scrollspy initalization
+    $(".scrollspy").scrollSpy();
+    // Scrollspy enter function - Confirms when
+    // user enters specified scrollspy id
+    $(".scrollspy").on('scrollSpy:enter', function () {
+        // Display enter scrolling points of each div id to console
+        console.log('enter:', $(this).attr('id'));
+        // add active class to parent li in horizontal navigation
+        $(".navbar-fixed").find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active-nav')
+        // add active class to parent li in vertical side-navigation
+        $("#slide-out").find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active-nav')
+    });
+    // Scrollspy enter function - Confirms when
+    // user exits specified scrollspy id
+    $(".scrollspy").on('scrollSpy:exit', function () {
+        // Display exit scrolling points of each div id to console
+        console.log('exit:', $(this).attr('id'));
+        // remove active class from parent li
+        $(".navbar-fixed").find('a[href="#'+$(this).attr('id')+'"]').parent().removeClass('active-nav');
+        // add active class to parent li in vertical side-navigation
+        $("#slide-out").find('a[href="#'+$(this).attr('id')+'"]').parent().removeClass('active-nav');
     });
 };
 
@@ -121,15 +135,15 @@ $(document).ready(function () {
     // Dropdown Initialization
     $('.dropdown-button').dropdown();
     // Scrollspy Initialization
-    $('.scrollspy').scrollSpy();
-
+    //$('.scrollspy').scrollSpy();
+    activeScrollspy();
 
     // Carousel Slider item change
     carouselChange();
     // Landing page loading bar
     progressBar();
     // Scroll effects
-    scrolly();
+    scrollChange();
     
 
 });
