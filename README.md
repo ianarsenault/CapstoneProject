@@ -21,7 +21,8 @@ Documentation Site:
 * Navigation
  - [x] Side-nav visible on Large
  * Hamburger Icon transition on click
- * Fadeout on scroll -> visible scroll-up or stop
+ 
+ - [x] Fadeout on scroll -> visible scroll-up or stop
 * Jumbotron
  - [x] rough outline 
  * Video or Image
@@ -47,7 +48,7 @@ Documentation Site:
  * Ian + Jameson 
 * Footer
  * Terms of Service
- - [x] ~~Privacy Policy~~`
+ - [x] Privacy Policy
  - [x] Help
  - [x] ~~Social Media Icons~~
  
@@ -55,6 +56,8 @@ Documentation Site:
 
 
 ## Weekly Breakdown
-- [ ] Need to update activeScrollspy function to remove class when other li is activated
+Week 5 - make form field input underline green like label 
+           Text needs to be blue or some darker color
+           add content to sections and start transitioning to PHP using MVC 
 
 ## Deadline: September 21, 2016
