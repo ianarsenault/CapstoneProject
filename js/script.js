@@ -29,60 +29,67 @@ var progressBar = function () {
     }, 2500 );
 };
 
+
 // Function for scrolling effects
 var scrolly = function () {
     /* Fixed Navbar Scroll */
     var lastScrollTop = 0;
     var navbar = $('.navbar-fixed');
     var chatbtn = $("#fixChatBtn");
-    $(window).scroll(function() {
-        var y = $(this).scrollTop();
-        // If scrolltop point is greater than last scroll position
-        if (y > lastScrollTop) {
-            // scrolling down code
-            //alert("down");
-            // Change navbar opacity to almost transparent
-            navbar.css({
-                //visibility: "hidden",
-                transition: "opacity 0.5s linear",
-                opacity: 0.2
-            });
-            chatbtn.css({
-                transition: "opacity 0.5s linear",
-                opacity: 0.2
-            });
-        } else {
-            // scrolling up code
-            //alert("up");
-            // If it's scrolling up lose opacity
-            navbar.css({
-                visibility: "visible",
-                transition: "opacity 0.5s linear",
-                opacity: 1
-            });
-            chatbtn.css({
-                transition: "opacity 0.5s linear",
-                opacity: 0.2
-            })
 
-        }
-        // If scroll point  is at the same last scrollpoint after .5 seconds lose opacity
-        lastScrollTop = y;
-        var scrolly = $('body').scrollTop();
-        setTimeout(function () {
-            if(scrolly == $('body').scrollTop()) {
+    $(window).scroll(function() {
+        // If window width is less than 1550px
+        // do scrollTop function stuff > transition + opacity changes
+        if ($(window).width() < 1550) {
+            var y = $(this).scrollTop();
+            // If scrolltop point is greater than last scroll position
+            if (y > lastScrollTop) {
+                // scrolling down code
+                //alert("down");
+                // Change navbar opacity to almost transparent
+                navbar.css({
+                    //visibility: "hidden",
+                    transition: "opacity 0.5s linear",
+                    opacity: 0.2
+                });
+                chatbtn.css({
+                    transition: "opacity 0.5s linear",
+                    opacity: 0.2
+                });
+            } else {
+                // scrolling up code
+                //alert("up");
+                // If it's scrolling up lose opacity
                 navbar.css({
                     visibility: "visible",
                     transition: "opacity 0.5s linear",
                     opacity: 1
                 });
                 chatbtn.css({
-                    visibility: "visible",
                     transition: "opacity 0.5s linear",
-                    opacity: 1
+                    opacity: 0.2
                 })
+
             }
-        }, 500);
+            // If scroll point  is at the same last scrollpoint after .5 seconds lose opacity
+            lastScrollTop = y;
+            var scrolly = $('body').scrollTop();
+            setTimeout(function () {
+                if(scrolly == $('body').scrollTop()) {
+                    navbar.css({
+                        visibility: "visible",
+                        transition: "opacity 0.5s linear",
+                        opacity: 1
+                    });
+                    chatbtn.css({
+                        visibility: "visible",
+                        transition: "opacity 0.5s linear",
+                        opacity: 1
+                    })
+                }
+            }, 500);
+
+        } // end if
 
 
         /*  Bottom right hand corner button - Scroll to top function
@@ -100,7 +107,6 @@ var scrolly = function () {
 
     });
 };
-
 
 
 $(document).ready(function () {
@@ -124,8 +130,6 @@ $(document).ready(function () {
     progressBar();
     // Scroll effects
     scrolly();
-
-
-
+    
 
 });

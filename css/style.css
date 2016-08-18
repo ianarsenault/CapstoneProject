@@ -882,6 +882,7 @@ footer.page-footer .footer-copyright {
     position: fixed;
     bottom: -70px;
     left: 20px;
+    z-index: 1100;
 }
 
 /* Fixed Chat Modal Button - bottom left */
@@ -997,7 +998,7 @@ footer.page-footer .footer-copyright {
 .logo-land {
     position: relative;
     top: 220px;
-    margin-left: auto;d
+    margin-left: auto;
     margin-right: auto;
     height:10px;
     display: block;
