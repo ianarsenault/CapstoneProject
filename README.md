@@ -49,7 +49,7 @@ Documentation Site:
  * Terms of Service
  - [x] Privacy Policy
  - [x] Help
- - [x] Social Media Icons
+ - [x] ~~Social Media Icons~~
  
 
 
