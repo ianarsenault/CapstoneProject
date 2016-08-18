@@ -47,7 +47,7 @@ Documentation Site:
  * Ian + Jameson 
 * Footer
  * Terms of Service
- - [x] Privacy Policy
+ - [x] ~~Privacy Policy~~`
  - [x] Help
  - [x] ~~Social Media Icons~~
  
@@ -55,6 +55,6 @@ Documentation Site:
 
 
 ## Weekly Breakdown
-
+- [ ] Need to update activeScrollspy function to remove class when other li is activated
 
 ## Deadline: September 21, 2016

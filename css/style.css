@@ -253,6 +253,16 @@ and (max-width: 1549px) {
     /*height: 42px !important;*/
 }
 
+.active-nav {
+    -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    -moz-transition: box-shadow 0.5s ease-in-out;
+    -ms-transition: box-shadow 0.5s ease-in-out;
+    -o-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+}
 
 /*********** ACTIVE NAVIGATION STYLING
 
@@ -940,6 +950,21 @@ footer.page-footer .footer-copyright {
 }
 
 @-moz-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@-o-keyframes moveUp {
     0% {
         -webkit-transform: translateY(0px);
 
