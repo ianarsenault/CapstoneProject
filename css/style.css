@@ -425,7 +425,7 @@ and (min-width: 1550px) {
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12) !important;
     }
 
-    .side-nav .userView {
+   /* .side-nav .userView {
         overflow: hidden;
         position: relative;
         padding: 32px 32px 0;
@@ -433,12 +433,11 @@ and (min-width: 1550px) {
         color: #7b7b7b;
         background-color: #ef4747;
     }
-    /* Max setting color change for side-nav */
+
     .max-side-nav {
         color: #ffffff;
         background-color: #464646 !important;
-       /* background-color: #797979 !important;*/
-        /*background-color: #3b3e40 !important;*/
+
     }
 
     .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
@@ -485,10 +484,59 @@ and (min-width: 1550px) {
         background-color: transparent !important;
     }
 
-    .active-nav {
+     .active-nav {
         -webkit-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
         -moz-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
         box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+        -webkit-transition: box-shadow 0.5s ease-in-out;
+        -moz-transition: box-shadow 0.5s ease-in-out;
+        -ms-transition: box-shadow 0.5s ease-in-out;
+        -o-transition: box-shadow 0.5s ease-in-out;
+        transition: box-shadow 0.5s ease-in-out;
+    } */
+
+
+    .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        background-color: #3b5dad;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #2b3870;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #2b3870;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+    .active-nav {
+        -webkit-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        -moz-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        box-shadow: inset 0 -4px 0 0 #00c962 !important;
         -webkit-transition: box-shadow 0.5s ease-in-out;
         -moz-transition: box-shadow 0.5s ease-in-out;
         -ms-transition: box-shadow 0.5s ease-in-out;
@@ -596,7 +644,15 @@ and (max-width: 1549px) {
 
 ****************************************************************/
 
-
+/* Section title underline */
+hr {
+    border-style: none;
+    border-width: 0;
+    margin: 33px auto 63px;
+    background-color: #bbb;
+    width: 100px;
+    height: 5px;
+}
 
 
 /*******************************************
@@ -977,13 +1033,27 @@ blockquote {
     transition: background-color .4s ease-in-out;
 }
 @media only screen and (min-width: 1550px) {
-    blockquote {
+    /*blockquote {
         margin: 20px 0;
         padding-left: 1.5rem;
         border-left: 5px solid #ff2e00;
     }
     .carousel .indicators .indicator-item:hover {
         background-color: rgb(255, 46, 0);
+        -webkit-transition: background-color .4s ease-in-out;
+        -moz-transition: background-color .4s ease-in-out;
+        -ms-transition: background-color .4s ease-in-out;
+        -o-transition: background-color .4s ease-in-out;
+        transition: background-color .4s ease-in-out;
+    }*/
+
+    blockquote {
+        margin: 20px 0;
+        padding-left: 1.5rem;
+        border-left: 5px solid #175fff;
+    }
+    .carousel .indicators .indicator-item:hover {
+        background-color: rgb(23, 95, 255);
         -webkit-transition: background-color .4s ease-in-out;
         -moz-transition: background-color .4s ease-in-out;
         -ms-transition: background-color .4s ease-in-out;
@@ -1176,6 +1246,25 @@ and (max-width: 1799px) {
     padding: 30px;
     overflow: auto;
 }
+.collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: none !important
+}
+
+.topper {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.require {
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: #ff5555;
+    padding-left:10px;
+}
 .send-mail-btn {
     background-color: #388e3c ;
     -webkit-transition: all 1s ease-in-out;
@@ -1188,69 +1277,11 @@ and (max-width: 1799px) {
 .send-mail-btn:hover {
     background-color: #48b44d;
 }
+
 /* label color */
 .input-field label {
-    color: #d10e0e;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
-    color: #43a047 ;
-}
-/* Text &  underline color */
-.input-field input[type=text] {
-    color: #788382;
-    border-bottom: 2px solid #ffa707;;
-}
-/*  Text & underline focus color*/
-.input-field input[type=text]:focus {
-    color: #00a144;
-    border-bottom: 2px solid #00a144;
-    box-shadow: 0 0 0 0 #80cbc4;
-}
-
-/* valid color */
-.input-field input[type=text].valid {
-    border-bottom: 2px solid #ec8e0c;
-    box-shadow: 0 0 0 0;
-}
-/* Valid focus color */
-.input-field input[type=text]:focus.valid {
-    border-bottom: 2px solid #ffa707;
-    box-shadow: 0 0 0 0 #ffa707;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-}
-
-/* icon prefix focus color */
-.input-field .prefix.active {
-    color: #f44336 ;
-}
-
-/* Text Area border size and color on focus */
-textarea.materialize-textarea:focus:not([readonly]) {
-    color: #43a047;
-    border-bottom: 2px solid #43a047;
-    box-shadow: 0 0 0 0 #43a047;
-}
-
-/* Text area label color on focus */
-textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #43a047;
-}
-
-/* Text area border and text color when not active/focuses */
-textarea.materialize-textarea {
-    color: #727790;
-    border-bottom: 2px solid #ffa707;
-
-}
-
-textarea.materialize-textarea.valid {
-    border-bottom: 2px solid #ec8e0c;
-    box-shadow: 0 0 0 0 #ec8e0c;
+    color: #303030;
+    font-weight: 300;
 }
 
 /* Clears placeholder in form */
@@ -1258,18 +1289,26 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+textarea.materialize-textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea.materialize-textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea.materialize-textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea.materialize-textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
 /*******************************************
 **          Google Map  Styling          *
 ******************************************/
 /* Main section class */
 .googlemap-section {
-    background-color:#ffebee;
-    height: 1000px;
-    padding: 30px 0 60px 0;
+    background-color: #ffffff;
+    padding: 0 0 160px 0;
 }
-
-
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+    height: 510px;
+    width: 100%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+}
 
 /*******************************************
 **       Developer Team  Styling          *
