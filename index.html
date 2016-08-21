@@ -107,7 +107,7 @@
         <nav id="navbar">
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo center-on-xlarge open-sans4">Company Name</a>
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" data-activates="slide-out" class="button-collapse" id="hamburger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down hide-on-xlarge">
                     <li><a href="#about">About</a></li>
                     <li><a href="#product">Product</a></li>
@@ -130,31 +130,36 @@
         </nav>
     </div><!-- End Navbar -->
     <!-- FIXED SIDE-NAV XL -->
-    <ul id="slide-out" class="side-nav fixed ralewayBold">
+   <!-- <ul id="slide-out" class="side-nav fixed blue-grey lighten-4 ralewayBold">-->
+    <ul id="slide-out" class="side-nav fixed max-side-nav ralewayBold">
+        <!--<li><div class="userView blue-grey lighten-2">-->
         <li><div class="userView">
-            <img class="background" src="images/office.jpg">
-            <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-            <a href="#!name"><span class="white-text name">John Doe</span></a>
-            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            <div class="center-align">
+                <img class="circle side-logo" src="images/logos/logo.png">
+            </div>
+            <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
+            <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
         </div></li>
-        <li><a href="#about"><i class="material-icons left">description</i>About</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#product"><i class="material-icons left">developer_board</i>Product</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#testimonial"><i class="material-icons left">comment</i>Testimonials</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#demo"><i class="material-icons left">whatshot</i>Demo</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#buy"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#location"><i class="material-icons left">location_city</i>Location</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#team"><i class="material-icons left">group</i>Dev Team</a>
-        <li><div class="divider"></div></li>
-        <li><a href="#social-footer"><i class="material-icons left">share</i>Social Media</a></li>
-        <li><div class="divider"></div></li>
+        <ul class="main-side-links">
+            <li><a href="#about" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#product" id="sBtn2"><i class="material-icons left">developer_board</i>Product</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#testimonial" id="sBtn3"><i class="material-icons left">comment</i>Testimonials</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#demo" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#buy"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#contact"><i class="material-icons left">email</i>Contact</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#location"><i class="material-icons left">location_city</i>Location</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#team"><i class="material-icons left">group</i>Dev Team</a>
+            <li><div class="divider"></div></li>
+            <li><a href="#social-footer"><i class="material-icons left">share</i>Social Media</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
     </ul> <!-- END FIXED SIDE-NAV XL -->
 </header>
 
@@ -214,6 +219,24 @@
 
     <!-- Begin Product Details -->
     <section class="product-section scrollspy" id="product">
+
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+        </ul>
+
+
+
         <!-- Horizontal Card - Product -->
         <div class="row">
             <div class="col s12 m8 l10 offset-l1 offset-m2">
@@ -297,6 +320,84 @@
                 </div>
             </div>
         </div><!-- End horizontal card about -->
+
+        <ul id="staggered-test">
+            <li>
+                <div class="row">
+                    <div class="col s12 m8 l10 offset-l1 offset-m2">
+                        <div class="card horizontal" id="horiz-one">
+                            <div class="card-image">
+                                <div class="card-img-overlay">
+                                    <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
+                                </div>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <span class="card-title">Something</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End horizontal card about -->
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col s12 m8 l10 offset-l1 offset-m2">
+                        <div class="card horizontal" id="horiz-one">
+                            <div class="card-image">
+                                <div class="card-img-overlay">
+                                    <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
+                                </div>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <span class="card-title">Something</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End horizontal card about -->
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col s12 m8 l10 offset-l1 offset-m2">
+                        <div class="card horizontal" id="horiz-one">
+                            <div class="card-image">
+                                <div class="card-img-overlay">
+                                    <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
+                                </div>
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <span class="card-title">Something</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End horizontal card about -->
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+        </ul>
+
 
     </section><!-- End PRODUCT Details -->
 
@@ -306,8 +407,15 @@
     <section class="testimonials-section scrollspy" id="testimonial">
 
         <!-- CAROUSEL TESTIMONIAL -->
-        <div class="carousel carousel-slider center" data-indicators="true">
-            <div class="carousel-item one white-text" href="#one!">
+        <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
+            <div class="carousel-item first-title white-text" href="#one!">
+                <div class="slider-quotebox-first">
+                    <blockquote>
+                        <p class="test-titles">Testimonials</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="carousel-item one white-text" href="#two!">
                 <div class="slider-quotebox1">
                     <blockquote>
                         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
@@ -316,7 +424,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="carousel-item two white-text" href="#two!">
+            <div class="carousel-item two white-text" href="#three!">
                 <div class="slider-quotebox2">
                     <blockquote>
                         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
@@ -325,7 +433,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="carousel-item three white-text" href="#three!">
+            <div class="carousel-item three white-text" href="#four!">
                 <div class="slider-quotebox3">
                     <blockquote>
                         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
@@ -334,7 +442,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="carousel-item four white-text" href="#four!">
+            <div class="carousel-item four white-text" href="#five!">
                 <div class="slider-quotebox4">
                     <blockquote>
                         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
@@ -343,7 +451,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="carousel-item five white-text" href="#five!">
+            <div class="carousel-item five white-text" href="#six!">
                 <div class="slider-quotebox5">
                     <blockquote>
                         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
@@ -353,6 +461,178 @@
                 </div>
             </div>
         </div>
+
+        <div class="row hide-on-med-and-up">
+            <h4>Testimonials</h4>
+            <h6>Learn what our customers are saying...</h6>
+        </div>
+
+
+
+        <div class="row hide-on-med-and-up">
+            <div class="col s12 m8 offset-m2 l6">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row test-row valign-wrapper">
+                        <div class="col s3">
+                            <img src="images/images/roundtestimages/testimg1.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s9">
+                            <blockquote>
+                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                <cite class="kristi signature right"> - Alan Birche</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m8 offset-m2 l6">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row test-row valign-wrapper">
+                        <div class="col s3">
+                            <img src="images/images/roundtestimages/testimg2.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s9">
+                            <blockquote>
+                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                <cite class="kristi signature right"> - Joseph Dunn</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row test-row valign-wrapper">
+                        <div class="col s3">
+                            <img src="images/images/roundtestimages/testimg3.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s9">
+                            <blockquote>
+                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                <cite class="kristi signature right"> - Rachel Dobbson</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row test-row valign-wrapper">
+                        <div class="col s3">
+                            <img src="images/images/roundtestimages/testimg4.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s9">
+                            <blockquote>
+                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                <cite class="kristi signature right"> - Laura Hagan</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="center-align">
+            <i class="material-icons">navigation</i>
+        </div>
+
+
+    </section><!-- End Testimonials -->
+
+    <!-- Begin DEMO -->
+    <section class="demo-section scrollspy" id="demo">
+
+        <div class="center-align">
+            <i class="material-icons small">arrow_upward</i>
+        </div>
+
+    </section><!-- End DEMO -->
+
+
+
+
+    <!-- PURCHASE -->
+    <section class="buy-section scrollspy" id="buy">
+
+        <div class="center-align">
+            <i class="material-icons fa-2x">arrow_upward</i>
+        </div>
+
+    </section><!-- End PURCHASE -->
+
+
+    <!-- Contact Us Section -->
+    <section class="section scrollspy" id="contact">
+        <!-- CONTACT US FORM -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3 form-padding">
+                <div class="card white card-form z-depth-2">
+                    <form class="col s12 contact-form">
+                        <div class="row center-align">
+                            <h5>Send us a message</h5>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <!--placeholder="Mr. Reynolds"-->
+                                <input id="name_of"  type="text" class="validate" required="" aria-required="true">
+                                <label for="name_of">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <!-- placeholder="Name@yourdomain.com" -->
+                                <input  id="email_of" type="text" class="validate" required="" aria-required="true">
+                                <label for="email_of">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <!-- placeholder="Write your message here!" -->
+                                <textarea  id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light send-mail-btn" id="sendMailBtn" type="submit" name="action">Send
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- GOOGLE MAP -->
+            <!--div class="col s12 m12 l6 map-padding">
+                <div id="map"></div>
+            </div>-->
+        </div>
+    </section>
+
+
+    <!-- GOOGLE MAPS LOCATION  -->
+    <section class="googlemap-section scrollspy" id="location">
+        <!-- GOOGLE MAP -->
+        <div class="col s12 m12 l6 map-padding">
+            <div id="map"></div>
+        </div>
+    </section><!-- End Google Maps Location -->
+
+
+
+    <!-- DEV TEAM -->
+    <section class="dev-section scrollspy" id="team">
+
 
 
 
@@ -422,193 +702,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <div class="center-align">
-            <i class="material-icons">navigation</i>
-        </div>
-
-
-    </section><!-- End Testimonials -->
-
-    <!-- Begin DEMO -->
-    <section class="demo-section scrollspy" id="demo">
-        <h4>Testimonials</h4>
-        <h6>Learn what our customers are saying...</h6>
-
-
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3">
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row test-row valign-wrapper">
-                        <div class="col s3">
-                            <img src="images/images/roundtestimages/testimg1.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s9">
-                            <blockquote>
-                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                                <cite class="kristi signature right"> - Alan Birche</cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m8 offset-m2 l6 offset-l3">
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row test-row valign-wrapper">
-                        <div class="col s3">
-                            <img src="images/images/roundtestimages/testimg2.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s9">
-                            <blockquote>
-                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                                <cite class="kristi signature right"> - Joseph Dunn</cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m8 offset-m2 l6 offset-l3">
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row test-row valign-wrapper">
-                        <div class="col s3">
-                            <img src="images/images/roundtestimages/testimg3.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s9">
-                            <blockquote>
-                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                                <cite class="kristi signature right"> - Rachel Dobbson</cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m8 offset-m2 l6 offset-l3">
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row test-row valign-wrapper">
-                        <div class="col s3">
-                            <img src="images/images/roundtestimages/testimg4.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s9">
-                            <blockquote>
-                                "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                                <cite class="kristi signature right"> - Laura Hagan</cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!--<div class="col s12">
-                <h2 class="header">Horizontal Card</h2>
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <div class="card-img-container valign-wrapper">
-                            <img  class="valign" src="images/images/roundtestimages/testimg1.png">
-                        </div>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content valign-wrapper">
-
-                            <blockquote class="valign">
-                                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-
-
-        </div>
-
-
-        <div class="center-align">
-            <i class="material-icons small">arrow_upward</i>
-        </div>
-
-    </section><!-- End DEMO -->
-
-
-
-
-    <!-- PURCHASE -->
-    <section class="buy-section scrollspy" id="buy">
-
-        <div class="center-align">
-            <i class="material-icons fa-2x">arrow_upward</i>
-        </div>
-
-    </section><!-- End PURCHASE -->
-
-
-    <!-- Contact Us Section -->
-    <section class="section scrollspy" id="contact">
-        <!-- CONTACT US FORM -->
-        <div class="row">
-            <div class="col s12 m8 offset-m2 l6 offset-l3 form-padding">
-                <div class="card white card-form z-depth-2">
-                    <form class="col s12 contact-form">
-                        <div class="row center-align">
-                            <h5>Send us a message</h5>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="name_of" placeholder="Mr. Reynolds" type="text" class="validate" required="" aria-required="true">
-                                <label for="name_of">Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">
-                                <label for="email_of">Email</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-
-                        <div class="center-align">
-                            <button class="btn waves-effect waves-light send-mail-btn" id="sendMailBtn" type="submit" name="action">Send
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- GOOGLE MAP -->
-            <!--div class="col s12 m12 l6 map-padding">
-                <div id="map"></div>
-            </div>-->
-        </div>
-    </section>
-
-
-    <!-- GOOGLE MAPS LOCATION  -->
-    <section class="googlemap-section scrollspy" id="location">
-        <!-- GOOGLE MAP -->
-        <div class="col s12 m12 l6 map-padding">
-            <div id="map"></div>
-        </div>
-    </section><!-- End Google Maps Location -->
-
-
-
-    <!-- DEV TEAM -->
-    <section class="dev-section scrollspy" id="team">
         <div class="center-align">
             <i class="material-icons large">expand_less</i>
         </div>
@@ -833,7 +926,7 @@
 
 <!-- FIXED CHAT BUTTON -->
 <div class="fix-btn-transform" id="fixChatBtn">
-    <a href="#modal-chat" class="btn-floating btn-large blue modal-trigger">
+    <a href="#modal-chat" class="btn-floating btn-large modal-trigger">
         <i class="material-icons">message</i>
     </a>
 </div><!-- End  Fixed Chatbox Button -->

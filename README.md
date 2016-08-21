@@ -56,8 +56,10 @@ Documentation Site:
 
 
 ## Weekly Breakdown
-Week 5 - make form field input underline green like label 
+~~Week 5 - make form field input underline green like label 
            Text needs to be blue or some darker color
-           add content to sections and start transitioning to PHP using MVC 
-
+           add content to sections and start transitioning to PHP using MVC~~
+Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
+       -  Add transition hover effect to card form
+        - Change scrolling opacity when side-nav scroll spy browser width is less than 993px
 ## Deadline: September 21, 2016
