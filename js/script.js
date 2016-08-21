@@ -158,7 +158,8 @@ var activeScrollspy = function () {
      *   and top points **/
 
     // Scrollspy initalization
-    $(".scrollspy").scrollSpy();
+    $('.scrollspy').scrollSpy({scrollOffset: 30});
+    //$(".scrollspy").scrollSpy();
     // Scrollspy enter function - Confirms when
     // user enters specified scrollspy id
     $(".scrollspy").on('scrollSpy:enter', function () {
@@ -231,6 +232,7 @@ var contactForm = function () {
     });
 
 };
+
 
 
 $(document).ready(function () {

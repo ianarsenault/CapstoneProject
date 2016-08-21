@@ -30,77 +30,6 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="UTF-8">
-    <!--AIzaSyAb5vPD_O6ZW3aBgBclGVh6hFvjnmrb9t0-->
-    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ-d-T3vJzzvCv3TpPuNlpXNpUvLGK_zU&callback=initMap"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript">
-
-        function init() {
-            // Basic options for google map
-            var mapOptions = {
-                // Zoomed in level
-                zoom: 10,
-
-                // The latitude and longitude to center the map
-                center: new google.maps.LatLng(41.82399, -71.41283), // New York
-
-                // How you would like to style the map.
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [[{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
-            };
-
-
-            // Get the HTML DOM element that will contain your map
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('map');
-
-
-            // Create the Google Map using our element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-
-
-            /* Providence Marker */
-            var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(41.82399, -71.41283),
-                map: map,
-                title: 'Somewhere around here!'
-            });
-
-          /*  google.maps.event.addListener(map, 'mousedown', function (event) {
-                this.setOptions({scrollwheel:true});
-            });
-
-            google.maps.event.addListener(map, 'mouseover', function(event){
-                self = this;
-                timer = setTimeout(function() {
-                    self.setOptions({scrollwheel:true});
-                }, 1000);
-            });
-
-            google.maps.event.addListener(map, 'mouseout', function(event){
-                this.setOptions({scrollwheel:false});
-                clearTimeout(timer);
-            });*/
-
-        }
-
-        /*function waitForMap() {
-            setTimeout(function () {
-                if($('#phone6s').is(':visible')) {
-                    initTabMap();
-                } else {
-                    waitForMap();
-                }
-            }, 100);
-        }
-
-        waitForMap();*/
-
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-        //google.maps.event.addDomListener(window, 'load', initTabMap);
-
-    </script>-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ-d-T3vJzzvCv3TpPuNlpXNpUvLGK_zU&callback=initMap"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
@@ -262,7 +191,7 @@
     <!-- Begin Navbar -->
     <div class="navbar-fixed open-sans3">
         <nav id="navbar">
-            <div class="nav-wrapper">
+            <div class="nav-wrapper nav-text-color">
                 <a href="#!" class="brand-logo center-on-xlarge open-sans4">Company Name</a>
                 <a href="#" data-activates="slide-out" class="button-collapse" id="hamburger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down hide-on-xlarge">
@@ -586,6 +515,10 @@
             </li>
         </ul>
 
+        <div class="center-align">
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
+        </div>
+
 
     </section><!-- End PRODUCT Details -->
 
@@ -729,7 +662,7 @@
 
 
         <div class="center-align">
-            <i class="material-icons">navigation</i>
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
         </div>
 
     </section><!-- End Testimonials -->
@@ -745,7 +678,7 @@
         </div>
 
         <div class="center-align">
-            <i class="material-icons small">arrow_upward</i>
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
         </div>
 
     </section><!-- End DEMO -->
@@ -764,19 +697,23 @@
         </div>
 
         <div class="center-align">
-            <i class="material-icons fa-2x">arrow_upward</i>
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
         </div>
 
     </section><!-- End PURCHASE -->
 
 
     <!-- Contact Us Section -->
-    <section class="section scrollspy" id="contact">
+    <section class="contact-section section scrollspy" id="contact">
         <div class="row">
             <div class="col s12 m8 offset-m2 l6 offset-l3">
                 <h4 class="center-align">GET IN TOUCH</h4>
                 <hr />
-                <p></p>
+                <div class="container contact-details">
+                    <p>Whether you have a question about your application, or are curious about future projects we're are building. Or
+                        if you have recommendations as to how we can improve upon our current versions, please feel free to contact us
+                        in any of the following ways. <span class="kristi signature right">- Protech Solutions</span></p>
+                </div>
             </div>
         </div>
         <!-- CONTACT US FORM -->
@@ -822,7 +759,7 @@
                 </form>
                 <!--</div>-->
             </div>
-            <div class="col s12 l5 open-sans3">
+            <div class="col s12 m8 offset-m2 l5 open-sans3 contact-details">
                 <div class="row">
                     <h5>Contact Info</h5>
                 </div>
@@ -837,8 +774,9 @@
                     <li class="collection-item">Providence, RI 02906</li>
                 </ul>
             </div>
-
-
+        </div>
+        <div class="center-align">
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
         </div>
     </section>
 
@@ -856,6 +794,10 @@
         <div class="col s12 m12 l6">
             <div id="map"></div>
         </div>
+
+        <div class="center-align">
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
+        </div>
     </section><!-- End Google Maps Location -->
 
 
@@ -870,17 +812,14 @@
             </div>
         </div>
 
-
-
-
-        <div class="row">
-            <div class="col s3">
-                <div class="card z-depth-2">
+        <div class="row dev-row">
+            <div class="col s12 m4 l4">
+                <div class="card z-depth-2 shadow-hvr">
                     <div class="card-content black-text">
                         <div class="center-align">
-                            <img class="responsive-img" src="images/images/roundtestimages/testimg1.png" />
+                            <img class="responsive-img" src="http://i.imgur.com/kSnJSMb.png" />
                         </div>
-                        <h3 class="card-title center-align">Our Purpose</h3>
+                        <h3 class="card-title center-align">Ian Arsenault</h3>
                         <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
                             pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
                         </p>
@@ -890,45 +829,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col s3">
-                <div class="card z-depth-2">
+            <div class="col s12 m4 l4">
+                <div class="card z-depth-2 shadow-hvr">
                     <div class="card-content black-text">
                         <div class="center-align">
-                            <img class="responsive-img" src="images/images/roundtestimages/testimg2.png" />
+                            <img class="responsive-img" src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/bighead.png" />
                         </div>
-                        <h3 class="card-title center-align">Our Purpose</h3>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
-                        </p>
-                    </div>
-                    <div class="card-action center-align">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col s3">
-                <div class="card z-depth-2">
-                    <div class="card-content black-text">
-                        <div class="center-align">
-                            <img class="responsive-img" src="images/images/roundtestimages/testimg3.png" />
-                        </div>
-                        <h3 class="card-title center-align">Our Purpose</h3>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
-                        </p>
-                    </div>
-                    <div class="card-action center-align">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col s3">
-                <div class="card z-depth-2">
-                    <div class="card-content black-text">
-                        <div class="center-align">
-                            <img class="responsive-img" src="images/images/roundtestimages/testimg4.png" />
-                        </div>
-                        <h3 class="card-title center-align">Our Purpose</h3>
+                        <h3 class="card-title center-align">Jameson Arsenault</h3>
                         <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
                             pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
                         </p>
@@ -940,7 +847,7 @@
             </div>
         </div>
         <div class="center-align">
-            <i class="material-icons large">expand_less</i>
+            <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
         </div>
     </section><!-- End Dev Team -->
 
