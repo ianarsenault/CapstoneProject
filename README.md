@@ -16,6 +16,8 @@ Documentation Site:
 * Buy -> Download
 * Order Confirmation page
 * Detail write ups for information throughout website
+* Nav links on Checkout and Confirm work with index scrollspy
+* Pick font styling - get rid of test fonts 
 
 ##To-Do's
 * Navigation
@@ -56,9 +58,14 @@ Documentation Site:
     will be set as an overlay for first load of page~~
 
 ## Weekly Breakdown
-Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
+* Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
        -  ~~Add transition hover effect to card form~~
         - ~~Change scrolling opacity when side-nav scroll spy browser width is less than 993px~~ Changed
+        
+* Week 7
+* Week 8
+* Week 9
+* Week 10
 
 
 ## Deadline: September 21, 2016
