@@ -635,6 +635,14 @@ and (max-width: 1549px) {
 
 
 }
+/* Drop Down button styling */
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
 
 /*********** ACTIVE NAVIGATION STYLING
 
@@ -762,12 +770,40 @@ hr {
 /* Main section class */
 .product-section {
     padding: 30px 0 60px 0;
+    background-color: #f8f8f8 !important;
 }
 
 .active-bdcb {
 
 }
-
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #6b6b6b;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
+.collapsible-header:hover {
+    background-color: #919191;
+}
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #f3930b;
+    border-radius: 2px;
+    position: relative;
+    padding: 4px 7px 4px 4px;
+    left: 15px;
+}
 
 #staggered-test li {
     opacity: 0;
@@ -1234,12 +1270,29 @@ and (max-width: 1799px) {
 ******************************************/
 /* Main section class */
 .demo-section{
-    background-color:#dcedc8;
+    background-color: rgb(249, 253, 251);
     height: 1000px;
     padding: 30px 0 60px 0;
 }
+
+
+.tabs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 48px;
+/*    margin: 0 auto;*/
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto 60px;
+}
 .tabs .tab a {
-    color: #560bff;
+    color: #289e28;
     display: block;
     width: 100%;
     height: 100%;
@@ -1248,19 +1301,24 @@ and (max-width: 1799px) {
     transition: color .28s ease;
 }
 .tabs .tab a:hover {
-    color: #30bf30;
+    color: #155515;
 }
 
 .tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 4px;
-    background-color: #7000ff;
+    background-color: #294fea;
     will-change: left, right;
 }
 .tabs-section {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
+
+audio {
+    color: #000;
+}
+
 /*******************************************
 **          Purchase/Buy  Styling        *
 ******************************************/
