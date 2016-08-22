@@ -22,7 +22,7 @@ var progressBar = function () {
     }, 2500 );
     // Blue Progress Bar
     $(".progress-bar-middle").animate({
-       width: "100%"
+        width: "100%"
     }, 2500);
     // Blue Progress Bar
     $(".progress-bar-2").animate( {
@@ -38,7 +38,7 @@ var scrollChange = function () {
     var chatbtn = $("#fixChatBtn");
 
     $(window).scroll(function() {
-        // If window width is less than 1550px
+        // If window width is greater than 992 & less than 1550px
         // do scrollTop function stuff > transition + opacity changes
         if ($(window).width() > 992 && $(window).width() < 1550) {
             var y = $(this).scrollTop();
@@ -123,7 +123,7 @@ var scrollChange = function () {
         }
 
 
-       // Displays scrollTop in console (Showing when user reached bottom of page)
+        // Displays scrollTop in console (Showing when user reached bottom of page)
         console.log($(window).scrollTop() == ($(document).height() - $(window).height()));
     });
 };
@@ -167,12 +167,12 @@ var activeScrollspy = function () {
 // ELement fire function
 var scrollfire = function () {
     var options = [
-       /* {selector: '#staggered-test', offset: 50, callback: function(el) {
-            Materialize.toast("This is our ScrollFire Demo!", 1500 );
-        } },
-        {selector: '#staggered-test', offset: 205, callback: function(el) {
-            Materialize.toast("Please continue scrolling!", 1500 );
-        } },*/
+        /* {selector: '#staggered-test', offset: 50, callback: function(el) {
+         Materialize.toast("This is our ScrollFire Demo!", 1500 );
+         } },
+         {selector: '#staggered-test', offset: 205, callback: function(el) {
+         Materialize.toast("Please continue scrolling!", 1500 );
+         } },*/
         {selector: '#staggered-test', offset: 400, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } }
@@ -233,7 +233,7 @@ var mainContent = function () {
 
 $(document).ready(function () {
     /** CHANGE BACK WHEN LIVE **/
-   // $(".main-section").fadeIn(10000);
+    // $(".main-section").fadeIn(10000);
 
     /* Fade out overlay and loading screen */
     /** CHANGE BACK WHEN LIVE **/
