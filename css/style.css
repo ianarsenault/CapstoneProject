@@ -11,7 +11,10 @@ body,
     margin: 0;
     padding: 0;
 }
-
+/* Greate vibes cursive font */
+.great-vibes {
+    font-family: 'Great Vibes', cursive;
+}
 /* Raleway Font */
 .ralewayThin {
     font-family: 'Raleway', sans-serif;
@@ -426,75 +429,75 @@ and (min-width: 1550px) {
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12) !important;
     }
 
-   /* .side-nav .userView {
-        overflow: hidden;
-        position: relative;
-        padding: 32px 32px 0;
-        margin-bottom: 0;
-        color: #7b7b7b;
-        background-color: #ef4747;
-    }
+    /* .side-nav .userView {
+         overflow: hidden;
+         position: relative;
+         padding: 32px 32px 0;
+         margin-bottom: 0;
+         color: #7b7b7b;
+         background-color: #ef4747;
+     }
 
-    .max-side-nav {
-        color: #ffffff;
-        background-color: #464646 !important;
+     .max-side-nav {
+         color: #ffffff;
+         background-color: #464646 !important;
 
-    }
+     }
 
-    .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
-        color: rgba(255, 255, 255, 0.54);
-    }
+     .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+         color: rgba(255, 255, 255, 0.54);
+     }
 
-    .side-nav.fixed a {
-        color: rgb(255, 255, 255) !important;
-        -webkit-transition: background-color 0.3s ease-in-out;
-        -moz-transition: background-color 0.3s ease-in-out;
-        -ms-transition: background-color 0.3s ease-in-out;
-        -o-transition: background-color 0.3s ease-in-out;
-        transition: background-color 0.3s ease-in-out;
-    }
-    .side-nav.fixed .main-side-links a:hover {
-        background-color: rgba(255, 255, 255, 0.22) !important;
-    }
+     .side-nav.fixed a {
+         color: rgb(255, 255, 255) !important;
+         -webkit-transition: background-color 0.3s ease-in-out;
+         -moz-transition: background-color 0.3s ease-in-out;
+         -ms-transition: background-color 0.3s ease-in-out;
+         -o-transition: background-color 0.3s ease-in-out;
+         transition: background-color 0.3s ease-in-out;
+     }
+     .side-nav.fixed .main-side-links a:hover {
+         background-color: rgba(255, 255, 255, 0.22) !important;
+     }
 
-    .side-nav .userView .circle {
-        height: 64px;
-        width: 64px;
-        margin-left: 64px;
-    }
+     .side-nav .userView .circle {
+         height: 64px;
+         width: 64px;
+         margin-left: 64px;
+     }
 
 
-    .side-nav .userView .name {
-        margin-top: 16px;
-        font-weight: 500;
-        text-shadow: 2px 1px #8a0300;
-        letter-spacing: 0.28em;
-    }
-    .userView .name:hover {
-        background-color: transparent !important;
-    }
+     .side-nav .userView .name {
+         margin-top: 16px;
+         font-weight: 500;
+         text-shadow: 2px 1px #8a0300;
+         letter-spacing: 0.28em;
+     }
+     .userView .name:hover {
+         background-color: transparent !important;
+     }
 
-    .side-nav .userView .email {
-        font-weight: 100 !important;
-        font-size: smaller;
-        text-shadow: 1px 1px #8a0300;
-        letter-spacing: 0.06em;
-    }
+     .side-nav .userView .email {
+         font-weight: 100 !important;
+         font-size: smaller;
+         text-shadow: 1px 1px #8a0300;
+         letter-spacing: 0.06em;
+     }
 
-    .userView .email:hover {
-        background-color: transparent !important;
-    }
+     .userView .email:hover {
+         background-color: transparent !important;
+     }
 
-     .active-nav {
-        -webkit-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
-        -moz-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
-        box-shadow: inset 0 -4px 0 0 #ffad46 !important;
-        -webkit-transition: box-shadow 0.5s ease-in-out;
-        -moz-transition: box-shadow 0.5s ease-in-out;
-        -ms-transition: box-shadow 0.5s ease-in-out;
-        -o-transition: box-shadow 0.5s ease-in-out;
-        transition: box-shadow 0.5s ease-in-out;
-    } */
+      .active-nav {
+         -webkit-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         -moz-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         -webkit-transition: box-shadow 0.5s ease-in-out;
+         -moz-transition: box-shadow 0.5s ease-in-out;
+         -ms-transition: box-shadow 0.5s ease-in-out;
+         -o-transition: box-shadow 0.5s ease-in-out;
+         transition: box-shadow 0.5s ease-in-out;
+     } */
 
 
     .side-nav .userView {
@@ -869,7 +872,7 @@ blockquote {
 
 /* First Carousel slide */
 .one {
-   /* background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
+    /* background: url("https://hd.unsplash.com/photo-1467664631004-58beab1ece0d") no-repeat;*/
     background: rgba(205, 222, 255, 0.43) url('../images/images/person1.png') no-repeat left center;
     width: 100%;
     position: relative;
@@ -1286,7 +1289,7 @@ and (max-width: 1799px) {
     height: 48px;
     background-color: transparent;
     border-radius: 48px;
-/*    margin: 0 auto;*/
+    /*    margin: 0 auto;*/
     width: 100%;
     white-space: nowrap;
     margin: 0 auto 60px;
@@ -1325,12 +1328,202 @@ audio {
 /* Main section class */
 .buy-section {
     background-color: rgb(231, 235, 233);
-    height: 1000px;
     padding: 30px 0 60px 0;
 }
 table.highlight > tbody > tr:hover {
     background-color: rgba(184, 184, 184, 0.64) !important;
 }
+
+/* Div for horizontal card overlay */
+.card-img-overlay-main {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-main:after {
+    content: '';
+    background-color: rgba(255, 5, 5, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Div for horizontal card overlay */
+.card-img-overlay-secondary {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-secondary:after {
+    content: '';
+    background-color: rgba(134, 53, 255, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.card-title-purchase {
+    font-size: 24px;
+    font-weight: 300;
+}
+.card-title-purchase {
+    color: #fff;
+    position: absolute;
+    top:35%;
+    bottom:0;
+    left: 0;
+    right: 0 !important;
+    padding: 20px;
+    font-size: 1.4vw!important;;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -moz-transition: opacity 0.6s ease-in-out;
+    -ms-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+#purchaseCard:hover .card-title-purchase {
+    opacity: 0!important;
+}
+/* Text shadow for title */
+.buy-title-main {
+    text-shadow: 2px 2px 0 #6f0202;
+}
+/* Text shadow for title */
+.buy-title-secondary {
+    text-shadow: 2px 2px 0 #1f0040;
+}
+/* Large Pricing title */
+.buy-card-price {
+    position: absolute;
+    color: #fff;
+    top:22%;
+    bottom:0;
+    left: 0;
+    right: 0 !important;
+    padding: 20px;
+    font-size: 5vw;
+    text-shadow: 2px 2px 0 #000;
+    visibility: hidden;
+    opacity: 0!important;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+.monthly-title {
+    font-size: 1.2vmax !important;
+    font-style: italic;
+    position: relative;
+}
+#purchaseCard:hover .buy-card-price {
+    opacity: 1 !important;
+    visibility: visible;
+}
+/* Id for purchase card to get rid of overlay on hover */
+#purchaseCard:hover .card-img-overlay-main:after {
+    background-color: transparent;
+}
+#purchaseCard:hover .card-img-overlay-secondary:after {
+    background-color: transparent;
+}
+
+/* Change size of purchase title text at screen resize */
+@media only screen
+and (min-width: 850px)
+and (max-width: 1100px) {
+    .card-title-purchase {
+        top: 30%;
+        font-size: 2vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+}
+/* Change size of purchase title text at screen resize */
+@media only screen
+and (max-width: 850px){
+    .card-title-purchase {
+        top: 25%;
+        font-size: 2vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+}
+@media only screen
+and (max-width: 600px){
+    .card-title-purchase {
+        top: 35%;
+        font-size: 6vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+    .buy-card-price {
+        position: absolute;
+        color: #fff;
+        top: 22%;
+        bottom: 0;
+        left: 0;
+        right: 0 !important;
+        padding: 20px;
+        font-size: 10vw;
+    }
+}
+.buy-blocks {
+    margin: 30px 0 80px 0;
+}
+.star-icon {
+    vertical-align: middle;
+    margin-top: -5px;
+    color: #ff9b02;
+}
+/* Purchase button in purchase section */
+.purchase-btn {
+    background-color: #388e3c ;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.purchase-btn:hover {
+    background-color: #48b44d;
+}
+/* Demo button in purchase section */
+.demo-btn {
+    background-color: #be3407;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.demo-btn:hover {
+    background-color: #e74108;
+}
+
 /*******************************************
 **           Contact  Styling             *
 ******************************************/
@@ -1487,7 +1680,7 @@ textarea.materialize-textarea:focus:-ms-input-placeholder { color:transparent; }
 div > .chat-box > .card-content {
     overflow-y: scroll!important;
 }
-.modal {
+#modal-chat {
     display: none;
     position: fixed;
     left: 0;
@@ -1501,11 +1694,32 @@ div > .chat-box > .card-content {
     border-radius: 2px;
     will-change: top, opacity;
 }
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow: hidden!important;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
 
 .modal .modal-footer.chat-footer {
     height: 85px !important;
 }
 
+.modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+}
 .modal.modal-fixed-footer .modal-content:not(.privacy-content) {
     padding-top: 4px;
     overflow-y: hidden !important;
@@ -1562,7 +1776,6 @@ footer.page-footer .footer-copyright {
     background-color: rgba(51, 51, 51, 0.04);
 }
 /* Lower Left Fixed Chat Button */
-
 .btn-floating {
     background-color: #2196f3;
     -webkit-transition: background-color 0.6s ease-in-out;

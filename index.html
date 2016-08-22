@@ -18,6 +18,8 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:300,900,800,500' rel='stylesheet' type='text/css'>
     <!-- Abel Font -->
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <!-- Great Vibes Cursive -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <!-- Titillium Web Font-->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
     <!-- Open Sans -->
@@ -41,10 +43,10 @@
             var mapOptions = {
                 // Zoomed in level
                 zoom: 14,
-                scrollwheel: false,
+                scrollwheel: false, // Set scrolling to false
 
                 // The latitude and longitude to center the map
-                center: new google.maps.LatLng(41.82399, -71.41283), // New York
+                center: new google.maps.LatLng(41.82399, -71.41283), //Providence
 
                 // Styling
                 styles: [
@@ -163,7 +165,7 @@
             var marker1 = new google.maps.Marker({
                 position: new google.maps.LatLng(41.82399, -71.41283),
                 map: map,
-                title: 'Somewhere around here!'
+                title: 'Stop By!'
             });
 
             google.maps.event.addListener(map, 'mousedown', function (event) {
@@ -220,7 +222,7 @@
         <div class="navbar-fixed open-sans3">
             <nav id="navbar">
                 <div class="nav-wrapper nav-text-color">
-                    <a href="#!" class="brand-logo center-on-xlarge open-sans4">Company Name</a>
+                    <a href="#!" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
                     <a href="#" data-activates="slide-out" class="button-collapse" id="hamburger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down hide-on-xlarge">
                         <li><a href="#about">About</a></li>
@@ -313,7 +315,6 @@
                         <div class="card-content black-text">
                             <div class="center-align">
                                 <img height="256" width="256" src="images/logos/logo.png" />
-
                             </div>
                             <h3 class="card-title center-align">Our Purpose</h3>
                             <hr />
@@ -772,6 +773,72 @@
                 </div>
             </div>
 
+            <!-- ROW OF PRODUCTS -->
+            <div class="row buy-blocks">
+                <div class="col s12 m4">
+                    <div class="card" id="purchaseCard">
+                        <div class="card-image">
+                            <div class="card-img-overlay-secondary">
+                                <!--http://www.freepik.com/free-photo/finger-pressing-a-social-network-button-on-a-touch-screen_903499.htm-->
+                                <img src="https://image.freepik.com/free-photo/doctor-working-with-a-modern-touch-screen_1112-497.jpg">
+                            </div>
+                            <div class="center-align">
+                                <div class="buy-card-price">$149.99<br/><span class="monthly-title">monthly</span></div>
+                                <span class="card-title-purchase buy-title-secondary">Advanced Patient Portal Suite</span>
+                            </div>
+                        </div>
+                        <!--<div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        </div>-->
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <a href="checkout.html">
+                        <div class="card" id="purchaseCard">
+                            <div class="card-image">
+                                <div class="card-img-overlay-main">
+                                    <!--http://www.freepik.com/free-photo/doctor-using-a-modern-computer_903500.htm-->
+                                    <img src="https://image.freepik.com/free-photo/doctor-working-with-a-modern-touch-screen_1112-497.jpg">
+                                </div>
+                                <div class="center-align">
+                                    <div class="buy-card-price">$199.99<br/><span class="monthly-title">monthly</span></div>
+                                    <span class="card-title-purchase buy-title-main">Advanced EHR Suite</span>
+                                </div>
+                            </div>
+                            <!--<div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                            </div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card" id="purchaseCard">
+                        <div class="card-image">
+                            <div class="card-img-overlay-secondary">
+                                <img src="https://image.freepik.com/free-photo/doctor-working-with-a-modern-touch-screen_1112-497.jpg">
+                            </div>
+                            <div class="center-align">
+                                <div class="buy-card-price">$79.99<br/><span class="monthly-title">monthly</span></div>
+                                <span class="card-title-purchase buy-title-secondary">Advanced Medical Billing Suite</span>
+                            </div>
+                        </div>
+                        <!--<div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- END ROW OF PRODUCTS -->
+
             <!-- ROW -->
             <div class="row">
                 <div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -815,6 +882,74 @@
                     </div> <!-- END CARD PRICE TABLE -->
                 </div>
             </div><!-- END ROW -->
+
+            <!-- PURCHASE CARD -->
+            <div class="row">
+                <div class="col s12 m12 l10 offset-l1">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="center-align">
+                                <span class="card-title">Protech Solutions EHR</span>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <div class="center-align">
+                                        <img height="158" width="158" class="responsive-img" src="images/logos/logo.png" />
+                                    </div>
+                                </div>
+                                <div class="col s9">
+                                    <table class="responsive-table">
+                                        <thead>
+                                        <tr class="">
+                                            <th class="center-align" data-field="id" colspan="2">Advanced EHR Suite</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr>
+                                            <td><b>Rating:</b> &nbsp;&nbsp;<i class="material-icons star-icon">star</i>
+                                                <i class="material-icons star-icon">star</i><i class="material-icons star-icon">star</i>
+                                                <i class="material-icons star-icon">star</i><i class="material-icons star-icon">star_half</i>
+                                            </td>
+                                            <td><b>Price:</b>&nbsp;&nbsp;$199.99</td>
+                                            <td><b>Recommended:</b>&nbsp;&nbsp;(<a href="#!">189</a>)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Platforms:</b>  &nbsp;&nbsp;<a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Windows"><i class="fa fa-windows" aria-hidden="true"></i></a></td>
+                                            <td><b>Version:</b>&nbsp;&nbsp; 1.0</td>
+                                            <td><b>Support:</b>&nbsp;&nbsp; 3 months <a class="modal-trigger" href="#freeSupport">free</a></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- Modal Structure -->
+                                    <div id="freeSupport" class="modal">
+                                        <div class="modal-content">
+                                            <h4>Free Customer Support</h4>
+                                            <p>We feel it's necessary as a compnay to provide basic customer service support to help transition
+                                                your company into our robust EHR Suite. If  you have any questions, or there are any issues with
+                                                your application, we will do our best to resolve any issues as soon as we're alerted.</p>
+                                            <p>If you have any questions, we have 24/7 customer chat support, located in the bottom left corner of our website,
+                                                or you can call us anytime at 1.401.555.5555 <br><br><br><span>Thank you,</span></p><span class="signature kristi">Protech Solutions</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="#!" class=" modal-action modal-close waves-effect btn-flat">Exit</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action center-block">
+                            <div class="center-align">
+                                <a href="#" class="waves-effect waves-light btn purchase-btn">Purchase</a>
+                                <a href="#" class="waves-effect waves-light btn demo-btn">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END PURCHASE CARD -->
+
+
 
 
             <div class="center-align">
