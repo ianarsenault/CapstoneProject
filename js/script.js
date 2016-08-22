@@ -13,6 +13,7 @@ var carouselChange = function () {
         $('.carousel.carousel-slider').carousel('next');
     }, carousel_interval);
 };
+
 // Function handles progress bar animations for loading div
 var progressBar = function () {
     // Blue Progress Bar
@@ -28,28 +29,6 @@ var progressBar = function () {
         width: "100%"
     }, 2500 );
 };
-
-/* if ($(window).width() < 993) {
- $("#hamburger").on('click', function () {
- $(window).scroll(function() {
-
- if ($(window).width() < 1550) {
- var y = $(this).scrollTop();
-
- if (y > lastScrollTop) {
- navbar.css({
- //visibility: "hidden",
- transition: "opacity 0.5s linear",
- opacity: 1
- });
-
- }
- }
- });
- }
- }*/
-
-
 
 // Function for scrolling effects
 var scrollChange = function () {
@@ -149,6 +128,7 @@ var scrollChange = function () {
     });
 };
 
+
 // Active scroll spy functionality
 var activeScrollspy = function () {
 
@@ -158,7 +138,8 @@ var activeScrollspy = function () {
      *   and top points **/
 
     // Scrollspy initalization
-    $(".scrollspy").scrollSpy();
+    $('.scrollspy').scrollSpy({scrollOffset: 50});
+    //$(".scrollspy").scrollSpy();
     // Scrollspy enter function - Confirms when
     // user enters specified scrollspy id
     $(".scrollspy").on('scrollSpy:enter', function () {
@@ -182,6 +163,7 @@ var activeScrollspy = function () {
 
     });
 };
+
 // ELement fire function
 var scrollfire = function () {
     var options = [
@@ -232,8 +214,36 @@ var contactForm = function () {
 
 };
 
+// Enables scrolling after 9 seconds -- loading screen
+var switchScroll = function () {
+    var body = $("body");
+    setTimeout(function () {
+        body.removeClass("stop-scrolling");
+    }, 9000);
+};
+
+
+// Show main content after landing div loads first
+var mainContent = function () {
+    var main = $(".main-section");
+    setTimeout(function () {
+        main.fadeIn();
+    }, 5000);
+};
 
 $(document).ready(function () {
+    /** CHANGE BACK WHEN LIVE **/
+   // $(".main-section").fadeIn(10000);
+
+    /* Fade out overlay and loading screen */
+    /** CHANGE BACK WHEN LIVE **/
+    // $(".loading-overlay").fadeIn('slow').show().delay(8000).fadeOut(500);
+    /** CHANGE BACK WHEN LIVE **/
+    // $("#fadediv").show();
+    /** CHANGE BACK WHEN LIVE **/
+    // Delay window scroll function
+    //switchScroll();
+    //mainContent();
 
     // Fade in download demo section on page load 
     $(".Message-Header-Top").fadeIn(5000);
@@ -252,7 +262,7 @@ $(document).ready(function () {
     // Carousel Slider item change
     carouselChange();
 
-    $('.carousel').carousel();
+    //$('.carousel').carousel();
 
     // Landing page loading bar
     progressBar();
@@ -262,6 +272,10 @@ $(document).ready(function () {
     scrollfire();
     // Contact form function
     contactForm();
+    // Tabs Initialization
+    $('ul.tabs').tabs();
+
+
 
 
 
