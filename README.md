@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-12%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-35%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -13,51 +13,52 @@ Documentation Site:
 #To-Do's [Important]
 * Contact form
 * Checkout system using PHP MySQL
+* Buy -> Download
 * Order Confirmation page
-* Splash landing page with logo and loader animation
-   will be set as an overlay for first load of page
+* Detail write ups for information throughout website
 
 ##To-Do's
 * Navigation
- - [x] Side-nav visible on Large
- * Hamburger Icon transition on click
- 
- - [x] Fadeout on scroll -> visible scroll-up or stop
-* Jumbotron
- - [x] rough outline 
- * Video or Image
- * Overlay text / company + product
+ * Hamburger Icon transition on click (* Extra)
+* Parallax Jumbotron
+ * Final Image or video choice
+ * Overlay text / company + product details
 * About 
- - [x] Rough skeleton
- * Final Updates
-* Product
+ * Final Updates 
+* Product (detailed description)
  * Uniqueness
  * Speed
  * Data
  * Support
 * Testimonials
- - [x] slideshow of testimonials with images and fill text
- *  Customers - Patients Reviews 
-* Demo Request/Contact -- change color of form inputs
+ * Reset timer on slide indicator click
+ *  Customers - Patients Reviews (Final Drafts)
+* Contact Form -- change color of form inputs
  * Form => PHP => MySQL DB 
  * Email Recipient 
-* Google Maps - Styled
-* Buy - Download
- * Extra Page checkout  
-* Developer Team
- * Ian + Jameson 
+* Buy - Download .exe
+* Confirmation page with order number
+* Developer Team (Final drafts for overview of team)
 * Footer
- * Terms of Service
- - [x] Privacy Policy
- - [x] Help
- - [x] ~~Social Media Icons~~
+ * Terms of Service & Finalized Help chat box 
  
-
-
+## Completed
+ - ~~Rough skeleton layout~~
+ - ~~Side-nav visible on Large~~
+ - ~~Fadeout on scroll -> visible scroll-up or stop~~
+ - ~~Jumbotron Parallax rough outline~~
+ - ~~Slideshow of testimonials with images and fill text~~
+ - ~~Google Maps - Styled~~
+ - ~~Privacy Policy~~
+ - ~~Help~~
+ - ~~Social Media Icons~~
+ - ~~Splash landing page with logo and loader animation
+    will be set as an overlay for first load of page~~
 
 ## Weekly Breakdown
-Week 5 - make form field input underline green like label 
-           Text needs to be blue or some darker color
-           add content to sections and start transitioning to PHP using MVC 
+Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
+       -  ~~Add transition hover effect to card form~~
+        - ~~Change scrolling opacity when side-nav scroll spy browser width is less than 993px~~ Changed
+
 
 ## Deadline: September 21, 2016

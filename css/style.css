@@ -4,6 +4,14 @@
  *  Github - https://github.com/GorgonsMaze/CapstoneProject
  */
 
+html,
+body,
+#map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Raleway Font */
 .ralewayThin {
     font-family: 'Raleway', sans-serif;
@@ -128,15 +136,227 @@ header, main, footer {
 nav {
     background-color: #ffffff !important;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
 }
+/* Changes navigation size and chat button size on small and down devices */
+@media only screen
+and (max-width: 601px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 44px;
+        line-height: 44px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 1.5rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.1rem;
+        height: 44px;
+        line-height: 44px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 44px;
+    }
+    .side-nav.fixed {
+        margin-top: 44px !important;
+    }
+    .btn-floating.btn-large, .btn-floating.btn-large i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        width: 44.4px !important;
+        height: 44.4px!important;
+        line-height: 44.4px;
+    }
+
+    .btn-large {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 44px!important;
+        line-height: 44px!important;
+    }
+}
+/* Changes navigation size and chat button size on medium devices */
+@media only screen
+and (min-width: 601px)
+and (max-width: 993px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 54px;
+        line-height: 54px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 1.8rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.4rem;
+        height: 54px;
+        line-height: 54px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 54px;
+    }
+    .side-nav.fixed {
+        margin-top: 54px;
+    }
+    .btn-floating.btn-large, .btn-floating.btn-large i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        width: 49.4px !important;
+        height: 49.4px!important;
+        line-height: 49.4px;
+    }
+
+    .btn-large {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 49px!important;
+        line-height: 49px!important;
+    }
+}
+/* Changes navigation size and chat button size on large and up devices */
+@media only screen
+and (min-width: 993px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 64px;
+        line-height: 64px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 2.1rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.4rem;
+        height: 64px;
+        line-height: 64px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 64px;
+    }
+}
+
+/* Changes navigation size and chat button size on medium devices */
+@media only screen
+and (max-width: 993px) {
+    .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        background-color: #3b5dad;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #2b3870;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #2b3870;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+}
+
 nav ul a {
     transition: background-color .3s;
     font-size: 1rem;
-    color: #000 !important;
+    color: #000;
     display: block;
     padding: 0 15px;
     cursor: pointer;
 }
+
 
 /* HOVERABLE NAV BUTTON */
 nav ul a:hover {
@@ -184,6 +404,7 @@ and (max-width: 600px) {
 }
 
 
+
 @media only screen
 and (min-width: 1550px) {
     .side-nav.fixed {
@@ -204,6 +425,134 @@ and (min-width: 1550px) {
     .side-nav {
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12) !important;
     }
+
+   /* .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #7b7b7b;
+        background-color: #ef4747;
+    }
+
+    .max-side-nav {
+        color: #ffffff;
+        background-color: #464646 !important;
+
+    }
+
+    .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+        color: rgba(255, 255, 255, 0.54);
+    }
+
+    .side-nav.fixed a {
+        color: rgb(255, 255, 255) !important;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -moz-transition: background-color 0.3s ease-in-out;
+        -ms-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .side-nav.fixed .main-side-links a:hover {
+        background-color: rgba(255, 255, 255, 0.22) !important;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #8a0300;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #8a0300;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+     .active-nav {
+        -webkit-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+        -moz-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+        box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+        -webkit-transition: box-shadow 0.5s ease-in-out;
+        -moz-transition: box-shadow 0.5s ease-in-out;
+        -ms-transition: box-shadow 0.5s ease-in-out;
+        -o-transition: box-shadow 0.5s ease-in-out;
+        transition: box-shadow 0.5s ease-in-out;
+    } */
+
+
+    .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        background-color: #3b5dad;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #2b3870;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #2b3870;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+    .active-nav {
+        -webkit-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        -moz-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        -webkit-transition: box-shadow 0.5s ease-in-out;
+        -moz-transition: box-shadow 0.5s ease-in-out;
+        -ms-transition: box-shadow 0.5s ease-in-out;
+        -o-transition: box-shadow 0.5s ease-in-out;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .btn-floating {
+        background-color: #6c7574 !important;
+    }
+
+    .btn-floating:hover {
+        background-color: #373737 !important;
+    }
+
 }
 
 @media only screen and (min-width: 1550px) {
@@ -252,7 +601,48 @@ and (max-width: 1549px) {
     margin-top: -10px;
     /*height: 42px !important;*/
 }
+/* Breadcrumbs for each section of homepage */
+.breadcrumb-nav-home {
+    /*background-color: transparent;*/
+    background-color: rgb(216, 228, 237) !important;
+    box-shadow: none !important;
+    padding-left: 25px !important;
+    height: 52px !important;
+    margin-top: -10px;
+    /*height: 42px !important;*/
+    line-height:54px;
+}
 
+
+
+.active-nav {
+    -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    -moz-transition: box-shadow 0.5s ease-in-out;
+    -ms-transition: box-shadow 0.5s ease-in-out;
+    -o-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 993px) {
+    .active-nav {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+}
+/* Drop Down button styling */
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
 
 /*********** ACTIVE NAVIGATION STYLING
 
@@ -263,12 +653,61 @@ and (max-width: 1549px) {
 
 ****************************************************************/
 
+/* Section title underline */
+hr {
+    border-style: none;
+    border-width: 0;
+    margin: 33px auto 63px;
+    background-color: #bbb;
+    width: 100px;
+    height: 5px;
+}
 
-
+/* Hover box shadow for skills card in about me */
+.shadow-hvr {
+    transition: box-shadow .25s;
+    -webkit-box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+    box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+}
+.shadow-hvr:hover {
+    /*-webkit-box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);
+    box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);*/
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
 
 /*******************************************
 **           About  Styling             *
 ******************************************/
+.toast {
+    border-radius: 2px;
+    top: 0;
+    width: auto;
+    clear: both;
+    margin-top: 10px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    min-height: 48px;
+    line-height: 1.5em;
+    word-break: break-all;
+    background-color: #323232;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 
 .Message-Header-Top {
     margin: 30px 0 30px 0;
@@ -331,7 +770,45 @@ and (max-width: 1549px) {
 /* Main section class */
 .product-section {
     padding: 30px 0 60px 0;
+    background-color: #f8f8f8 !important;
 }
+
+.active-bdcb {
+
+}
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #6b6b6b;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
+.collapsible-header:hover {
+    background-color: #919191;
+}
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #f3930b;
+    border-radius: 2px;
+    position: relative;
+    padding: 4px 7px 4px 4px;
+    left: 15px;
+}
+
+#staggered-test li {
+    opacity: 0;
+}
+
 
 /* Div for horizontal card overlay */
 .card-img-overlay {
@@ -369,7 +846,7 @@ and (max-width: 1549px) {
 ******************************************/
 /* Main section class */
 .testimonials-section {
-    background-color:#cfd8dc;
+    background-color: #ffffff;
     padding: 30px 0 60px 0;
 
 }
@@ -537,10 +1014,47 @@ blockquote {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+.first-title {
+    /* background: url("https://hd.unsplash.com/photo-1468743428993-661b9309fa2c") no-repeat;
+
+    https://hd.unsplash.com/photo-1414265247351-4afd13a3b4e6
+
+    */
+    background: rgba(205, 222, 255, 0.43) url('../images/images/city-testim.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+
+.first-title:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /*background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);*/
+    /*background: -moz-linear-gradient(top, rgba(0,0,0,0.24) 0%, rgba(123,181,227,0) 98%, rgba(125,185,232,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.24) 0%,rgba(123,181,227,0) 98%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.24) 0%,rgba(123,181,227,0) 98%,rgba(125,185,232,0) 100%); */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.52) 47%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.52) 47%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.52) 47%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
 /* Save for small device
 .carousel {
     display: none !important;
 }*/
+
+.carousel.carousel-slider {
+    margin: 30px 0 100px 0 !important;
+}
 
 /* Carousel Indicator Active */
 .carousel .indicators .indicator-item.active {
@@ -568,6 +1082,37 @@ blockquote {
     -o-transition: background-color .4s ease-in-out;
     transition: background-color .4s ease-in-out;
 }
+@media only screen and (min-width: 1550px) {
+    /*blockquote {
+        margin: 20px 0;
+        padding-left: 1.5rem;
+        border-left: 5px solid #ff2e00;
+    }
+    .carousel .indicators .indicator-item:hover {
+        background-color: rgb(255, 46, 0);
+        -webkit-transition: background-color .4s ease-in-out;
+        -moz-transition: background-color .4s ease-in-out;
+        -ms-transition: background-color .4s ease-in-out;
+        -o-transition: background-color .4s ease-in-out;
+        transition: background-color .4s ease-in-out;
+    }*/
+
+    blockquote {
+        margin: 20px 0;
+        padding-left: 1.5rem;
+        border-left: 5px solid #175fff;
+    }
+    .carousel .indicators .indicator-item:hover {
+        background-color: rgb(23, 95, 255);
+        -webkit-transition: background-color .4s ease-in-out;
+        -moz-transition: background-color .4s ease-in-out;
+        -ms-transition: background-color .4s ease-in-out;
+        -o-transition: background-color .4s ease-in-out;
+        transition: background-color .4s ease-in-out;
+    }
+
+}
+
 
 @media only screen and (min-width: 1220px) {
     .carousel {
@@ -575,6 +1120,79 @@ blockquote {
     }
 }
 /* Slide One Quote - Testimonial */
+.test-titles {
+    font-size: 10vw !important;
+    text-shadow: 2px 2px 0 #000;
+}
+
+@media only screen and (max-width: 993px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 15%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 993px)
+and (max-width: 1200px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: -5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1200px)
+and (max-width: 1350px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1351px)
+and (max-width: 1549px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1550px)
+and (max-width: 1590px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 12%;
+        top: -5%;
+        width: 40%;
+    }
+}
+
+@media only screen
+and (min-width: 1591px)
+and (max-width: 1799px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 13%;
+        top: -5%;
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 13%;
+        top: -16%;
+        width: 40%;
+    }
+}
+
 .slider-quotebox1 {
     position: relative;
     left: 50%;
@@ -626,14 +1244,79 @@ blockquote {
     height:120%;
 }*/
 
+.carousel .carousel-item {
+    display: none;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
 /*******************************************
 **            Demo  Styling              *
 ******************************************/
 /* Main section class */
 .demo-section{
-    background-color:#dcedc8;
+    background-color: rgb(249, 253, 251);
     height: 1000px;
     padding: 30px 0 60px 0;
+}
+
+
+.tabs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 48px;
+/*    margin: 0 auto;*/
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto 60px;
+}
+.tabs .tab a {
+    color: #289e28;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+.tabs .tab a:hover {
+    color: #155515;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #294fea;
+    will-change: left, right;
+}
+.tabs-section {
+    margin-bottom: 100px;
+}
+
+audio {
+    color: #000;
 }
 
 /*******************************************
@@ -641,9 +1324,12 @@ blockquote {
 ******************************************/
 /* Main section class */
 .buy-section {
-    background-color:#e0f2f1;
+    background-color: rgb(231, 235, 233);
     height: 1000px;
     padding: 30px 0 60px 0;
+}
+table.highlight > tbody > tr:hover {
+    background-color: rgba(184, 184, 184, 0.64) !important;
 }
 /*******************************************
 **           Contact  Styling             *
@@ -652,99 +1338,98 @@ blockquote {
 .contact-section {
     padding: 30px 0 60px 0;
 }
+/* Contact us form */
+.contact-form {
+    margin-bottom: 60px;
+}
+/* Paragraph & Detail box */
+.contact-details {
+    margin-bottom: 60px;
+}
+/* NOT IN USE NOW -- LEAVE */
 .card-form {
     margin-top: 0;
     padding: 30px;
     overflow: auto;
 }
+.collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: none !important
+}
+
+.topper {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.require {
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: #ff5555;
+    padding-left:10px;
+}
 .send-mail-btn {
     background-color: #388e3c ;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
+
 .send-mail-btn:hover {
-    background-color: #5e35b1;
+    background-color: #48b44d;
 }
+
 /* label color */
 .input-field label {
-    color: #43a047;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
-    color: #43a047 ;
-}
-/* Text &  underline color */
-.input-field input[type=text] {
-    color: #f44336;
-    border-bottom: 2px solid #000000;
-}
-/*  Text & underline focus color*/
-.input-field input[type=text]:focus {
-    color: #000000;
-    border-bottom: 2px solid #80cbc4;
-    box-shadow: 0 0 0 0 #80cbc4;
+    color: #303030;
+    font-weight: 300;
 }
 
-/* valid color */
-.input-field input[type=text].valid {
-    border-bottom: 2px solid #000;
-    box-shadow: 0 0 0 0;
-}
-/* Valid focus color */
-.input-field input[type=text]:focus.valid {
-    border-bottom: 2px solid #f44336;
-    box-shadow: 0 0 0 0 #f44336;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-}
+/* Clears placeholder in form */
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+textarea.materialize-textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea.materialize-textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea.materialize-textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea.materialize-textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
-/* icon prefix focus color */
-.input-field .prefix.active {
-    color: #f44336 ;
-}
-
-/* Text Area border size and color on focus */
-textarea.materialize-textarea:focus:not([readonly]) {
-    color: #000;
-    border-bottom: 2px solid #f44336;
-    box-shadow: 0 0 0 0 #f44336;
-}
-
-/* Text area label color on focus */
-textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #43a047;
-}
-
-/* Text area border and text color when not active/focuses */
-textarea.materialize-textarea {
-    color: #f44336;
-    border-bottom: 2px solid #000000;
-
-}
 /*******************************************
 **          Google Map  Styling          *
 ******************************************/
 /* Main section class */
 .googlemap-section {
-    background-color:#ffebee;
-    height: 1000px;
+    background-color: #ffffff;
     padding: 30px 0 60px 0;
 }
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+    height: 510px;
+    width: 100%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    margin-bottom: 100px;
+}
+
 /*******************************************
 **       Developer Team  Styling          *
 ******************************************/
 /* Main section class */
 .dev-section {
-    background-color:#cfd8dc;
-    height: 1000px;
+    background-color: #ffffff;
     padding: 30px 0 60px 0;
 }
+.dev-row {
+    margin-bottom: 60px;
+}
+
+
 /*******************************************
 **           Footer  Styling             *
 ******************************************/
@@ -877,6 +1562,19 @@ footer.page-footer .footer-copyright {
     background-color: rgba(51, 51, 51, 0.04);
 }
 /* Lower Left Fixed Chat Button */
+
+.btn-floating {
+    background-color: #2196f3;
+    -webkit-transition: background-color 0.6s ease-in-out;
+    -moz-transition: background-color 0.6s ease-in-out;
+    -ms-transition: background-color 0.6s ease-in-out;
+    -o-transition: background-color 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
+}
+.btn-floating:hover {
+    background-color: #1d67b0;
+}
+
 /*  Will animate upwards after 6 second delay */
 #fixChatBtn {
     position: fixed;
@@ -954,6 +1652,21 @@ footer.page-footer .footer-copyright {
     }
 }
 
+@-o-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
 @keyframes moveUp {
     0% {
         -webkit-transform: translateY(0px);
@@ -972,14 +1685,40 @@ footer.page-footer .footer-copyright {
 /****************************************
  *         Landing Page Styling         *
 *****************************************/
-
-.landing-load {
-    position: absolute;
-    top:0;
-    bottom:0;
-    width:100%;
-    background-color: #ffffff;
+.loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,1);
+    z-index: 1200;
 }
+/***** CHANGE BACK WHEN LVIE!!!!!! ****************************/
+/* Entire Website
+.main-section {
+    display: none;
+}
+
+/* Stop scrolling class for overlay div
+.stop-scrolling {
+    height:100%;
+    overflow: hidden;
+}
+*/
+#fadediv {
+    display:none;
+    position: relative;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    /*margin-left: -100px;*/
+    z-index: 1050 !important;
+}
+
+
 /* Transition speed for progress bar */
 .progress {
     position: relative;
