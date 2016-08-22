@@ -1238,15 +1238,40 @@ and (max-width: 1799px) {
     height: 1000px;
     padding: 30px 0 60px 0;
 }
+.tabs .tab a {
+    color: #560bff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+.tabs .tab a:hover {
+    color: #30bf30;
+}
 
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #7000ff;
+    will-change: left, right;
+}
+.tabs-section {
+    margin-bottom: 30px;
+}
 /*******************************************
 **          Purchase/Buy  Styling        *
 ******************************************/
 /* Main section class */
 .buy-section {
-    background-color:#e0f2f1;
+    background-color: rgb(231, 235, 233);
     height: 1000px;
     padding: 30px 0 60px 0;
+}
+table.highlight > tbody > tr:hover {
+    background-color: rgba(184, 184, 184, 0.64) !important;
 }
 /*******************************************
 **           Contact  Styling             *
@@ -1602,14 +1627,40 @@ footer.page-footer .footer-copyright {
 /****************************************
  *         Landing Page Styling         *
 *****************************************/
-
-.landing-load {
-    position: absolute;
-    top:0;
-    bottom:0;
-    width:100%;
-    background-color: #ffffff;
+.loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,1);
+    z-index: 1200;
 }
+/***** CHANGE BACK WHEN LVIE!!!!!! ****************************/
+/* Entire Website
+.main-section {
+    display: none;
+}
+
+/* Stop scrolling class for overlay div
+.stop-scrolling {
+    height:100%;
+    overflow: hidden;
+}
+*/
+#fadediv {
+    display:none;
+    position: relative;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    /*margin-left: -100px;*/
+    z-index: 1050 !important;
+}
+
+
 /* Transition speed for progress bar */
 .progress {
     position: relative;
