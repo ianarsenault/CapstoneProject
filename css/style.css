@@ -811,7 +811,24 @@ span.badge.new {
 #staggered-test li {
     opacity: 0;
 }
-
+@media only screen
+and (max-width: 450px){
+    span.badge.new {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 601px)
+and (max-width: 730px){
+    span.badge.new {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 993px)
+and (max-width: 1275px){
+    span.badge.new {
+        display: none !important;
+    }
+}
 
 /* Div for horizontal card overlay */
 .card-img-overlay {
@@ -1304,7 +1321,7 @@ and (max-width: 1799px) {
     transition: color .28s ease;
 }
 .tabs .tab a:hover {
-    color: #155515;
+    color: #32c532;
 }
 
 .tabs .indicator {
@@ -1318,9 +1335,7 @@ and (max-width: 1799px) {
     margin-bottom: 100px;
 }
 
-audio {
-    color: #000;
-}
+/* floralwhite gainsboro ghost white sandybrown */
 
 /*******************************************
 **          Purchase/Buy  Styling        *
@@ -1343,7 +1358,7 @@ table.highlight > tbody > tr:hover {
 /* Psuedo element sets an overlay ontop of horizontal card image */
 .card-img-overlay-main:after {
     content: '';
-    background-color: rgba(255, 5, 5, 0.73);
+    background-color: rgba(255, 35, 0, 0.73);
     position: absolute;
     height:100%;
     width:100%;
@@ -1365,6 +1380,27 @@ table.highlight > tbody > tr:hover {
 .card-img-overlay-secondary:after {
     content: '';
     background-color: rgba(134, 53, 255, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Div for horizontal card overlay */
+.card-img-overlay-third {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-third:after {
+    content: '';
+    background-color: rgba(37, 73, 255, 0.73);
     position: absolute;
     height:100%;
     width:100%;
@@ -1435,10 +1471,13 @@ table.highlight > tbody > tr:hover {
 }
 /* Id for purchase card to get rid of overlay on hover */
 #purchaseCard:hover .card-img-overlay-main:after {
-    background-color: transparent;
+    background-color: rgba(255, 5, 5, 0.44);;
 }
 #purchaseCard:hover .card-img-overlay-secondary:after {
-    background-color: transparent;
+    background-color: rgba(134, 53, 255, 0.44);;
+}
+#purchaseCard:hover .card-img-overlay-third:after {
+    background-color: rgba(37, 73, 255, 0.44);;
 }
 
 /* Change size of purchase title text at screen resize */
@@ -1523,7 +1562,13 @@ and (max-width: 600px){
 .demo-btn:hover {
     background-color: #e74108;
 }
-
+/* Spacing Section */
+.overview-table {
+    margin-bottom: 80px;
+}
+.purchase-overview {
+    margin-bottom:80px;
+}
 /*******************************************
 **           Contact  Styling             *
 ******************************************/
@@ -1581,8 +1626,13 @@ and (max-width: 600px){
 .input-field label {
     color: #303030;
     font-weight: 300;
+    letter-spacing: 1px;
 }
-
+/*
+label {
+    font-size: 0.8rem;
+    color: #000000;
+}*/
 /* Clears placeholder in form */
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
@@ -2311,7 +2361,6 @@ footer.page-footer .footer-copyright {
 /***************************************
  *      CHECKOUT PAGE STYLING         *
  **************************************/
-
 .active-checkout {
     -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
     -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
@@ -2325,4 +2374,23 @@ footer.page-footer .footer-copyright {
     box-shadow: inset 0 -4px 0 0 #00b0ff;
     /*border-bottom: 4px solid #00b0ff;
     border-radius: 4px;*/
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #00b0ff;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #00b0ff;
+    z-index: 0;
+}
+
+/******************************************
+**           Confirmation Footer         **
+********************************************/
+
+.confirm-footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
 }
