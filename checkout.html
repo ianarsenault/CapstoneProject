@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Chat text -->
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <!-- Great Vibes Cursive -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <!-- Kristi Font -->
     <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet' type='text/css'>
     <!-- Materialize css -->
@@ -100,11 +102,181 @@
 </header>
 
 <main>
+
+    <form name="checkout_form" id="checkoutForm" action="#!">
+        <!-- CHECKBOX - PRODUCT SECTION -->
+        <div class="row">
+            <div class="col s12 m8 l6 offset-m2 offset-l3">
+                <ul class="collection with-header">
+                    <li class="collection-header"><h4>Select One</h4></li>
+                    <li class="collection-item">
+                        <p>
+                            <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true"/>
+                            <label for="chkEHR">Advanced EHR Suite</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="chkBilling" disabled="disabled" />
+                            <label for="chkBilling">Advanced Medical Billing Suite</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="chkPortal" disabled="disabled" />
+                            <label for="chkPortal">Advanced Patient Portal Suite</label>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- END CHECKBOX - PRODUCT SECTION -->
+
+
+    </form>
+
     <!-- CHECKOUT FORMS -->
     <section class="section">
+        <div class="container">
+            <!-- ROW -->
+            <div class="row">
+                <div class="col m6 offset-m3">
+                    <!-- CARD -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <h5 class="center-align">Payment Information <span class="require hide-on-small-only">* All fields required</span></h5>
+                            </div>
+                            <div class="row">
+                                <!-- BEGIN FORM -->
+                                <form class="col s12" action="#">
+                                    <!-- First Name-->
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="first_name" placeholder="John" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,35}$" title="Enter first name" class="validate" required="" aria-required="true">
+                                            <label for="first_name"><b>First Name</b></label>
+                                        </div>
+                                        <!-- Last Name-->
+                                        <div class="input-field col s6">
+                                            <input id="last_name" placeholder="Juggerknot" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter first name" class="validate" required="" aria-required="true">
+                                            <label for="last_name"><b>Last Name</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Address 1-->
+                                        <div class="input-field col s12">
+                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" name=""  title="Enter your street address" class="validate" required="" aria-required="true">
+                                            <label for="address_one"><b>Address 1</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- Address 2-->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="address_two" placeholder="Apartment 2C" type="text" name=""  title="Enter secondary address" class="validate" required="" aria-required="true">
+                                            <label for="address_two"><b>Address 2</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- CITY -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="city" placeholder="Narnia" type="text" name=""  title="Enter your city or town" class="validate" required="" aria-required="true">
+                                            <label for="city"><b>City</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- STATES -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select id="states" title="Select a state" type="select" class="validate" required="" aria-required="true">
+                                                <option value="" disabled selected>Select a State</option>
+                                                <option value="AL">Alabama</option>
+                                                <option value="AK">Alaska</option>
+                                                <option value="AZ">Arizona</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="CA">California</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="DC">District Of Columbia</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WA">Washington</option>
+                                                <option value="WV">West Virginia</option>
+                                                <option value="WI">Wisconsin</option>
+                                                <option value="WY">Wyoming</option>
+                                            </select>
+                                            <label for="states"><b>State</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- ZIPCODE -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="zipcode" placeholder="03543 or 02454-4533" type="text" name=""  title="Enter your zipcode" class="validate" required="" aria-required="true">
+                                            <label for="zipcode"><b>Zip</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- Country -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input disabled value="United States" id="country" type="text" class="validate">
+                                            <label for="country"><b>Country</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="phone_number" placeholder="123-456-7890" type="text" name=""  title="Enter your phone number" class="validate" required="" aria-required="true">
+                                            <label for="phone_number"><b>Phone</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <!-- placeholder="Name@yourdomain.com" -->
+                                            <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly" class="validate" required="" aria-required="true">
+                                            <label for="email_of"><b>Email</b></label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!-- END ROW -->
+                        </div><!-- END CARD CONTENT -->
+                    </div> <!-- END CARD -->
+                </div><!-- END COL -->
+            </div><!--END  ROW -->
+        </div> <!-- END CONTAINER -->
+    </section><!-- END Checkout Forms -->
 
-    </section>
-    <!-- END Checkout Forms -->
+
+
+
 
 
     <section class="section">
