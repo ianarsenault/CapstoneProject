@@ -13,6 +13,7 @@ Documentation Site:
 #To-Do's [Important]
 * Contact form
 * Checkout system using PHP MySQL
+ * Pull drop down lists from DB (State, CC Month + Year )
 * Buy -> Download
 * Order Confirmation page
 * Detail write ups for information throughout website
@@ -32,6 +33,7 @@ Documentation Site:
  * Speed
  * Data
  * Support
+ * Change Pricing - more reasonable
 * Testimonials
  * Reset timer on slide indicator click
  *  Customers - Patients Reviews (Final Drafts)
@@ -61,6 +63,11 @@ Documentation Site:
 * Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
        -  ~~Add transition hover effect to card form~~
         - ~~Change scrolling opacity when side-nav scroll spy browser width is less than 993px~~ Changed
+        * Add submit form button on checkout page 
+        * Validation to checkout forms 
+        * Finalize order complete page
+        * Checkout page links in navigation and side-nav - add icons and page routes
+        * Start PHP crossover 
         
 * Week 7
 * Week 8
