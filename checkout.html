@@ -40,7 +40,7 @@
     <div class="navbar-fixed open-sans3">
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center-on-xlarge open-sans4">Company Name</a>
+                <a href="#!" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down hide-on-xlarge">
                     <li><a href="#!">About</a></li>
@@ -61,35 +61,34 @@
                     </ul>
                 </ul>
             </div>
-
-            <ul id="slide-out" class="side-nav fixed ralewayBold">
-                <li><div class="userView">
-                    <div class="center-align">
-                        <img class="circle side-logo" src="images/logos/logo.png">
-                    </div>
-                    <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
-                    <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
-                </div></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="index.html#product">Product</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="index.html#testimonial">Testimonials</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="#!">Demo</a></li>
-                <li><div class="divider"></div></li>
-                <li class="active-checkout-side"><a href="#!">Buy</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="#!">Contact</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="#!">Dev Team</a>
-                <li><div class="divider"></div></li>
-                <li><a href="#!">Location</a></li>
-                <li><div class="divider"></div></li>
-                <li><a href="#!">Social Media</a></li>
-                <li><div class="divider"></div></li>
-            </ul>
         </nav>
+        <ul id="slide-out" class="side-nav fixed ralewayBold">
+            <li><div class="userView">
+                <div class="center-align">
+                    <img class="circle side-logo" src="images/logos/logo.png">
+                </div>
+                <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
+                <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
+            </div></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="index.html#product">Product</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="index.html#testimonial">Testimonials</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">Demo</a></li>
+            <li><div class="divider"></div></li>
+            <li class="active-checkout-side"><a href="#!">Buy</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">Contact</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">Dev Team</a>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">Location</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#!">Social Media</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
     </div><!-- End Navbar -->
     <nav class="open-sans3 breadcrumb-nav">
         <div class="nav-wrapper">
@@ -102,49 +101,43 @@
 </header>
 
 <main>
-
-    <form name="checkout_form" id="checkoutForm" action="#!">
-        <!-- CHECKBOX - PRODUCT SECTION -->
-        <div class="row">
-            <div class="col s12 m8 l6 offset-m2 offset-l3">
-                <ul class="collection with-header">
-                    <li class="collection-header"><h4>Select One</h4></li>
-                    <li class="collection-item">
-                        <p>
-                            <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true"/>
-                            <label for="chkEHR">Advanced EHR Suite</label>
-                        </p>
-                        <p>
-                            <input name="group1" type="radio" id="chkBilling" disabled="disabled" />
-                            <label for="chkBilling">Advanced Medical Billing Suite</label>
-                        </p>
-                        <p>
-                            <input name="group1" type="radio" id="chkPortal" disabled="disabled" />
-                            <label for="chkPortal">Advanced Patient Portal Suite</label>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div><!-- END CHECKBOX - PRODUCT SECTION -->
-
-
-    </form>
-
     <!-- CHECKOUT FORMS -->
-    <section class="section">
+    <section class="section checkout-section open-sans3">
         <div class="container">
-            <!-- ROW -->
-            <div class="row">
-                <div class="col m6 offset-m3">
-                    <!-- CARD -->
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="row">
-                                <h5 class="center-align">Payment Information <span class="require hide-on-small-only">* All fields required</span></h5>
-                            </div>
-                            <div class="row">
-                                <!-- BEGIN FORM -->
-                                <form class="col s12" action="#">
+            <!-- BEGIN FORM -->
+            <form class="col s12" name="checkout_form" id="checkoutForm" action="#!">
+                <!-- CHECKBOX - PRODUCT SECTION -->
+                <div class="row">
+                    <div class="col s12 m8 l6 offset-m2 offset-l3">
+                        <ul class="collection with-header center-align">
+                            <li class="collection-header" id="chk-collection-header"><img src="images/logos/logo.png" height="128" width="128"/><h4>Protech Checkout</h4></li>
+                            <li class="collection-item" id="chk-collection">
+                                <p>
+                                    <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true"/>
+                                    <label for="chkEHR" class="chk-ehr-label">Advanced EHR Suite - <i>$199.99 /month</i></label>
+                                </p>
+                                <p>
+                                    <input name="group1" type="radio" id="chkBilling" disabled="disabled" />
+                                    <label for="chkBilling">Advanced Medical Billing Suite - <i>$79.99 /month</i></label>
+                                </p>
+                                <p>
+                                    <input name="group1" type="radio" id="chkPortal" disabled="disabled" />
+                                    <label for="chkPortal">Advanced Patient Portal Suite - <i>$149.99 /month</i></label>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- END CHECKBOX - PRODUCT SECTION -->
+                <!-- ROW -->
+                <div class="row">
+                    <div class="col m6">
+                        <!-- CARD -->
+                        <div class="card chk-out-card">
+                            <div class="card-content billing-content">
+                                <div class="row">
+                                    <h5 class="center-align">Payment Information <span class="require hide-on-small-only">* All fields required</span></h5>
+                                </div>
+                                <div class="row">
                                     <!-- First Name-->
                                     <div class="row">
                                         <div class="input-field col s6">
@@ -241,7 +234,7 @@
                                     <!-- ZIPCODE -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="zipcode" placeholder="03543 or 02454-4533" type="text" name=""  title="Enter your zipcode" class="validate" required="" aria-required="true">
+                                            <input id="zipcode" placeholder="03543 or 02454-4533" type="text" name=""  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode" class="validate" required="" aria-required="true">
                                             <label for="zipcode"><b>Zip</b></label>
                                         </div>
                                     </div>
@@ -252,12 +245,15 @@
                                             <label for="country"><b>Country</b></label>
                                         </div>
                                     </div>
+                                    <!-- PHONE -->
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <!-- CHECK VALIDATION ******************* -->
                                             <input id="phone_number" placeholder="123-456-7890" type="text" name=""  title="Enter your phone number" class="validate" required="" aria-required="true">
                                             <label for="phone_number"><b>Phone</b></label>
                                         </div>
                                     </div>
+                                    <!-- EMAIL -->
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- placeholder="Name@yourdomain.com" -->
@@ -265,12 +261,82 @@
                                             <label for="email_of"><b>Email</b></label>
                                         </div>
                                     </div>
-                                </form>
-                            </div><!-- END ROW -->
-                        </div><!-- END CARD CONTENT -->
-                    </div> <!-- END CARD -->
-                </div><!-- END COL -->
-            </div><!--END  ROW -->
+                                </div><!-- END ROW -->
+                            </div><!-- END CARD CONTENT -->
+                        </div> <!-- END CARD -->
+                    </div><!-- END COL -->
+
+                    <!-- CC FORM -->
+                    <div class="col m6">
+                        <!-- CARD -->
+                        <div class="card chk-out-card">
+                            <div class="card-content billing-content">
+                                <div class="row">
+                                    <h5 class="center-align">Credit Card Information <span class="require hide-on-small-only">* All fields required</span></h5>
+                                </div>
+                                <div class="row">
+                                    <!-- Credit Card  Name-->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="cc_name" placeholder="First Last" type="text" name="cc_name" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">
+                                            <label for="cc_name"><b>Card Name</b></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!-- Credit Card Number -->
+                                        <div class="input-field col s12">
+                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="cc_number" pattern="" title="Enter credit card number" class="validate" required="" aria-required="true">
+                                            <label for="cc_number"><b>Card Number</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- Expiration Dates -->
+                                    <div class="row">
+                                        <!-- Month Expr -->
+                                        <div class="input-field col s6">
+                                            <select id="cc_month" title="Select a month" type="select" class="validate" required="" aria-required="true">
+                                                <option value="" disabled selected>Month</option>
+                                                <option value="01">January</option>
+                                                <option value="02">February</option>
+                                                <option value="03">March</option>
+                                                <option value="04">April</option>
+                                                <option value="05">May</option>
+                                                <option value="06">June</option>
+                                                <option value="07">July</option>
+                                                <option value="08">August</option>
+                                                <option value="09">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+                                            <label for="cc_month"><b>Month</b></label>
+                                        </div>
+                                        <!-- Year Expr -->
+                                        <div class="input-field col s6">
+                                            <select id="cc_year" title="Select a year" type="select" class="validate" required="" aria-required="true">
+                                                <option value="" disabled selected>Year</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                            <label for="cc_year"><b>Year</b></label>
+                                        </div>
+                                    </div>
+                                    <!-- CCV Security Code -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
+                                            <label for="cc_ccv"><b>CCV</b></label>
+                                        </div>
+                                    </div>
+                                </div><!-- END ROW -->
+                            </div><!-- END CARD CONTENT -->
+                        </div> <!-- END CARD -->
+                    </div><!-- END COL -->
+                    <!-- END CC FORM -->
+                </div><!--END  ROW -->
+            </form>
         </div> <!-- END CONTAINER -->
     </section><!-- END Checkout Forms -->
 
