@@ -107,15 +107,15 @@
     <section class="section checkout-section open-sans3">
         <div class="container">
             <!-- BEGIN FORM -->
-            <form class="col s12">
-                <!-- CHECKBOX - PRODUCT SECTION -->
+            <form class="col s12" id="checkoutForm" method="post">
+                 <!--CHECKBOX - PRODUCT SECTION-->
                 <div class="row">
                     <div class="col s12 m8 l6 offset-m2 offset-l3">
                         <ul class="collection with-header center-align">
                             <li class="collection-header" id="chk-collection-header"><img src="images/logos/logo.png" height="128" width="128"/><h4>Protech Checkout</h4></li>
                             <li class="collection-item" id="chk-collection">
                                 <p>
-                                    <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true"/>
+                                    <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true" value="EHR"/>
                                     <label for="chkEHR" class="chk-ehr-label">Advanced EHR Suite - <i>$199.99 /month</i></label>
                                 </p>
                                 <p>
@@ -163,7 +163,7 @@
                                     <!-- Address 2-->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="address_two" placeholder="Apartment 2C" type="text" name=""  title="Enter secondary address" class="validate" required="" aria-required="true">
+                                            <input id="address_two" placeholder="Apartment 2C" type="text" name="" title="Enter secondary address">
                                             <label for="address_two"><b>Address 2</b></label>
                                         </div>
                                     </div>
@@ -289,7 +289,7 @@
                                     <div class="row">
                                         <!-- Credit Card Number -->
                                         <div class="input-field col s12">
-                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="cc_number" pattern="" title="Enter credit card number" class="validate" required="" aria-required="true">
+                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="cc_number" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
                                             <label for="cc_number"><b>Card Number</b></label>
                                         </div>
                                     </div>
@@ -330,12 +330,12 @@
                                     <!-- CCV Security Code -->
                                     <div class="row">
                                         <div class="input-field col s6">
-                                            <input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
+                                            <input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  pattern="^[1-9][0-9]{2,3}$" title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
                                             <label for="cc_ccv"><b>CCV</b></label>
                                         </div>
                                         <div class="col s6">
-                                            <div class="valign-wrapper">
-                                                <a href="#!" class="valign">What is this?</a>
+                                            <div class="whats-CCV">
+                                                <a href="#!">What is this?</a>
                                             </div>
                                         </div>
                                     </div>
@@ -350,11 +350,12 @@
                             <div class="card-content checkout-card-complete">
                                 <div class="row">
                                     <div class="center-align">
-                                        <input type="checkbox" class="filled-in" id="chk_termsOfService" title="Please agree to the terms of service" required="" aria-required="true" />
+                                        <!--onchange="this.setCustomValidity(validity.valueMissing ? 'Please agree to the Terms of Service' : '');"-->
+                                        <input type="checkbox" class="filled-in" name="terms" id="chk_termsOfService" title="Please agree to the terms of service" required="" aria-required="true" />
                                         <label for="chk_termsOfService"><a href="#!">Terms of Service</a></label>
                                     </div>
                                     <div class="center-align">
-                                        <button class="btn waves-effect waves-light red" type="button" name="action">Purchase
+                                        <button class="btn waves-effect waves-light red" type="submit" id="chkOutBtn" form="checkoutForm" name="action">Purchase
                                             <i class="material-icons right">send</i>
                                         </button>
                                     </div>
@@ -370,35 +371,252 @@
 
 
 
-    <form class="col s12 contact-form">
-        <div class="row center-align railwayBold">
-            <h5>Send me a message</h5>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="name_of" placeholder="Mr. Bigglesworth" type="text" class="validate" required="" aria-required="true">
-                <label for="name_of">Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">
-                <label for="email_of">Email</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
-                <label for="message">Message</label>
-            </div>
-        </div>
+    <!--<form class="col s12 contact-form">-->
+        <!--&lt;!&ndash;<div class="row center-align railwayBold">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h5>Send me a message</h5>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="input-field col s12">&ndash;&gt;-->
+                <!--&lt;!&ndash;<input id="name_of" placeholder="Mr. Bigglesworth" type="text" class="validate" required="" aria-required="true">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label for="name_of">Name</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="input-field col s12">&ndash;&gt;-->
+                <!--&lt;!&ndash;<input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">&ndash;&gt;-->
+                <!--&lt;!&ndash;<label for="email_of">Email</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="input-field col s12">&ndash;&gt;-->
+                <!--&lt;!&ndash;<textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>&ndash;&gt;-->
+                <!--&lt;!&ndash;<label for="message">Message</label>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash; ROW &ndash;&gt;-->
+        <!--<div class="row">-->
+            <!--<div class="col m6">-->
+                <!--&lt;!&ndash; CARD &ndash;&gt;-->
+                <!--<div class="card chk-out-card">-->
+                    <!--<div class="card-content billing-content">-->
+                        <!--<div class="row">-->
+                            <!--<h5 class="center-align">Payment Information</h5>-->
+                            <!--<div class="require center-align">* All fields required</div><br/>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                            <!--&lt;!&ndash; First Name&ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s6">-->
+                                    <!--<input id="first_name" placeholder="John" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,35}$" title="Enter first name" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="first_name"><b>First Name</b></label>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash; Last Name&ndash;&gt;-->
+                                <!--<div class="input-field col s6">-->
+                                    <!--<input id="last_name" placeholder="Juggerknot" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter first name" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="last_name"><b>Last Name</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="row">-->
+                                <!--&lt;!&ndash; Address 1&ndash;&gt;-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<input id="address_one" placeholder="123 Holiday Lane" type="text" name=""  title="Enter your street address" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="address_one"><b>Address 1</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Address 2&ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<input id="address_two" placeholder="Apartment 2C" type="text" name=""  title="Enter secondary address" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="address_two"><b>Address 2</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; CITY &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<input id="city" placeholder="Narnia" type="text" name=""  title="Enter your city or town" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="city"><b>City</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; STATES &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<select id="states" title="Select a state" class="validate" required="" aria-required="true">-->
+                                        <!--<option value="" disabled selected>Select a State</option>-->
+                                        <!--<option value="AL">Alabama</option>-->
+                                        <!--<option value="AK">Alaska</option>-->
+                                        <!--<option value="AZ">Arizona</option>-->
+                                        <!--<option value="AR">Arkansas</option>-->
+                                        <!--<option value="CA">California</option>-->
+                                        <!--<option value="CO">Colorado</option>-->
+                                        <!--<option value="CT">Connecticut</option>-->
+                                        <!--<option value="DE">Delaware</option>-->
+                                        <!--<option value="DC">District Of Columbia</option>-->
+                                        <!--<option value="FL">Florida</option>-->
+                                        <!--<option value="GA">Georgia</option>-->
+                                        <!--<option value="HI">Hawaii</option>-->
+                                        <!--<option value="ID">Idaho</option>-->
+                                        <!--<option value="IL">Illinois</option>-->
+                                        <!--<option value="IN">Indiana</option>-->
+                                        <!--<option value="IA">Iowa</option>-->
+                                        <!--<option value="KS">Kansas</option>-->
+                                        <!--<option value="KY">Kentucky</option>-->
+                                        <!--<option value="LA">Louisiana</option>-->
+                                        <!--<option value="ME">Maine</option>-->
+                                        <!--<option value="MD">Maryland</option>-->
+                                        <!--<option value="MA">Massachusetts</option>-->
+                                        <!--<option value="MI">Michigan</option>-->
+                                        <!--<option value="MN">Minnesota</option>-->
+                                        <!--<option value="MS">Mississippi</option>-->
+                                        <!--<option value="MO">Missouri</option>-->
+                                        <!--<option value="MT">Montana</option>-->
+                                        <!--<option value="NE">Nebraska</option>-->
+                                        <!--<option value="NV">Nevada</option>-->
+                                        <!--<option value="NH">New Hampshire</option>-->
+                                        <!--<option value="NJ">New Jersey</option>-->
+                                        <!--<option value="NM">New Mexico</option>-->
+                                        <!--<option value="NY">New York</option>-->
+                                        <!--<option value="NC">North Carolina</option>-->
+                                        <!--<option value="ND">North Dakota</option>-->
+                                        <!--<option value="OH">Ohio</option>-->
+                                        <!--<option value="OK">Oklahoma</option>-->
+                                        <!--<option value="OR">Oregon</option>-->
+                                        <!--<option value="PA">Pennsylvania</option>-->
+                                        <!--<option value="RI">Rhode Island</option>-->
+                                        <!--<option value="SC">South Carolina</option>-->
+                                        <!--<option value="SD">South Dakota</option>-->
+                                        <!--<option value="TN">Tennessee</option>-->
+                                        <!--<option value="TX">Texas</option>-->
+                                        <!--<option value="UT">Utah</option>-->
+                                        <!--<option value="VT">Vermont</option>-->
+                                        <!--<option value="VA">Virginia</option>-->
+                                        <!--<option value="WA">Washington</option>-->
+                                        <!--<option value="WV">West Virginia</option>-->
+                                        <!--<option value="WI">Wisconsin</option>-->
+                                        <!--<option value="WY">Wyoming</option>-->
+                                    <!--</select>-->
+                                    <!--<label for="states"><b>State</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; ZIPCODE &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<input id="zipcode" placeholder="03543 or 02454-4533" type="text" name=""  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="zipcode"><b>Zip</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Country &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--<input disabled value="United States" id="country" type="text" class="validate">-->
+                                    <!--<label for="country"><b>Country</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; PHONE &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--&lt;!&ndash; CHECK VALIDATION ******************* &ndash;&gt;-->
+                                    <!--<input id="phone_number" placeholder="123-456-7890" type="text" name=""  title="Enter your phone number" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="phone_number"><b>Phone</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; EMAIL &ndash;&gt;-->
+                            <!--<div class="row">-->
+                                <!--<div class="input-field col s12">-->
+                                    <!--&lt;!&ndash; placeholder="Name@yourdomain.com" &ndash;&gt;-->
+                                    <!--<input  id="email_of" placeholder="example@yourdomain.com" type="text" name="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly" class="validate" required="" aria-required="true">-->
+                                    <!--<label for="email_of"><b>Email</b></label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>&lt;!&ndash; END ROW &ndash;&gt;-->
+                    <!--</div>&lt;!&ndash; END CARD CONTENT &ndash;&gt;-->
+                <!--</div> &lt;!&ndash; END CARD &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; END COL &ndash;&gt;-->
 
-        <div class="center-align">
-            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
-                <i class="material-icons right">send</i>
-            </button>
-        </div>
-    </form>
+
+
+
+        <!--&lt;!&ndash; CC FORM &ndash;&gt;-->
+        <!--<div class="col m6">-->
+            <!--&lt;!&ndash; CARD &ndash;&gt;-->
+            <!--<div class="card chk-out-card">-->
+                <!--<div class="card-content billing-content">-->
+                    <!--<div class="row">-->
+                        <!--<h5 class="center-align">Credit Card Information</h5>-->
+                        <!--<div class="require hide-on-small-only center-align">* All fields required</div><br />-->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--&lt;!&ndash; Credit Card  Name&ndash;&gt;-->
+                        <!--<div class="row">-->
+                            <!--<div class="input-field col s12">-->
+                                <!--<input id="cc_name" placeholder="First Last" type="text" name="cc_name" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">-->
+                                <!--<label for="cc_name"><b>Card Name</b></label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                            <!--&lt;!&ndash; Credit Card Number &ndash;&gt;-->
+                            <!--<div class="input-field col s12">-->
+                                <!--<input id="cc_number" placeholder="0000000000000000" type="text" name="cc_number"  title="Enter credit card number" class="validate" required="" aria-required="true">-->
+                                <!--<label for="cc_number"><b>Card Number</b></label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; Expiration Dates &ndash;&gt;-->
+                        <!--<div class="row">-->
+                            <!--&lt;!&ndash; Month Expr &ndash;&gt;-->
+                            <!--<div class="input-field col s6">-->
+                                <!--<select id="cc_month" title="Select a month" type="select" class="validate" required="" aria-required="true">-->
+                                    <!--<option value="" disabled selected>Month</option>-->
+                                    <!--<option value="01">January</option>-->
+                                    <!--<option value="02">February</option>-->
+                                    <!--<option value="03">March</option>-->
+                                    <!--<option value="04">April</option>-->
+                                    <!--<option value="05">May</option>-->
+                                    <!--<option value="06">June</option>-->
+                                    <!--<option value="07">July</option>-->
+                                    <!--<option value="08">August</option>-->
+                                    <!--<option value="09">September</option>-->
+                                    <!--<option value="10">October</option>-->
+                                    <!--<option value="11">November</option>-->
+                                    <!--<option value="12">December</option>-->
+                                <!--</select>-->
+                                <!--<label for="cc_month"><b>Month</b></label>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; Year Expr &ndash;&gt;-->
+                            <!--<div class="input-field col s6">-->
+                                <!--<select id="cc_year" title="Select a year" type="select" class="validate" required="" aria-required="true">-->
+                                    <!--<option value="" disabled selected>Year</option>-->
+                                    <!--<option value="2016">2016</option>-->
+                                    <!--<option value="2017">2017</option>-->
+                                    <!--<option value="2018">2018</option>-->
+                                    <!--<option value="2019">2019</option>-->
+                                    <!--<option value="2020">2020</option>-->
+                                <!--</select>-->
+                                <!--<label for="cc_year"><b>Year</b></label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash; CCV Security Code &ndash;&gt;-->
+                        <!--<div class="row">-->
+                            <!--<div class="input-field col s6">-->
+                                <!--<input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">-->
+                                <!--<label for="cc_ccv"><b>CCV</b></label>-->
+                            <!--</div>-->
+                            <!--<div class="col s6">-->
+                                <!--<div class="valign-wrapper">-->
+                                    <!--<a href="#!" class="valign">What is this?</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>&lt;!&ndash; END ROW &ndash;&gt;-->
+                <!--</div>&lt;!&ndash; END CARD CONTENT &ndash;&gt;-->
+            <!--</div> &lt;!&ndash; END CARD &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; END COL &ndash;&gt;-->
+
+
+        <!--<div class="center-align">-->
+            <!--<button class="btn waves-effect waves-light red" type="submit" name="action">Submit-->
+                <!--<i class="material-icons right">send</i>-->
+            <!--</button>-->
+        <!--</div>-->
+    <!--</form>-->
 
 
     <section class="section">
