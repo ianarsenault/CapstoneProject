@@ -63,11 +63,16 @@ Documentation Site:
 * Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
        -  ~~Add transition hover effect to card form~~
         - ~~Change scrolling opacity when side-nav scroll spy browser width is less than 993px~~ Changed
+        * Get rid of opacity change on navbar in checkout page + added fixed breadcrumbs - hide on less than _px
         * Add submit form button on checkout page 
+        * Overlay on parallax containers - add text or title and brief overview
         * Validation to checkout forms 
         * Finalize order complete page
         * Checkout page links in navigation and side-nav - add icons and page routes
         * Start PHP crossover 
+        * Set breadcrumbs to z-index greater than - or just hide
+        * Clean up required on select drop downs - display inline is showing, and allowing default drop down
+        
         
 * Week 7
 * Week 8

@@ -35,7 +35,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<header>
+<header class="chkout-headder">
     <!-- Begin Navbar -->
     <div class="navbar-fixed open-sans3">
         <nav>
@@ -90,22 +90,24 @@
             <li><div class="divider"></div></li>
         </ul>
     </div><!-- End Navbar -->
-    <nav class="open-sans3 breadcrumb-nav">
+    <!-- BREADCRUMB NAV -->
+    <nav class="open-sans3 breadcrumb-nav hide-on-med-and-down">
         <div class="nav-wrapper">
-            <div class="col s12 bcrumb-hvr">
+            <div class="col s12 bcrumb-hvr pinned">
                 <a href="#!" class="breadcrumb">Home</a>
                 <a href="#!" class="breadcrumb">Checkout</a>
             </div>
         </div>
-    </nav>
+    </nav><!-- END BREADCRUMB NAV -->
 </header>
 
 <main>
+
     <!-- CHECKOUT FORMS -->
     <section class="section checkout-section open-sans3">
         <div class="container">
             <!-- BEGIN FORM -->
-            <form class="col s12" name="checkout_form" id="checkoutForm" action="#!">
+            <form class="col s12">
                 <!-- CHECKBOX - PRODUCT SECTION -->
                 <div class="row">
                     <div class="col s12 m8 l6 offset-m2 offset-l3">
@@ -135,7 +137,8 @@
                         <div class="card chk-out-card">
                             <div class="card-content billing-content">
                                 <div class="row">
-                                    <h5 class="center-align">Payment Information <span class="require hide-on-small-only">* All fields required</span></h5>
+                                    <h5 class="center-align">Payment Information</h5>
+                                    <div class="require center-align">* All fields required</div><br/>
                                 </div>
                                 <div class="row">
                                     <!-- First Name-->
@@ -174,7 +177,7 @@
                                     <!-- STATES -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <select id="states" title="Select a state" type="select" class="validate" required="" aria-required="true">
+                                            <select id="states" title="Select a state" class="validate" required="" aria-required="true">
                                                 <option value="" disabled selected>Select a State</option>
                                                 <option value="AL">Alabama</option>
                                                 <option value="AK">Alaska</option>
@@ -272,7 +275,8 @@
                         <div class="card chk-out-card">
                             <div class="card-content billing-content">
                                 <div class="row">
-                                    <h5 class="center-align">Credit Card Information <span class="require hide-on-small-only">* All fields required</span></h5>
+                                    <h5 class="center-align">Credit Card Information</h5>
+                                    <div class="require hide-on-small-only center-align">* All fields required</div><br />
                                 </div>
                                 <div class="row">
                                     <!-- Credit Card  Name-->
@@ -325,15 +329,39 @@
                                     </div>
                                     <!-- CCV Security Code -->
                                     <div class="row">
-                                        <div class="input-field col s12">
+                                        <div class="input-field col s6">
                                             <input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
                                             <label for="cc_ccv"><b>CCV</b></label>
+                                        </div>
+                                        <div class="col s6">
+                                            <div class="valign-wrapper">
+                                                <a href="#!" class="valign">What is this?</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div><!-- END ROW -->
                             </div><!-- END CARD CONTENT -->
                         </div> <!-- END CARD -->
                     </div><!-- END COL -->
+
+                    <div class="col s6">
+                        <!-- CARD -->
+                        <div class="card chk-out-card">
+                            <div class="card-content checkout-card-complete">
+                                <div class="row">
+                                    <div class="center-align">
+                                        <input type="checkbox" class="filled-in" id="chk_termsOfService" title="Please agree to the terms of service" required="" aria-required="true" />
+                                        <label for="chk_termsOfService"><a href="#!">Terms of Service</a></label>
+                                    </div>
+                                    <div class="center-align">
+                                        <button class="btn waves-effect waves-light red" type="button" name="action">Purchase
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- END CC FORM -->
                 </div><!--END  ROW -->
             </form>
@@ -342,7 +370,35 @@
 
 
 
+    <form class="col s12 contact-form">
+        <div class="row center-align railwayBold">
+            <h5>Send me a message</h5>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name_of" placeholder="Mr. Bigglesworth" type="text" class="validate" required="" aria-required="true">
+                <label for="name_of">Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input placeholder="Name@yourdomain.com" id="email_of" type="text" class="validate" required="" aria-required="true">
+                <label for="email_of">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea placeholder="Write your message here!" id="message" class="materialize-textarea validate" required="" aria-required="true"></textarea>
+                <label for="message">Message</label>
+            </div>
+        </div>
 
+        <div class="center-align">
+            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
 
 
     <section class="section">

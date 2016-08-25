@@ -34,7 +34,10 @@ var progressBar = function () {
 var scrollChange = function () {
     /* Fixed Navbar Scroll */
     var lastScrollTop = 0;
-    var navbar = $('.navbar-fixed');
+    // .navbar-fixed will change all pages navbar
+    /*var navbar = $('.navbar-fixed');*/
+    // home nav Will only change homepage navigation
+    var navbar = $('.home-nav');
     var chatbtn = $("#fixChatBtn");
 
     $(window).scroll(function() {
@@ -275,15 +278,14 @@ $(document).ready(function () {
     // Tabs Initialization
     $('ul.tabs').tabs();
 
-
-
     // Form Drop Doww -- CHECKOUT
     $("select").material_select();
 
     // for HTML5 "required" attribute
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});
 
-
+    // PUSHPIN
+   // $('.breadcrumb-nav .bcrumb-hvr').pushpin({ top: $('.bcrumb-hvr').offset(50).top });
 
 
 
