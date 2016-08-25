@@ -234,6 +234,18 @@ var mainContent = function () {
     }, 5000);
 };
 
+// Radio Button validation -- added due to HTML5 Required not working
+var formValidation = function () {
+    $("#chkOutBtn").on('click', function () {
+        if(!document.getElementById('chkEHR').checked){
+            alert("Please choose a product!");
+            return false;
+        }
+    });
+
+   // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
+};
+
 $(document).ready(function () {
     /** CHANGE BACK WHEN LIVE **/
     // $(".main-section").fadeIn(10000);
@@ -281,8 +293,13 @@ $(document).ready(function () {
     // Form Drop Doww -- CHECKOUT
     $("select").material_select();
 
+    //Radio button validation
+    formValidation();
+
     // for HTML5 "required" attribute
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});
+    //$("input['type=radio'][required]").css({display: "inline", height: 0, padding: 0, width: 0});
+    //$('#chkEHR[required]').css({visibility: "visible", marginLeft: "200px"});
 
     // PUSHPIN
    // $('.breadcrumb-nav .bcrumb-hvr').pushpin({ top: $('.bcrumb-hvr').offset(50).top });
