@@ -599,7 +599,7 @@ and (max-width: 1549px) {
 .breadcrumb-nav {
     background-color: #f1f1f1 !important;
     box-shadow: none !important;
-    margin-left: 25px !important;
+   /* margin-left: 25px !important; */
     height: 52px !important;
     margin-top: -10px;
     /*height: 42px !important;*/
@@ -615,7 +615,9 @@ and (max-width: 1549px) {
     /*height: 42px !important;*/
     line-height:54px;
 }
-
+.bcrumb-hvr {
+    margin-left: 25px!important;
+}
 .chkout-headder {
     background-color: #f1f1f1 !important;
 }
@@ -1594,6 +1596,13 @@ and (max-width: 600px){
     padding: 30px;
     overflow: auto;
 }
+.collection {
+    -webkit-transition: border 0.28s ease-in-out;
+    -moz-transition: border 0.28s ease-in-out;
+    -ms-transition: border 0.28s ease-in-out;
+    -o-transition: border 0.28s ease-in-out;
+    transition: border 0.28s ease-in-out;
+}
 .collection .collection-item {
     background-color: #fff;
     line-height: 1.5rem;
@@ -2435,14 +2444,83 @@ footer.page-footer .footer-copyright {
 select {
     border: 1px solid #ffffff;
     position: relative;
-    top: -20px;
+    top: -30px;
 }
 .select-wrapper {
     position: relative;
     height: 46px !important;
 }
+/* The initial select on load */
+/*.select-wrapper input.select-dropdown {*/
+    /*color: #cac7c6 !important;*/
+/*}*/
+
+/* What is a CCV link */
 .whats-CCV {
     margin-top: 30px;
+}
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* Validation styling for elements that cannot
+    validate using HTML5 ---*/
+@-webkit-keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+/*********** END OF ANIMATE.CSS   ************************/
+
+#toast-container {
+    top: 10% !important;
+    display: block;
+    z-index: 1!important;
+}
+.toast {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /****************************************
 ***             PUSHPIN               **

@@ -214,7 +214,6 @@ var contactForm = function () {
         }
 
     });
-
 };
 
 // Enables scrolling after 9 seconds -- loading screen
@@ -234,14 +233,88 @@ var mainContent = function () {
     }, 5000);
 };
 
-// Radio Button validation -- added due to HTML5 Required not working
+// Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
+    // On form submit click
     $("#chkOutBtn").on('click', function () {
+        // If product radio btn isn't checked
         if(!document.getElementById('chkEHR').checked){
-            alert("Please choose a product!");
+            //alert("Please choose a product!");
+            // Scroll to top to display radio button selection
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            setTimeout(function () {
+                // Fire toast with error message
+                Materialize.toast(' Please choose a product!', 50000, 'red darken-1');
+                // Add orange CSS Border - for alerting to selection area
+                $(".collection").css({
+                    "border": "3px solid rgb(255, 143, 0)"
+                });
+                // Add animation class - Shake - to alert user even more lol -> dumb user
+                $("#validateAnimate").addClass("animated shake");
+                // Set timeout function to remove classes to
+                // allow for the animation to continue each click until checked
+                setTimeout(function () {
+                    $("#validateAnimate").removeClass("animated shake");
+                }, 1000);
+            }, 500);
+            // Materialize.toast(' Please choose a product!', 4000, 'red darken-4');
+            // // Add orange CSS Border
+            // $(".collection").css({
+            //     "border": "3px solid rgb(255, 143, 0)"
+            // });
+            // // Add animation class - Shake - to alert user
+            // $("#validateAnimate").addClass("animated shake");
+            // // Set timeout function to remove classes to
+            // // allow for the animation to continue each click until checked
+            // setTimeout(function () {
+            //     $("#validateAnimate").removeClass("animated shake");
+            // }, 1000);
             return false;
+        } else {
+            // Remove CSS Border if radio btn is checked
+            $(".collection").css({
+                "border": "1px solid #e0e0e0"
+            });
         }
     });
+
+    // Once a radio button is checked -
+    $("input[type='radio']").change(function () {
+        $(".toast").fadeOut(function () {
+            $(this).remove();
+        });
+        // If the value is for the Advanced EHR Suite
+       if ($(this).val()=='EHR') {
+           // Remove own required styling border
+           $(".collection").css({
+               "border": "1px solid #e0e0e0"
+           });
+           // and dismiss any toasts that are visible
+          // Materialize.toast('remove');
+
+       }
+    });
+
+    //
+    // var selectColr = $('.select-dropdown');
+    // $("select").change(function () {
+    //    $(selectColr).css('color', 'red!important');
+    // });
+
+    // Select drop down color change
+    // $("#states").change(function () {
+    //    //var currentSelect = $("#states").val();
+    //     //var disabledSelect = $(".select-wrapper input.select-dropdown ");
+    //     if ($("#states").val() !==  null) {
+    //         $(".select-dropdown").css({
+    //             "color": "black !important"
+    //         });
+    //     } else {
+    //         $(".select-dropdown ").css({
+    //             "color": "#cac7c6"
+    //         });
+    //     }
+    // });
 
    // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
 };
@@ -303,7 +376,5 @@ $(document).ready(function () {
 
     // PUSHPIN
    // $('.breadcrumb-nav .bcrumb-hvr').pushpin({ top: $('.bcrumb-hvr').offset(50).top });
-
-
 
 });
