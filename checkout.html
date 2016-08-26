@@ -110,7 +110,7 @@
             <form class="col s12" id="checkoutForm" method="post">
                  <!--CHECKBOX - PRODUCT SECTION-->
                 <div class="row">
-                    <div class="col s12 m8 l6 offset-m2 offset-l3">
+                    <div class="col s12 m8 l6 offset-m2 offset-l3" id="validateAnimate">
                         <ul class="collection with-header center-align">
                             <li class="collection-header" id="chk-collection-header"><img src="images/logos/logo.png" height="128" width="128"/><h4>Protech Checkout</h4></li>
                             <li class="collection-item" id="chk-collection">
@@ -149,7 +149,7 @@
                                         </div>
                                         <!-- Last Name-->
                                         <div class="input-field col s6">
-                                            <input id="last_name" placeholder="Juggerknot" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter first name" class="validate" required="" aria-required="true">
+                                            <input id="last_name" placeholder="Juggerknot" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter last name" class="validate" required="" aria-required="true">
                                             <label for="last_name"><b>Last Name</b></label>
                                         </div>
                                     </div>
@@ -178,7 +178,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <select id="states" title="Select a state" class="validate" required="" aria-required="true">
-                                                <option value="" disabled selected>Select a State</option>
+                                                <option value="None" class="grey-text" disabled selected>Select a State</option>
                                                 <option value="AL">Alabama</option>
                                                 <option value="AK">Alaska</option>
                                                 <option value="AZ">Arizona</option>
