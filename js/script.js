@@ -198,7 +198,7 @@ var contactForm = function () {
             $(submitBtn).hover(function () {
                 $(this).css("background-color", "#7B46E9");
             }, function () {
-                $(this).css("background-color", "#5e35b1")
+                $(this).css("background-color", "#5e35b1");
             });
         } else {
             submitBtn.css({
@@ -209,7 +209,7 @@ var contactForm = function () {
             $(submitBtn).hover(function () {
                 $(this).css("background-color", "#41B145");
             }, function () {
-                $(this).css("background-color", "#388e3c")
+                $(this).css("background-color", "#388e3c");
             });
         }
 
@@ -237,6 +237,8 @@ var mainContent = function () {
 var formValidation = function () {
     // On form submit click
     $("#chkOutBtn").on('click', function () {
+        // if there are any validation toasts showing remove them
+        $(".toast").remove();
         // If product radio btn isn't checked
         if(!document.getElementById('chkEHR').checked){
             //alert("Please choose a product!");
@@ -244,7 +246,7 @@ var formValidation = function () {
             $("html, body").animate({ scrollTop: 0 }, 600);
             setTimeout(function () {
                 // Fire toast with error message
-                Materialize.toast(' Please choose a product!', 50000, 'red darken-1');
+                Materialize.toast(' Please choose a product!', 50000, 'red darken-1 radio-toast');
                 // Add orange CSS Border - for alerting to selection area
                 $(".collection").css({
                     "border": "3px solid rgb(255, 143, 0)"
@@ -257,30 +259,42 @@ var formValidation = function () {
                     $("#validateAnimate").removeClass("animated shake");
                 }, 1000);
             }, 500);
-            // Materialize.toast(' Please choose a product!', 4000, 'red darken-4');
-            // // Add orange CSS Border
-            // $(".collection").css({
-            //     "border": "3px solid rgb(255, 143, 0)"
-            // });
-            // // Add animation class - Shake - to alert user
-            // $("#validateAnimate").addClass("animated shake");
-            // // Set timeout function to remove classes to
-            // // allow for the animation to continue each click until checked
-            // setTimeout(function () {
-            //     $("#validateAnimate").removeClass("animated shake");
-            // }, 1000);
+
             return false;
+
         } else {
             // Remove CSS Border if radio btn is checked
             $(".collection").css({
                 "border": "1px solid #e0e0e0"
             });
         }
+
+        // If product radio btn is checked
+        if (document.getElementById('chkEHR').checked) {
+            var ccv = document.getElementById('cc_ccv');
+            // and if CCV input value is = 3 || 4
+            if (ccv.value.length == 3 || ccv.value.length == 4) {
+                // If the TOS checkbox is not checked
+                if (!document.getElementById('chk_termsOfService').checked){
+                    // Fire toast with error message
+                    Materialize.toast('Please agree to the Terms of Service', 50000, 'green darken-1 checkbox-toast');
+                    // Add animation class
+                    $("#tocBox").addClass("animated shake");
+                    // Set timeout for 1 second
+                    setTimeout(function () {
+                        // then remove animation class
+                        $("#tocBox").removeClass("animated shake");
+                    }, 1000);
+                }
+            }
+        }
+
     });
+
 
     // Once a radio button is checked -
     $("input[type='radio']").change(function () {
-        $(".toast").fadeOut(function () {
+        $(".radio-toast").fadeOut(function () {
             $(this).remove();
         });
         // If the value is for the Advanced EHR Suite
@@ -289,11 +303,18 @@ var formValidation = function () {
            $(".collection").css({
                "border": "1px solid #e0e0e0"
            });
-           // and dismiss any toasts that are visible
-          // Materialize.toast('remove');
-
        }
     });
+
+
+    // Once TOS is checked off
+    $("input[type='checkbox']").change(function () {
+        // remove checkbox toast
+        $(".checkbox-toast").fadeOut(function () {
+            $(this).remove();
+        });
+    });
+
 
     //
     // var selectColr = $('.select-dropdown');
@@ -317,6 +338,21 @@ var formValidation = function () {
     // });
 
    // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
+};
+// Function allows for the showing of Checkout button in side-nav
+var sideNavTransform = function () {
+    // On click of "BUY" btn in side-nav
+    $("#buySidenav").on('click', function () {
+        // The translated div hiding Checkout button will
+        // translate down into view
+        $(".hide-checkout").css({
+            "transform": "translateY(0px)"
+        });
+        // While changing it's opacity to become visible
+        $(".hidden-checkout-btn ").css({
+            "opacity": "1"
+        })
+    });
 };
 
 $(document).ready(function () {
@@ -349,6 +385,9 @@ $(document).ready(function () {
 
     // Carousel Slider item change
     carouselChange();
+
+    // Side nav checkout function
+    sideNavTransform();
 
     //$('.carousel').carousel();
 

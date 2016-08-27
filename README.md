@@ -70,11 +70,14 @@ Documentation Site:
         * Finalize order complete page
         * Checkout page links in navigation and side-nav - add icons and page routes
         * Start PHP crossover 
-        * Set breadcrumbs to z-index greater than - or just hide
+        * ~~Set breadcrumbs to z-index greater than - or just hide~~
         * ~~Clean up required on select drop downs - display inline is showing, and allowing default drop down~~
         
         
 * Week 7
+       * Start MVC 
+       * Create States/Months/Year Tables - Pull into select drop downs
+       * Start sending form data to MySQL Database
 * Week 8
 * Week 9
 * Week 10
