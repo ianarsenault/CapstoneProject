@@ -407,7 +407,6 @@ and (max-width: 600px) {
 }
 
 
-
 @media only screen
 and (min-width: 1550px) {
     .side-nav.fixed {
@@ -582,7 +581,40 @@ and (max-width: 1549px) {
     }
 }
 
-
+/** Hidden Checkout Side-nav button *
+*   Translates up under Buy Btn */
+.hide-checkout {
+    -webkit-transform: translatey(-49px);
+    -moz-transform: translatey(-49px);
+    -ms-transform: translatey(-49px);
+    -o-transform: translatey(-49px);
+    transform: translatey(-49px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* Hides the Checkout Side-Nav Btn */
+.hidden-checkout-btn {
+    opacity:0;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
+}
+/*.hidden-checkout {*/
+    /*display: none;*/
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    /*-moz-transition: all 0.3s ease-in-out;*/
+    /*-ms-transition: all 0.3s ease-in-out;*/
+    /*-o-transition: all 0.3s ease-in-out;*/
+    /*transition: all 0.3s ease-in-out;*/
+/*}*/
+/*#buySidenav:hover .hidden-checkout {*/
+    /*display: block !important;*/
+/*}*/
 /* Breadcrumbs for Checkout and Complete Pages */
 
 .breadcrumb {
@@ -671,7 +703,10 @@ hr {
     width: 100px;
     height: 5px;
 }
-
+.complete-box {
+    border-bottom: 1px solid #c0c0c0;
+    margin: 0 30px 0 20px!important;
+}
 /* Hover box shadow for skills card in about me */
 .shadow-hvr {
     transition: box-shadow .25s;
@@ -1554,6 +1589,9 @@ and (max-width: 600px){
 }
 .purchase-btn:hover {
     background-color: #48b44d;
+}
+.money-icon {
+    margin-right: 5px !important;
 }
 /* Demo button in purchase section */
 .demo-btn {
@@ -2450,6 +2488,19 @@ select {
     position: relative;
     height: 46px !important;
 }
+
+.tos {
+    margin:20px;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #faf8ff;
+    background-color: #00b0ff;
+    z-index: 0;
+}
 /* The initial select on load */
 /*.select-wrapper input.select-dropdown {*/
     /*color: #cac7c6 !important;*/
@@ -2458,6 +2509,29 @@ select {
 /* What is a CCV link */
 .whats-CCV {
     margin-top: 30px;
+}
+.chk-links {
+    color: #ff8b00;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.chk-links:hover {
+    color: #ff4112;
+    text-decoration: underline;
+}
+#chkOutBtn {
+    background-color: #3b5dad;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#chkOutBtn:hover {
+    background-color: #457bd7;
 }
 /*!
  * animate.css -http://daneden.me/animate

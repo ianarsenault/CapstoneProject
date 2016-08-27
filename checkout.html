@@ -70,21 +70,23 @@
                 <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
                 <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
             </div></li>
-            <li><a href="index.html#about">About</a></li>
+            <li><a class="waves-effect" href="index.html#about">About</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="index.html#product">Product</a></li>
+            <li><a class="waves-effect" href="index.html#product">Product</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="index.html#testimonial">Testimonials</a></li>
+            <li><a class="waves-effect" href="index.html#testimonial">Testimonials</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="#!">Demo</a></li>
+            <li><a class="waves-effect" href="#!">Demo</a></li>
             <li><div class="divider"></div></li>
-            <li class="active-checkout-side"><a href="#!">Buy</a></li>
+            <!--<li class="active-checkout-side"><a href="#!">Buy</a></li>-->
+            <li><a class="subheader">Buy</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons left red-text">subdirectory_arrow_right</i>Checkout</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="#!">Contact</a></li>
+            <li><a class="waves-effect" href="#!">Contact</a></li>
             <li><div class="divider"></div></li>
-            <li><a href="#!">Dev Team</a>
+            <li><a class="waves-effect" href="#!">Dev Team</a>
             <li><div class="divider"></div></li>
-            <li><a href="#!">Location</a></li>
+            <li><a class="waves-effect" href="#!">Location</a></li>
             <li><div class="divider"></div></li>
             <li><a href="#!">Social Media</a></li>
             <li><div class="divider"></div></li>
@@ -335,7 +337,7 @@
                                         </div>
                                         <div class="col s6">
                                             <div class="whats-CCV">
-                                                <a href="#!">What is this?</a>
+                                                <a class="chk-links" href="#!">What is this?</a>
                                             </div>
                                         </div>
                                     </div>
@@ -349,13 +351,16 @@
                         <div class="card chk-out-card">
                             <div class="card-content checkout-card-complete">
                                 <div class="row">
-                                    <div class="center-align">
+                                    <div class="row complete-box">
+                                        <h5 class="">Complete Order:</h5>
+                                    </div>
+                                    <div class="center-align tos" id="tocBox">
                                         <!--onchange="this.setCustomValidity(validity.valueMissing ? 'Please agree to the Terms of Service' : '');"-->
                                         <input type="checkbox" class="filled-in" name="terms" id="chk_termsOfService" title="Please agree to the terms of service" required="" aria-required="true" />
-                                        <label for="chk_termsOfService"><a href="#!">Terms of Service</a></label>
+                                        <label for="chk_termsOfService"><a href="#!" class="chk-links">Terms of Service</a></label>
                                     </div>
                                     <div class="center-align">
-                                        <button class="btn waves-effect waves-light red" type="submit" id="chkOutBtn" form="checkoutForm" name="action">Purchase
+                                        <button class="btn waves-effect waves-light" type="submit" id="chkOutBtn" form="checkoutForm" name="action">Purchase
                                             <i class="material-icons right">send</i>
                                         </button>
                                     </div>
