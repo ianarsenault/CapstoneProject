@@ -315,7 +315,7 @@
             <!-- About Us Section Card -->
             <div class="row">
                 <div class="col s12 m8 l10 offset-l1 offset-m2">
-                    <div class="card z-depth-4">
+                    <div class="card">
                         <div class="card-content black-text">
                             <div class="center-align">
                                 <img height="256" width="256" src="images/logos/logo.png" />
@@ -356,17 +356,22 @@
         <!-- Begin Product Details -->
         <section class="product-section section scrollspy container" id="product">
 
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l6 offset-l3">
-                    <h4 class="center-align">Applications</h4>
-                    <hr />
-                    <p></p>
-                </div>
-            </div>
+            <ul id="fireApplicationTitle">
+                <li>
+                    <div class="row">
+                        <div class="col s12 m8 offset-m2 l6 offset-l3">
+                            <h4 class="center-align">Applications</h4>
+                            <hr />
+                            <p></p>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
 
             <div class="row">
                 <div class="col s12 m8 offset-m2 l6 offset-l3">
-                    <ul class="collapsible popout" data-collapsible="accordion">
+                    <ul id="collapseApps" class="collapsible popout" data-collapsible="accordion">
                         <li>
                             <div class="collapsible-header active"><i class="material-icons">storage</i>Advanced EHR Suite</div>
                             <div class="collapsible-body">
@@ -391,171 +396,138 @@
                                     hub, so that your patients can schedule an appointment with a click of the button.</p></div>
                         </li>
                     </ul>
-
                 </div>
             </div>
 
-            <!-- Horizontal Card - Product -->
-            <div class="row">
-                <div class="col s12 m8 l10 offset-l1 offset-m2">
-                    <div class="card horizontal" id="horiz-one">
-                        <div class="card-image">
-                            <div class="card-img-overlay">
-                                <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
-                            </div>
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">Uniqueness</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End horizontal card about -->
-
-            <div class="row">
-                <div class="col s8 m10 l6">
-                    <div class="card z-depth-2">
-                        <div class="card-content black-text">
-                            <div class="center-align">
-                                <img height="256" width="256" src="images/logos/logo.png" />
-                            </div>
-                            <h3 class="card-title center-align">Speed</h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
-                                augue sit amet, eleifend lectus. Nullam sit amet venenatis lectus. Nunc id dictum ex, id eleifend
-                                arcu. Donec sollicitudin urna leo, id vulputate mauris dictum vitae. In varius ultricies nunc,
-                                nec ultrices velit volutpat a. Cras vitae sem et magna ullamcorper tincidunt. Cras aliquam
-                                vestibulum dolor ac ornare. In et dolor et tortor auctor porta. Donec bibendum iaculis est,
-                                in maximus diam ultricies vel. Vestibulum a varius lectus.</p>
-                        </div>
-                        <div class="card-action center-align"></div>
-                    </div>
-                </div>
-
-                <div class="col s8 m10 l6">
-                    <div class="card z-depth-2">
-                        <div class="card-content black-text">
-                            <div class="center-align">
-                                <img height="256" width="256" src="images/logos/logo.png" />
-                            </div>
-                            <i class="material-icons">data_usage</i>
-                            <h3 class="card-title center-align">Data</h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
-                                augue sit amet, eleifend lectus. Nullam sit amet venenatis lectus. Nunc id dictum ex, id eleifend
-                                arcu. Donec sollicitudin urna leo, id vulputate mauris dictum vitae. In varius ultricies nunc,
-                                nec ultrices velit volutpat a. Cras vitae sem et magna ullamcorper tincidunt. Cras aliquam
-                                vestibulum dolor ac ornare. In et dolor et tortor auctor porta. Donec bibendum iaculis est,
-                                in maximus diam ultricies vel. Vestibulum a varius lectus.</p>
-                        </div>
-                        <div class="card-action center-align"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Horizontal Card - Product -->
-            <div class="row">
-                <div class="col s12 m8 l10 offset-l1 offset-m2">
-                    <div class="card horizontal" id="horiz-one">
-                        <div class="card-image">
-                            <div class="card-img-overlay">
-                                <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
-                            </div>
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <span class="card-title">Support</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End horizontal card about -->
-
-            <ul id="staggered-test">
+            <ul id="fireApplicationDetails">
                 <li>
                     <div class="row">
-                        <div class="col s12 m8 l10 offset-l1 offset-m2">
-                            <div class="card horizontal" id="horiz-one">
-                                <div class="card-image">
-                                    <div class="card-img-overlay">
-                                        <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
-                                    </div>
-                                </div>
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <span class="card-title">Something</span>
-                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col s12 m8 offset-m2 l6 offset-l3">
+                            <h4 class="center-align">Application Details</h4>
+                            <hr />
+                            <p></p>
                         </div>
-                    </div><!-- End horizontal card about -->
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col s12 m8 l10 offset-l1 offset-m2">
-                            <div class="card horizontal" id="horiz-one">
-                                <div class="card-image">
-                                    <div class="card-img-overlay">
-                                        <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
-                                    </div>
-                                </div>
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <span class="card-title">Something</span>
-                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End horizontal card about -->
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col s12 m8 l10 offset-l1 offset-m2">
-                            <div class="card horizontal" id="horiz-one">
-                                <div class="card-image">
-                                    <div class="card-img-overlay">
-                                        <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
-                                    </div>
-                                </div>
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <span class="card-title">Something</span>
-                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End horizontal card about -->
-                </li>
-                <li>
-                    <h4><a href="#">List Item</a></h4>
-                    <p>This is a description</p>
-                </li>
-                <li>
-                    <h4><a href="#">List Item</a></h4>
-                    <p>This is a description</p>
+                    </div>
+
                 </li>
             </ul>
+
+            <!-- Horizontal Card - Product -->
+            <div class="row">
+                <div class="col s12 m8 l10 offset-l1 offset-m2">
+                    <ul id="uniqueCard">
+                        <li>
+                            <div class="card horizontal" id="horiz-one">
+                                <div class="card-image">
+                                    <div class="card-img-overlay">
+                                        <img class="image-overl-card" src="https://getreferralmd.com/wp-content/uploads/2015/02/healthcare-technology-2015.png">
+                                    </div>
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <span class="card-title">Uniqueness</span>
+                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- End horizontal card about -->
+
+            <div class="row">
+                <ul id="speedDataCards">
+                    <li>
+                        <div class="col s8 m10 l6">
+                            <div class="card z-depth-2">
+                                <div class="card-content black-text">
+                                    <div class="center-align">
+                                        <img height="256" width="256" src="images/logos/logo.png" />
+                                    </div>
+                                    <h3 class="card-title center-align">Speed</h3>
+                                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                        pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
+                                        augue sit amet, eleifend lectus. Nullam sit amet venenatis lectus. Nunc id dictum ex, id eleifend
+                                        arcu. Donec sollicitudin urna leo, id vulputate mauris dictum vitae. In varius ultricies nunc,
+                                        nec ultrices velit volutpat a. Cras vitae sem et magna ullamcorper tincidunt. Cras aliquam
+                                        vestibulum dolor ac ornare. In et dolor et tortor auctor porta. Donec bibendum iaculis est,
+                                        in maximus diam ultricies vel. Vestibulum a varius lectus.</p>
+                                </div>
+                                <div class="card-action center-align"></div>
+                            </div>
+                        </div>
+
+                        <div class="col s8 m10 l6">
+                            <div class="card z-depth-2">
+                                <div class="card-content black-text">
+                                    <div class="center-align">
+                                        <img height="256" width="256" src="images/logos/logo.png" />
+                                    </div>
+                                    <i class="material-icons">data_usage</i>
+                                    <h3 class="card-title center-align">Data</h3>
+                                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                        pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
+                                        augue sit amet, eleifend lectus. Nullam sit amet venenatis lectus. Nunc id dictum ex, id eleifend
+                                        arcu. Donec sollicitudin urna leo, id vulputate mauris dictum vitae. In varius ultricies nunc,
+                                        nec ultrices velit volutpat a. Cras vitae sem et magna ullamcorper tincidunt. Cras aliquam
+                                        vestibulum dolor ac ornare. In et dolor et tortor auctor porta. Donec bibendum iaculis est,
+                                        in maximus diam ultricies vel. Vestibulum a varius lectus.</p>
+                                </div>
+                                <div class="card-action center-align"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12 m7">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://image.freepik.com/free-photo/network-switch-with-cables_1137-6.jpg">
+                            <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Horizontal Card - Product -->
+            <div class="row">
+                <div class="col s12 m8 l10 offset-l1 offset-m2">
+                    <ul id="supportCard">
+                        <li>
+                            <div class="card horizontal" id="horiz-one">
+                                <div class="card-image">
+                                    <div class="card-img-overlay">
+                                        <img class="image-overl-card" src="https://image.freepik.com/free-photo/smiling-executive-using-headset_1098-527.jpg">
+                                    </div>
+                                </div>
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <span class="card-title">Support</span>
+                                        <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- End horizontal card about -->
 
             <div class="center-align">
                 <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
@@ -568,69 +540,78 @@
 
         <!-- Begin TESTIMONIALS -->
         <section class="testimonials-section scrollspy" id="testimonial">
-            <div class="row">
-                <div class="col s12 m8 offset-m2 l6 offset-l3">
-                    <h4 class="center-align">TESTIMONIALS</h4>
-                    <hr />
-                    <p></p>
-                </div>
-            </div>
+            <ul id="testimonialTitle">
+                <li>
+                    <div class="row">
+                        <div class="col s12 m8 offset-m2 l6 offset-l3">
+                            <h4 class="center-align">TESTIMONIALS</h4>
+                            <hr />
+                            <p></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-            <!-- CAROUSEL TESTIMONIAL - MED-UP -->
-            <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
-                <div class="carousel-item first-title white-text" href="#one!">
-                    <div class="slider-quotebox-first">
-                        <blockquote>
-                            <p class="test-titles">Testimonials</p>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="carousel-item one white-text" href="#two!">
-                    <div class="slider-quotebox1">
-                        <blockquote>
-                            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                            <cite class="kristi signature right"> - Alan Birche</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="carousel-item two white-text" href="#three!">
-                    <div class="slider-quotebox2">
-                        <blockquote>
-                            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                            <cite class="kristi signature right"> - Laura Hagan</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="carousel-item three white-text" href="#four!">
-                    <div class="slider-quotebox3">
-                        <blockquote>
-                            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                            <cite class="kristi signature right"> - Rachel Dobbson</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="carousel-item four white-text" href="#five!">
-                    <div class="slider-quotebox4">
-                        <blockquote>
-                            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                            <cite class="kristi signature right"> - Joseph Dunn</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="carousel-item five white-text" href="#six!">
-                    <div class="slider-quotebox5">
-                        <blockquote>
-                            "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                            pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
-                            <cite class="kristi signature right"> - Tyrell Willard</cite>
-                        </blockquote>
-                    </div>
-                </div>
-            </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
+            <ul id="testimonialSlider">
+                <li>
+                    <!-- CAROUSEL TESTIMONIAL - MED-UP -->
+                    <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
+                        <div class="carousel-item first-title white-text" href="#one!">
+                            <div class="slider-quotebox-first">
+                                <blockquote>
+                                    <p class="test-titles">Testimonials</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item one white-text" href="#two!">
+                            <div class="slider-quotebox1">
+                                <blockquote>
+                                    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                    pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                    <cite class="kristi signature right"> - Alan Birche</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item two white-text" href="#three!">
+                            <div class="slider-quotebox2">
+                                <blockquote>
+                                    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                    pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                    <cite class="kristi signature right"> - Laura Hagan</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item three white-text" href="#four!">
+                            <div class="slider-quotebox3">
+                                <blockquote>
+                                    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                    pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                    <cite class="kristi signature right"> - Rachel Dobbson</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item four white-text" href="#five!">
+                            <div class="slider-quotebox4">
+                                <blockquote>
+                                    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                    pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                    <cite class="kristi signature right"> - Joseph Dunn</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="carousel-item five white-text" href="#six!">
+                            <div class="slider-quotebox5">
+                                <blockquote>
+                                    "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
+                                    pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra."
+                                    <cite class="kristi signature right"> - Tyrell Willard</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
+                </li>
+            </ul>
+
 
             <!-- SHOW ON SMALL TESTIMONIALS -->
             <div class="row hide-on-med-and-up">
@@ -1076,15 +1057,26 @@
             </div>
 
             <div class="row dev-row">
-                <div class="col s12 m4 l4 offset-l2">
-                    <div class="card z-depth-2 shadow-hvr">
-                        <div class="card-content black-text">
+                <div class="col s12 m5 offset-m1 l5 offset-l1">
+                    <div class="card">
+                        <div class="card-content black-text open-sans3">
                             <div class="center-align">
                                 <img class="responsive-img" src="http://i.imgur.com/kSnJSMb.png" />
                             </div>
                             <h3 class="card-title center-align">Ian Arsenault</h3>
-                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
-                                pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
+                            <hr class="team-hr" />
+                            <div class="center-align team-social-icons">
+                                <!--#ff2c06-->
+                                <a href="#!"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                                <a href="#!"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="#!"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="">Born in Southern Massachusetts, Ian has travelled across the country playing hockey for 15 years, and has lived
+                                in Providence, Rhode Island for the past 5 years. He is majoring in IT - Software Engineering at New England Institute of Technology,
+                                concentrating on web development and database management. He has a deep passion for technology, learning new languages, and trying out
+                                new developer tools. In his off-time he enjoys playing video games on his PS4, watching hockey, and going hiking.
+                                <!--orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,-->
+                                <!--pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra-->
                             </p>
                         </div>
                         <div class="card-action center-align">
@@ -1092,13 +1084,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 shadow-hvr">
-                        <div class="card-content black-text">
+                <div class="col s12 m5 l5">
+                    <div class="card">
+                        <div class="card-content black-text open-sans3">
                             <div class="center-align">
                                 <img class="responsive-img" src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/bighead.png" />
                             </div>
                             <h3 class="card-title center-align">Jameson Arsenault</h3>
+                            <hr class="team-hr" />
+                            <div class="center-align team-social-icons">
+                                <!--#ff2c06-->
+                                <a href="#!"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                                <a href="#!"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="#!"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                            </div>
                             <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo sed arcu sed,
                                 pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed augue euismod, viverra
                             </p>
@@ -1113,6 +1112,13 @@
                 <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>
             </div>
         </section><!-- End Dev Team -->
+
+        <section class="social-media-section">
+            <div class="center-align">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%40Protech_RI" data-widget-id="769293779371167749" data-screen-name="Protech_RI">Tweets by @Protech_RI</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </section>
 
     </main><!-- END MAIN -->
 
