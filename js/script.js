@@ -176,7 +176,32 @@ var scrollfire = function () {
          {selector: '#staggered-test', offset: 205, callback: function(el) {
          Materialize.toast("Please continue scrolling!", 1500 );
          } },*/
-        {selector: '#staggered-test', offset: 400, callback: function(el) {
+        // Applications Products Title
+        {selector: '#fireApplicationTitle', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+
+        // Collapsible Application Section
+        {selector: '#collapseApps', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+
+        // Uniqueness Product Card
+        {selector: '#uniqueCard', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+
+        // Speed & Data Card - Products
+        {selector: '#speedDataCards', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#supportCard', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#testimonialTitle', offset: 400, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#testimonialSlider', offset: 400, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } }
     ];
@@ -291,7 +316,6 @@ var formValidation = function () {
 
     });
 
-
     // Once a radio button is checked -
     $("input[type='radio']").change(function () {
         $(".radio-toast").fadeOut(function () {
@@ -315,6 +339,12 @@ var formValidation = function () {
         });
     });
 
+
+    // If user clicks agree button in TOS modal
+    $("#tosAgreeBtn").on('click', function () {
+        // make TOS checkbox -> checked / true
+        $("input[name='terms']").prop('checked', true);
+    });
 
     //
     // var selectColr = $('.select-dropdown');
