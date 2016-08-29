@@ -246,6 +246,98 @@ var scrollfire = function () {
         // Testimonial Slider
         {selector: '#testimonialSlider', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
+        } },
+        // Hidden Testimonial Slider - small screens
+        {selector: '#hiddenTestimonials', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Stack Tech Icon Titles
+        {selector: '#fireTechnologyTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Stack Tech Icon Row 1
+        {selector: '#techIcons1', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Stack Tech Icon Row 2
+        {selector: '#techIcons2', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Demo Section title
+        {selector: '#demoTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Demo - tabs
+        {selector: '#tabHeader', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Demo - tab content
+        {selector: '#tabContent', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Purchase Section Title
+        {selector: '#purchaseTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Patient Portal Card - pricing
+        {selector: '#portalCard', offset: 390, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // EHR Card Pricing Card
+        {selector: '#ehrCard', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Billing Pricing Card
+        {selector: '#billingCard', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Product Overview Card - table
+        {selector: '#priceOverviewCard', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // EHR Overivew Card table
+        {selector: '#ehrOverviewCard', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Contact Title
+        {selector: '#contactTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Contact Us Form
+        {selector: '#contactFrm', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Direct Mail and Phone Container
+        {selector: '#contactContainer', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Location Title
+        {selector: '#googleTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Location Container Google Maps
+        {selector: '#googleContainer', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Dev Title
+        {selector: '#devTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Developer One card
+        {selector: '#devOne', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Developer Two Card
+        {selector: '#devTwo', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Social Media Title
+        {selector: '#socialTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Social Media Twitter Container
+        {selector: '#socialContainer', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
         } }
     ];
     Materialize.scrollFire(options);
@@ -412,6 +504,7 @@ var formValidation = function () {
 
    // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
 };
+
 // Function allows for the showing of Checkout button in side-nav
 var sideNavTransform = function () {
     // On click of "BUY" btn in side-nav
