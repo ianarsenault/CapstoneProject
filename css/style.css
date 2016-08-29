@@ -792,6 +792,51 @@ hr {
 #fireAboutCard li {*/
     /*opacity: 0;*/
 /*}*/
+
+/*.cap-P::first-letter{*/
+    /*font-size: 200%;*/
+    /*color: #8A2BE2;*/
+    /*margin-bottom: 0%;*/
+/*}*/
+/* About Card Img - hidden scrollfire  */
+#aboutImg li {
+    opacity:0;
+}
+/* About Card Title - hidden scrollfire */
+#aboutTitle li {
+    opacity:0;
+}
+/* About Card Prgrphs - hidden  scrollfire */
+#aboutParagraphs li {
+    opacity:0;
+}
+/* Capital Letter - First letter of 1st paragraph in about */
+.cap-P{
+    float: left;
+    color: #3b5dad;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin: -20px 0 -20px 0;
+}
+.about-ptwo {
+    margin-top: 40px !important;
+}
+/* Capital Letter - First letter of 2nd paragraph in about */
+.cap-o{
+    float: left;
+    color: #0b9933;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin: -20px 0 -20px 0;
+
+}
+
 .toast {
     border-radius: 2px;
     top: 0;
@@ -888,12 +933,20 @@ hr {
 #fireApplicationTitle li {
     opacity: 0;
 }
+/* Application Details Title */
+#fireApplicationDetails li {
+    opacity:0;
+}
 /* Collapsible Section - Products */
 #collapseApps li {
     opacity:0;
 }
-/* Unique Card - Products */
-#uniqueCard li {
+/* Unique Card1 image - Products */
+#uniqueCard1 li {
+    opacity: 0;
+}
+/* Unique Card2 content - Products */
+#uniqueCard2 li {
     opacity: 0;
 }
 /* Speed & Data Cards - Products */
@@ -939,6 +992,10 @@ span.badge.new {
 #staggered-test li {
     opacity: 0;
 }
+
+.app-collaps {
+    margin-bottom: 80px;
+}
 @media only screen
 and (max-width: 450px){
     span.badge.new {
@@ -957,17 +1014,35 @@ and (max-width: 1275px){
         display: none !important;
     }
 }
-
-/* Div for horizontal card overlay */
-.card-img-overlay {
+/* Unique Content Card color */
+.unique-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(255, 146, 65, 0.79)
+}
+/* Speed Content Card color */
+.speed-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(255, 75, 65, 0.79);
+}
+/* Support Content Card color */
+.support-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(65, 131, 255, 0.79);
+}
+/* Speed Image Overlay */
+.uniq-card-overlay {
     position: relative;
     display: block;
     overflow: hidden;
 }
-/* Psuedo element sets an overlay ontop of horizontal card image */
-.card-img-overlay:after {
+/* Speed Image Overlay:after color */
+.uniq-card-overlay:after {
     content: '';
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(65, 174, 255, 0.16);*/
+    background-color: rgba(106, 44, 185, 0.3);
     position: absolute;
     height:100%;
     width:100%;
@@ -978,17 +1053,102 @@ and (max-width: 1275px){
     -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
-#horiz-one:hover .card-img-overlay:after {
+/* On hover change opacity of overlay color */
+#uniqueone:hover .uniq-card-overlay:after  {
     background-color: transparent;
-
 }
-.image-overl-card {
+/* Speed Image Overlay */
+.speed-img-overlay {
+    position: relative;
     display: block;
+    overflow: hidden;
 }
+/* Speed Image Overlay: after color  */
+.speed-img-overlay:after {
+    content: '';
+    background-color: rgba(106, 44, 185, 0.3);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+/* On hover change opacity of overlay color */
+#speedcard:hover .speed-img-overlay:after {
+    background-color: transparent;
+}
+#speedImage li {
+    opacity:0;
+}
+#speedContent li {
+    opacity:0;
+}
+.card .card-image #righter {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    right:0;
+    padding: 20px;
+}
+/* Support Image Overlay */
+.support-img-overlay {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Support Image Overlay: after color  */
+.support-img-overlay:after {
+    content: '';
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*background-color: rgba(20, 83, 185, 0.5);*/
+    background-color: rgba(106, 44, 185, 0.3);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+/* On hover change opacity of overlay color */
+#supprt1:hover .support-img-overlay:after {
+    background-color: transparent;
+}
+#supportImage li {
+    opacity:0;
+}
+#supportContent li {
+    opacity:0;
+}
+/* Mirror flip Support Image */
+.image-overl-card {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: "FlipH";
+}
+
+
+/* ON HOLD FOR NOW- DOESN'T BREAK ANYTHING
+.image-overl-card {*/
+    /*display: block;*/
+/*}*/
+
 /* IMAGE SCALE
 #horiz-one:hover .image-overl-card {
     transform: scale(1.25);
 }*/
+
+
 /*******************************************
 **        Testimonials  Styling           *
 ******************************************/
@@ -1424,10 +1584,14 @@ and (max-width: 1799px) {
 /* Main section class */
 .demo-section{
     background-color: rgb(249, 253, 251);
-    height: 1000px;
-    padding: 30px 0 60px 0;
+    padding: 30px 0 90px 0;
 }
-
+/* Icons in tabs header */
+.tab-icon {
+    vertical-align: middle;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
 
 .tabs {
     display: -webkit-flex;
@@ -1858,6 +2022,22 @@ a .fa:hover {
 }
 .team-txt {
     color: #6d6d6d!important;
+}
+.team-titles {
+    font-size: 12px;
+    font-style: italic;
+}
+.twitter-box {
+    margin-bottom: 60px;
+}
+.twit-btn {
+    margin-bottom: 30px;
+}
+/*******************************************
+**         Social Media  Styling          *
+******************************************/
+.social-media-section {
+    padding: 30px 0 60px 0;
 }
 /*******************************************
 **           Footer  Styling             *

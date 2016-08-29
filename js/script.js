@@ -9,9 +9,24 @@ var carouselChange = function () {
     // Initialize materialize carousel slider
     $('.carousel.carousel-slider').carousel({full_width: true});
     // set timed interval function for slider change
-    setInterval(function () {
+    var timer = setInterval(function () {
         $('.carousel.carousel-slider').carousel('next');
     }, carousel_interval);
+
+    // On a slider indicator click
+    $("li .indicator-item").on('click', function () {
+        console.log("Indicator clicked!");
+        // Clear the set interval timer
+        clearInterval(timer);
+        // Set a timeout
+        setTimeout(function () {
+            // Reset an interval for the slider
+            timer = setInterval(function () {
+                $('.carousel.carousel-slider').carousel('next');
+            }, carousel_interval);
+        });
+
+    });
 };
 
 // Function handles progress bar animations for loading div
@@ -176,32 +191,60 @@ var scrollfire = function () {
          {selector: '#staggered-test', offset: 205, callback: function(el) {
          Materialize.toast("Please continue scrolling!", 1500 );
          } },*/
+        // About card image
+        {selector: '#aboutImg', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // About card title
+        {selector: '#aboutTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // About card paragraph
+        {selector: '#aboutParagraphs', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
         // Applications Products Title
-        {selector: '#fireApplicationTitle', offset: 400, callback: function(el) {
+        {selector: '#fireApplicationTitle', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-
         // Collapsible Application Section
-        {selector: '#collapseApps', offset: 400, callback: function(el) {
+        {selector: '#collapseApps', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-
-        // Uniqueness Product Card
-        {selector: '#uniqueCard', offset: 400, callback: function(el) {
+        // Applications Details Title
+        {selector: '#fireApplicationDetails', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-
-        // Speed & Data Card - Products
-        {selector: '#speedDataCards', offset: 400, callback: function(el) {
+        // Uniqueness Product Card - Product Section
+        {selector: '#uniqueCard1', offset: 350, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#supportCard', offset: 400, callback: function(el) {
+        // Uniqueness Product Card - Product Section
+        {selector: '#uniqueCard2', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#testimonialTitle', offset: 400, callback: function(el) {
+        // Speed & Data Card Content - Product Section
+        {selector: '#speedImage', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        {selector: '#testimonialSlider', offset: 400, callback: function(el) {
+        // Speed & Data Card Image - Product Section
+        {selector: '#speedContent', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Support Image Card - Product Section
+        {selector: '#supportImage', offset: 350, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Support Content  Card - Product Section
+        {selector: '#supportContent', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Testimonial Title
+        {selector: '#testimonialTitle', offset: 300, callback: function(el) {
+            Materialize.showStaggeredList($(el));
+        } },
+        // Testimonial Slider
+        {selector: '#testimonialSlider', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } }
     ];
