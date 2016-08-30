@@ -11,6 +11,17 @@ body,
     margin: 0;
     padding: 0;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 /* Greate vibes cursive font */
 .great-vibes {
     font-family: 'Great Vibes', cursive;
@@ -798,18 +809,11 @@ hr {
     /*color: #8A2BE2;*/
     /*margin-bottom: 0%;*/
 /*}*/
-/* About Card Img - hidden scrollfire  */
-#aboutImg li {
+/* About Card  -  scrollfire  */
+#aboutImg li, #aboutTitle li, #aboutParagraphs li  {
     opacity:0;
 }
-/* About Card Title - hidden scrollfire */
-#aboutTitle li {
-    opacity:0;
-}
-/* About Card Prgrphs - hidden  scrollfire */
-#aboutParagraphs li {
-    opacity:0;
-}
+
 /* Capital Letter - First letter of 1st paragraph in about */
 .cap-P{
     float: left;
@@ -930,37 +934,16 @@ hr {
     background-color: #f8f8f8 !important;
 }
 /* Application Title */
-#fireApplicationTitle li {
+#fireApplicationTitle li, #fireApplicationDetails li, #collapseApps li,
+#uniqueCard1 li, #uniqueCard2 li, #speedDataCards li, #supportCard li,
+#speedImage li, #speedContent li, #supportImage li, #supportContent li {
     opacity: 0;
 }
-/* Application Details Title */
-#fireApplicationDetails li {
-    opacity:0;
-}
-/* Collapsible Section - Products */
-#collapseApps li {
-    opacity:0;
-}
-/* Unique Card1 image - Products */
-#uniqueCard1 li {
-    opacity: 0;
-}
-/* Unique Card2 content - Products */
-#uniqueCard2 li {
-    opacity: 0;
-}
-/* Speed & Data Cards - Products */
-#speedDataCards li {
-    opacity:0;
-}
-/* Support Card - Products */
-#supportCard li {
-    opacity:0;
-}
+
 .active-bdcb {
 
 }
-.collapsible-header {
+.apps-header {
     display: block;
     cursor: pointer;
     min-height: 3rem;
@@ -975,7 +958,7 @@ hr {
     -o-transition: background-color .25s ease-in-out;
     transition: background-color .25s ease-in-out;
 }
-.collapsible-header:hover {
+.apps-header:hover {
     background-color: #919191;
 }
 span.badge.new {
@@ -987,10 +970,6 @@ span.badge.new {
     position: relative;
     padding: 4px 7px 4px 4px;
     left: 15px;
-}
-/* Scrollfire Tester */
-#staggered-test li {
-    opacity: 0;
 }
 
 .app-collaps {
@@ -1042,7 +1021,8 @@ and (max-width: 1275px){
 .uniq-card-overlay:after {
     content: '';
     /*background-color: rgba(65, 174, 255, 0.16);*/
-    background-color: rgba(106, 44, 185, 0.3);
+    /*background-color: rgba(106, 44, 185, 0.3);*/
+    background-color: rgba(65, 174, 255, 0.16);
     position: absolute;
     height:100%;
     width:100%;
@@ -1066,7 +1046,7 @@ and (max-width: 1275px){
 /* Speed Image Overlay: after color  */
 .speed-img-overlay:after {
     content: '';
-    background-color: rgba(106, 44, 185, 0.3);
+    background-color: rgba(65, 174, 255, 0.16);
     position: absolute;
     height:100%;
     width:100%;
@@ -1081,12 +1061,7 @@ and (max-width: 1275px){
 #speedcard:hover .speed-img-overlay:after {
     background-color: transparent;
 }
-#speedImage li {
-    opacity:0;
-}
-#speedContent li {
-    opacity:0;
-}
+
 .card .card-image #righter {
     color: #fff;
     position: absolute;
@@ -1106,7 +1081,8 @@ and (max-width: 1275px){
     content: '';
     /*background-color: rgba(0,0,0,0.5);*/
     /*background-color: rgba(20, 83, 185, 0.5);*/
-    background-color: rgba(106, 44, 185, 0.3);
+    /*background-color: rgba(106, 44, 185, 0.3);*/
+    background-color: rgba(65, 174, 255, 0.16);
     position: absolute;
     height:100%;
     width:100%;
@@ -1121,12 +1097,7 @@ and (max-width: 1275px){
 #supprt1:hover .support-img-overlay:after {
     background-color: transparent;
 }
-#supportImage li {
-    opacity:0;
-}
-#supportContent li {
-    opacity:0;
-}
+
 /* Mirror flip Support Image */
 .image-overl-card {
     -moz-transform: scaleX(-1);
@@ -1147,7 +1118,78 @@ and (max-width: 1275px){
 #horiz-one:hover .image-overl-card {
     transform: scale(1.25);
 }*/
+#fireTechnologyTitle li, #techIcons1 li, #techIcons2 li  {
+    opacity:0;
+}
+/* Support row margin */
+.bottom-row {
+    margin-bottom: 60px;
+}
+/* Tool Icon row 1 */
+.tool-row-1 {
+    margin-bottom: 60px;
+}
+/* Tool Icon row 2 */
+.tool-row-2 {
+    margin-bottom: 100px;
+}
+/****************************/
+/* Icon Color Styling */
+.devicon-html5-plain.colored,.devicon-css3-plain.colored,.devicon-javascript-plain.colored,
+.devicon-jquery-plain-wordmark.colored,.devicon-bootstrap-plain.colored,.devicon-cplusplus-plain.colored,
+.devicon-csharp-plain.colored,.devicon-jetbrains-plain.colored,.devicon-git-plain.colored,
+.devicon-foundation-plain.colored,.devicon-php-plain.colored,.devicon-mysql-plain-wordmark.colored,
+.devicon-sass-original.colored,.devicon-photoshop-line.colored,.devicon-illustrator-line.colored,
+.devicon-github-plain-wordmark.colored,.devicon-dot-net-plain-wordmark.colored {
+    color: #8b8b8b !important;
+    transition: all 0.3s ease-in-out;
+}
 
+/*  Icon Hover Styling       *
+*******************************/
+/* Visual Studio Icon */
+.vs-icon{
+    background-color:#8b8b8b;
+    height:6rem;
+    width:6rem;
+    transition: 0.3s;
+}
+.devicon-html5-plain.colored:hover {
+    color: #ef6c00 !important;
+}
+
+.devicon-css3-plain.colored:hover {
+    color: #3d8fc6 !important;
+}
+.devicon-javascript-plain.colored:hover {
+    color: #f0db4f !important;
+    background-color: #000;
+}
+.devicon-jquery-plain-wordmark.colored:hover {
+    color: #0769ad !important;
+}
+.devicon-csharp-plain.colored:hover {
+    color: #68217a !important;
+}
+.devicon-jetbrains-plain.colored:hover {
+    color: #F68B1F !important;
+}
+.devicon-php-plain.colored:hover {
+    color: #6181b6 !important;
+}
+.devicon-mysql-plain-wordmark.colored:hover {
+    color: #00618a !important;
+}
+.devicon-github-plain-wordmark.colored:hover {
+    /*color: #181616;*/
+    color: #1a0833 !important;
+}
+.devicon-dot-net-plain-wordmark.colored:hover {
+    color: #00b8d4 !important;
+}
+.vs-icon:hover {
+    background-color:#68217A;
+}
 
 /*******************************************
 **        Testimonials  Styling           *
@@ -1158,12 +1200,10 @@ and (max-width: 1275px){
     padding: 30px 0 60px 0;
 
 }
-#testimonialTitle li {
+#testimonialTitle li, #testimonialSlider li, #hiddenTestimonials li  {
     opacity: 0;
 }
-#testimonialSlider li {
-    opacity: 0;
-}
+
 blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
@@ -1586,6 +1626,10 @@ and (max-width: 1799px) {
     background-color: rgb(249, 253, 251);
     padding: 30px 0 90px 0;
 }
+#demoTitle li, #tabHeader li, #tabContent li  {
+    opacity:0;
+}
+
 /* Icons in tabs header */
 .tab-icon {
     vertical-align: middle;
@@ -1642,6 +1686,12 @@ and (max-width: 1799px) {
     background-color: rgb(231, 235, 233);
     padding: 30px 0 60px 0;
 }
+/* Purchase  - scrollfire */
+#purchaseTitle li, #portalCard li, #ehrCard li,
+#billingCard li, #priceOverviewCard li, #ehrOverviewCard li {
+    opacity:0;
+}
+
 table.highlight > tbody > tr:hover {
     background-color: rgba(184, 184, 184, 0.64) !important;
 }
@@ -1876,6 +1926,10 @@ and (max-width: 600px){
 .contact-section {
     padding: 30px 0 60px 0;
 }
+/* Contact Section Scrollfire */
+#contactTitle li, #contactFrm li, #contactContainer li {
+    opacity:0;
+}
 /* Contact us form */
 .contact-form {
     margin-bottom: 60px;
@@ -1990,7 +2044,9 @@ textarea.materialize-textarea:focus:-ms-input-placeholder {
     background-color: #ffffff;
     margin-bottom: 100px;
 }
-
+#googleTitle li, #googleContainer li {
+    opacity:0;
+}
 /*******************************************
 **       Developer Team  Styling          *
 ******************************************/
@@ -1998,6 +2054,10 @@ textarea.materialize-textarea:focus:-ms-input-placeholder {
 .dev-section {
     background-color: #ffffff;
     padding: 30px 0 60px 0;
+}
+/* Dev Team  - Scrollfire */
+#devTitle li, #devOne li, #devTwo li  {
+    opacity:0;
 }
 .dev-row {
     margin-bottom: 60px;
@@ -2039,6 +2099,10 @@ a .fa:hover {
 .social-media-section {
     padding: 30px 0 60px 0;
 }
+#socialTitle li, #socialContainer li {
+    opacity:0;
+}
+
 /*******************************************
 **           Footer  Styling             *
 ******************************************/
@@ -2941,7 +3005,32 @@ nav .breadcrum-nav {
 /******************************************
 **           Confirmation Footer         **
 ********************************************/
-
+/* Order Confirmation Card */
+.complete-card {
+    background-color: #f1f1f1;
+}
+/* Download Program Button */
+.download-btn {
+    background-color: #ff6d00;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.download-btn:hover {
+    background-color: #496cd4;
+}
+/*.order-det-body {*/
+    /*background-color: #ffffff;*/
+/*}*/
+.order-paragraph {
+    margin:0 65px !important;
+}
+.detail-title {
+    text-decoration: underline;
+}
 .confirm-footer {
     position: fixed;
     bottom: 0;
