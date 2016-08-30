@@ -11,6 +11,17 @@ body,
     margin: 0;
     padding: 0;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 /* Greate vibes cursive font */
 .great-vibes {
     font-family: 'Great Vibes', cursive;
@@ -932,7 +943,7 @@ hr {
 .active-bdcb {
 
 }
-.collapsible-header {
+.apps-header {
     display: block;
     cursor: pointer;
     min-height: 3rem;
@@ -947,7 +958,7 @@ hr {
     -o-transition: background-color .25s ease-in-out;
     transition: background-color .25s ease-in-out;
 }
-.collapsible-header:hover {
+.apps-header:hover {
     background-color: #919191;
 }
 span.badge.new {
@@ -2994,7 +3005,32 @@ nav .breadcrum-nav {
 /******************************************
 **           Confirmation Footer         **
 ********************************************/
-
+/* Order Confirmation Card */
+.complete-card {
+    background-color: #f1f1f1;
+}
+/* Download Program Button */
+.download-btn {
+    background-color: #ff6d00;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.download-btn:hover {
+    background-color: #496cd4;
+}
+/*.order-det-body {*/
+    /*background-color: #ffffff;*/
+/*}*/
+.order-paragraph {
+    margin:0 65px !important;
+}
+.detail-title {
+    text-decoration: underline;
+}
 .confirm-footer {
     position: fixed;
     bottom: 0;

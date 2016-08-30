@@ -339,6 +339,12 @@ var scrollfire = function () {
         {selector: '#socialContainer', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } }
+
+        // {selector: '.class', offset: 200, callback: customCallbackFunc } },
+        // {selector: '.other-class', offset: 200, callback: function() {
+        //     customCallbackFunc();
+        // } }
+
     ];
     Materialize.scrollFire(options);
 
