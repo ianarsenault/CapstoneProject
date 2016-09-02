@@ -997,19 +997,19 @@ and (max-width: 1275px){
 .unique-push {
     position: relative;
     margin: 10% 0 0 0;
-    background-color: rgba(255, 146, 65, 0.79)
+    background-color: rgba(255, 146, 65, 0.84)
 }
 /* Speed Content Card color */
 .speed-push {
     position: relative;
     margin: 10% 0 0 0;
-    background-color: rgba(255, 75, 65, 0.79);
+    background-color: rgba(255, 75, 65, 0.84);
 }
 /* Support Content Card color */
 .support-push {
     position: relative;
     margin: 10% 0 0 0;
-    background-color: rgba(65, 131, 255, 0.79);
+    background-color: rgba(65, 131, 255, 0.84);
 }
 /* Speed Image Overlay */
 .uniq-card-overlay {
@@ -1190,7 +1190,45 @@ and (max-width: 1275px){
 .vs-icon:hover {
     background-color:#68217A;
 }
-
+/*.unique-link {*/
+    /*color: #00b8d4 !important;*/
+/*}*/
+/*.data-link {*/
+    /*color: #000;*/
+/*}*/
+.card .card-action #uniqueLink {
+    color: #fdd09e;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #uniqueLink:hover {
+    color: #ffffff;
+}
+.card .card-action #datalink {
+    color: #fdbdbd;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #datalink:hover {
+    color: #ffffff;
+}
+.card .card-action #supportLink {
+    color: #c1caff;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #supportLink:hover {
+    color: #ffffff;
+}
 /*******************************************
 **        Testimonials  Styling           *
 ******************************************/
@@ -1676,6 +1714,14 @@ and (max-width: 1799px) {
     margin-bottom: 100px;
 }
 
+.materialboxed.active {
+    -webkit-transition: margin-left 0.3s ease-in;
+    -moz-transition: margin-left 0.3s ease-in;
+    -ms-transition: margin-left 0.3s ease-in;
+    -o-transition: margin-left 0.3s ease-in;
+    transition: margin-left 0.3s ease-in;
+    margin-left: 160px !important;
+}
 /* floralwhite gainsboro ghost white sandybrown */
 
 /*******************************************
@@ -3000,7 +3046,17 @@ nav .breadcrum-nav {
 .pinned {
     position: fixed !important;
 }
-
+/* Checkout Font in banner-bottom */
+.chkout-co-name {
+    font-size: 6vmax;
+    color: #ffffff;
+    margin-top: 0!important;
+    text-shadow: 2px 2px 1px #000;
+}
+/* Bottom Banner of Checkout Page */
+.bottom-sec {
+    background-color: #f1f1f1 !important;
+}
 
 /******************************************
 **           Confirmation Footer         **
