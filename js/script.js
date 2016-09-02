@@ -539,14 +539,16 @@ $(document).ready(function () {
     $(".Message-Header-Top").fadeIn(5000);
     // Side-nav Initialization
     $(".button-collapse").sideNav();
+    // Materialbox Initialization
+    $('.materialboxed').materialbox();
     // Modal Initialization
     $('.modal-trigger').leanModal();
     // Parallax Initialization
     $('.parallax').parallax();
     // Dropdown Initialization
     $('.dropdown-button').dropdown();
-    // Scrollspy Initialization
-    //$('.scrollspy').scrollSpy();
+
+    // Scrollspy function
     activeScrollspy();
 
     // Carousel Slider item change
@@ -579,7 +581,5 @@ $(document).ready(function () {
     //$("input['type=radio'][required]").css({display: "inline", height: 0, padding: 0, width: 0});
     //$('#chkEHR[required]').css({visibility: "visible", marginLeft: "200px"});
 
-    // PUSHPIN
-   // $('.breadcrumb-nav .bcrumb-hvr').pushpin({ top: $('.bcrumb-hvr').offset(50).top });
 
 });

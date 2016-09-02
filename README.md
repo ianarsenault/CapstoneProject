@@ -14,8 +14,8 @@ Documentation Site:
 * Contact form (1/2 complete - Sever Side needed)
 * Checkout system using PHP MySQL (1/2 complete - Sever Side needed)
  * Pull drop down lists from DB (State, CC Month + Year )
-* Buy -> Download 
-* Order Confirmation page
+* Buy -> Download  
+* Order Confirmation page (Layout complete)
 * Detail write ups for information throughout website (1/2 complete)
 * Nav links on Checkout and Confirm work with index scrollspy
 
@@ -25,13 +25,9 @@ Documentation Site:
 * Parallax Jumbotron
  * Final Image or video choice
  * Overlay text / company + product details
-[x] About 
-* Product (detailed description)
- * Uniqueness
- * ~~Speed~~
- * Data
- * Support
- * ~~Change Pricing - more reasonable~~
+- [x] About 
+- [x] Product (detailed description)
+
 * Testimonials
  - [x] Reset timer on slide indicator click
  *  Customers - Patients Reviews (Final Drafts)
@@ -64,25 +60,12 @@ Documentation Site:
  - [x] 
     
 ## Weekly Breakdown
-* Week 6 - ~~Remove scrollspy active class from side-nav when it's not on xl screens~~
-       -  ~~Add transition hover effect to card form~~
-        - ~~Change scrolling opacity when side-nav scroll spy browser width is less than 993px~~ Changed
-        * ~~Get rid of opacity change on navbar in checkout page + added fixed breadcrumbs - hide on less than _px~~
-        * ~~Add submit form button on checkout page~~
-        * ~~Validation to checkout forms~~
-        * ~~Finalize order complete page~~
-        * ~~Set breadcrumbs to z-index greater than - or just hide~~
-        * ~~Clean up required on select drop downs - display inline is showing, and allowing default drop down~~
-        
-        
-* Week 7
-       * Checkout page links in navigation and side-nav - add icons and page routes
-       * Start PHP crossover 
-       * Start MVC 
-       * Create States/Months/Year Tables - Pull into select drop downs
-       * Start sending form data to MySQL Database
+* ~~Weeks 1-7~~   
 * Week 8
        * Overlay on parallax containers - add text or title and brief overview
+       * PHP MySQL Functions for form data
+       * Create States/Months/Year Tables - Pull into select drop downs
+       * Start sending form data to MySQL Database
 * Week 9
        * Checkout page links in navigation and side-nav - add icons and page routes
 * Week 10
