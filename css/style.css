@@ -1,0 +1,3035 @@
+/*
+ *   Stylesheet for Protech Solutions Website
+ *  Authors - Ian Arsenault & Jameson Arsenault
+ *  Github - https://github.com/GorgonsMaze/CapstoneProject
+ */
+
+html,
+body,
+#map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Greate vibes cursive font */
+.great-vibes {
+    font-family: 'Great Vibes', cursive;
+}
+/* Raleway Font */
+.ralewayThin {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.ralewayBold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.ralewayXBold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+/* Abel Font */
+.abel {
+    font-family: 'Abel', sans-serif;
+}
+
+/* Titillium Web Font */
+.tWeb400 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:300;
+}
+.tWeb700 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:700;
+}
+/* Open Sans */
+.open-sans3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+.open-sans4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+.open-sans7 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Iconsolata Font -Chat */
+.inconsolata {
+    font-family: 'Inconsolata', sans-serif ;
+}
+/* Signature Font -- */
+.kristi {
+    font-family: 'Kristi', cursive;
+}
+.signature {
+    font-size: 24px;
+}
+/*******************************************
+**      Material Design Icon Styling       *
+******************************************/
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff) format('woff');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/*******************************************
+**     Header + Navigation  Styling       *
+******************************************/
+/* Styling for Fixed Side-nav on large screens */
+header, main, footer {
+    padding-left: 300px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width : 1550px) {
+    header, main, footer {
+        padding-left: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+}/* / fixed side-nav - large screens */
+
+/* Side-nav li divider */
+.side-nav .divider {
+    margin: 0 0 0 0 !important;
+}
+
+.side-nav.fixed {
+    margin-top: 64px;
+}
+nav {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+}
+/* Changes navigation size and chat button size on small and down devices */
+@media only screen
+and (max-width: 601px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 44px;
+        line-height: 44px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 1.5rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.1rem;
+        height: 44px;
+        line-height: 44px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 44px;
+    }
+    .side-nav.fixed {
+        margin-top: 44px !important;
+    }
+    .btn-floating.btn-large, .btn-floating.btn-large i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        width: 44.4px !important;
+        height: 44.4px!important;
+        line-height: 44.4px;
+    }
+
+    .btn-large {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 44px!important;
+        line-height: 44px!important;
+    }
+}
+/* Changes navigation size and chat button size on medium devices */
+@media only screen
+and (min-width: 601px)
+and (max-width: 993px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 54px;
+        line-height: 54px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 1.8rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.4rem;
+        height: 54px;
+        line-height: 54px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 54px;
+    }
+    .side-nav.fixed {
+        margin-top: 54px;
+    }
+    .btn-floating.btn-large, .btn-floating.btn-large i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        width: 49.4px !important;
+        height: 49.4px!important;
+        line-height: 49.4px;
+    }
+
+    .btn-large {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 49px!important;
+        line-height: 49px!important;
+    }
+}
+/* Changes navigation size and chat button size on large and up devices */
+@media only screen
+and (min-width: 993px) {
+    nav {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        height: 64px;
+        line-height: 64px;
+    }
+    nav .brand-logo {
+        -webkit-transition: font-size .7s ease-in-out;
+        -moz-transition: font-size .7s ease-in-out;
+        -ms-transition: font-size .7s ease-in-out;
+        -o-transition: font-size .7s ease-in-out;
+        transition: font-size .7s ease-in-out;
+        font-size: 2.1rem;
+    }
+
+    a.button-collapse, nav a.button-collapse i {
+        -webkit-transition: all .7s ease-in-out;
+        -moz-transition:  all .7s ease-in-out;
+        -ms-transition:  all .7s ease-in-out;
+        -o-transition:  all .7s ease-in-out;
+        transition:  all .7s ease-in-out;
+        font-size: 2.4rem;
+        height: 64px;
+        line-height: 64px;
+    }
+    .navbar-fixed {
+        -webkit-transition: height .7s ease-in-out;
+        -moz-transition:  height .7s ease-in-out;
+        -ms-transition:  height .7s ease-in-out;
+        -o-transition:  height .7s ease-in-out;
+        transition:  height .7s ease-in-out;
+        height: 64px;
+    }
+    .home-nav {
+        height: 44px!important;
+    }
+}
+
+/* Changes navigation size and chat button size on medium devices */
+@media only screen
+and (max-width: 993px) {
+    .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        background-color: #3b5dad;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #2b3870;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #2b3870;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+}
+
+nav ul a {
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #000;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+
+/* HOVERABLE NAV BUTTON */
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(0, 184, 255, 0.16);*/
+}
+/* ACTIVE NAV BUTTON */
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav.nav-wrapper a {
+    color: #000;
+}
+nav .brand-logo {
+    color: #000 !important;
+}
+nav .button-collapse {
+    margin-left: 10px !important;
+    color: #3b3b3b !important;
+}
+
+nav .nav-wrapper {
+    padding-right: 20px;
+}
+
+.side-nav {
+    box-shadow: none !important;
+}
+
+@media only screen
+and (min-width: 993px)
+and (max-width: 1549px) {
+    .side-nav.fixed {
+        display: none !important;
+    }
+
+}
+@media only screen
+and (max-width: 600px) {
+    .side-nav.fixed {
+        margin-top: 56px;
+    }
+
+}
+
+/*@media only screen and (min-width: 993px) {*/
+    /*.navbar-fixed {*/
+        /*-webkit-transition: height .7s ease-in-out;*/
+        /*-moz-transition: height .7s ease-in-out;*/
+        /*-ms-transition: height .7s ease-in-out;*/
+        /*-o-transition: height .7s ease-in-out;*/
+        /*transition: height .7s ease-in-out;*/
+        /*height: 64px;*/
+    /*}*/
+/*}*/
+
+
+@media only screen
+and (min-width: 1550px) {
+    .side-nav.fixed {
+        margin-top: 0 !important;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-transform: translateX(-105%);
+        transform: translateX(-105%);
+    }
+    .side-nav.fixed.right-aligned {
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+    }
+    .side-nav a {
+        padding: 0 16px;
+    }
+    .side-nav .userView {
+        padding: 16px 16px 0;
+    }
+    .side-nav {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    }
+
+    /* .side-nav .userView {
+         overflow: hidden;
+         position: relative;
+         padding: 32px 32px 0;
+         margin-bottom: 0;
+         color: #7b7b7b;
+         background-color: #ef4747;
+     }
+
+     .max-side-nav {
+         color: #ffffff;
+         background-color: #464646 !important;
+
+     }
+
+     .side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a>[class*="mdi-"], .side-nav li>a>i.material-icons {
+         color: rgba(255, 255, 255, 0.54);
+     }
+
+     .side-nav.fixed a {
+         color: rgb(255, 255, 255) !important;
+         -webkit-transition: background-color 0.3s ease-in-out;
+         -moz-transition: background-color 0.3s ease-in-out;
+         -ms-transition: background-color 0.3s ease-in-out;
+         -o-transition: background-color 0.3s ease-in-out;
+         transition: background-color 0.3s ease-in-out;
+     }
+     .side-nav.fixed .main-side-links a:hover {
+         background-color: rgba(255, 255, 255, 0.22) !important;
+     }
+
+     .side-nav .userView .circle {
+         height: 64px;
+         width: 64px;
+         margin-left: 64px;
+     }
+
+
+     .side-nav .userView .name {
+         margin-top: 16px;
+         font-weight: 500;
+         text-shadow: 2px 1px #8a0300;
+         letter-spacing: 0.28em;
+     }
+     .userView .name:hover {
+         background-color: transparent !important;
+     }
+
+     .side-nav .userView .email {
+         font-weight: 100 !important;
+         font-size: smaller;
+         text-shadow: 1px 1px #8a0300;
+         letter-spacing: 0.06em;
+     }
+
+     .userView .email:hover {
+         background-color: transparent !important;
+     }
+
+      .active-nav {
+         -webkit-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         -moz-box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         box-shadow: inset 0 -4px 0 0 #ffad46 !important;
+         -webkit-transition: box-shadow 0.5s ease-in-out;
+         -moz-transition: box-shadow 0.5s ease-in-out;
+         -ms-transition: box-shadow 0.5s ease-in-out;
+         -o-transition: box-shadow 0.5s ease-in-out;
+         transition: box-shadow 0.5s ease-in-out;
+     } */
+
+
+    .side-nav .userView {
+        overflow: hidden;
+        position: relative;
+        padding: 32px 32px 0;
+        margin-bottom: 0;
+        color: #ffffff;
+        background-color: #3b5dad;
+    }
+
+    .side-nav .userView .circle {
+        height: 64px;
+        width: 64px;
+        margin-left: 64px;
+    }
+
+
+    .side-nav .userView .name {
+        margin-top: 16px;
+        font-weight: 500;
+        text-shadow: 2px 1px #2b3870;
+        letter-spacing: 0.28em;
+    }
+    .userView .name:hover {
+        background-color: transparent !important;
+    }
+
+    .side-nav .userView .email {
+        font-weight: 100 !important;
+        font-size: smaller;
+        text-shadow: 1px 1px #2b3870;
+        letter-spacing: 0.06em;
+    }
+
+    .userView .email:hover {
+        background-color: transparent !important;
+    }
+
+    .active-nav {
+        -webkit-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        -moz-box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        box-shadow: inset 0 -4px 0 0 #00c962 !important;
+        -webkit-transition: box-shadow 0.5s ease-in-out;
+        -moz-transition: box-shadow 0.5s ease-in-out;
+        -ms-transition: box-shadow 0.5s ease-in-out;
+        -o-transition: box-shadow 0.5s ease-in-out;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+
+    .btn-floating {
+        background-color: #6c7574 !important;
+    }
+
+    .btn-floating:hover {
+        background-color: #373737 !important;
+    }
+
+}
+
+/*#slide-out {*/
+    /*-webkit-transition: all 0.5s ease-in-out;*/
+    /*-moz-transition: all 0.5s ease-in-out;*/
+    /*-ms-transition: all 0.5s ease-in-out;*/
+    /*-o-transition: all 0.5s ease-in-out;*/
+    /*transition: all 0.5s ease-in-out;*/
+/*}*/
+@media only screen and (min-width: 1550px) {
+    .hide-on-xlarge {
+        display: none !important;
+    }
+    nav {
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        height: 46px;
+        line-height: 46px;
+    }
+    .breadcrumb-nav {
+        margin-top: -20px!important;
+    }
+}
+
+
+@media only screen and (min-width: 1550px) {
+    nav .brand-logo.center-on-xlarge {
+        left: 42%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+/* Gives padding to company name on medium and large screens */
+@media only screen
+and (min-width: 993px)
+and (max-width: 1549px) {
+    nav .brand-logo {
+        margin-left: 25px !important;
+    }
+}
+
+/** Hidden Checkout Side-nav button *
+*   Translates up under Buy Btn */
+.hide-checkout {
+    -webkit-transform: translatey(-49px);
+    -moz-transform: translatey(-49px);
+    -ms-transform: translatey(-49px);
+    -o-transform: translatey(-49px);
+    transform: translatey(-49px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* Hides the Checkout Side-Nav Btn */
+.hidden-checkout-btn {
+    opacity:0;
+    -webkit-transition: opacity 0.4s ease-in;
+    -moz-transition: opacity 0.4s ease-in;
+    -ms-transition: opacity 0.4s ease-in;
+    -o-transition: opacity 0.4s ease-in;
+    transition: opacity 0.4s ease-in;
+}
+/*.hidden-checkout {*/
+    /*display: none;*/
+    /*-webkit-transition: all 0.3s ease-in-out;*/
+    /*-moz-transition: all 0.3s ease-in-out;*/
+    /*-ms-transition: all 0.3s ease-in-out;*/
+    /*-o-transition: all 0.3s ease-in-out;*/
+    /*transition: all 0.3s ease-in-out;*/
+/*}*/
+/*#buySidenav:hover .hidden-checkout {*/
+    /*display: block !important;*/
+/*}*/
+/* Breadcrumbs for Checkout and Complete Pages */
+
+.breadcrumb {
+    font-size: 13px !important;
+    color: rgb(110, 110, 110) !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.breadcrumb:before {
+    color: rgba(93, 93, 93, 0.7) !important;
+}
+
+.breadcrumb:last-child {
+    color: #000000;
+}
+.breadcrumb-nav {
+    background-color: #f1f1f1 !important;
+    box-shadow: none !important;
+   /* margin-left: 25px !important; */
+    height: 52px !important;
+    margin-top: -10px;
+    /*height: 42px !important;*/
+}
+/* Breadcrumbs for each section of homepage */
+.breadcrumb-nav-home {
+    /*background-color: transparent;*/
+    background-color: rgb(216, 228, 237) !important;
+    box-shadow: none !important;
+    padding-left: 25px !important;
+    height: 52px !important;
+    margin-top: -10px;
+    /*height: 42px !important;*/
+    line-height:54px;
+}
+.bcrumb-hvr {
+    z-index: 100!important;
+    margin-left: 25px!important;
+}
+
+
+/*.chkout-headder {*/
+    /*background-color: #f1f1f1 !important;*/
+/*}*/
+
+/* Adds inset bottom border to active scrollspy buttons */
+.active-nav {
+    -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    -moz-transition: box-shadow 0.5s ease-in-out;
+    -ms-transition: box-shadow 0.5s ease-in-out;
+    -o-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 993px) {
+    .active-nav {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+}
+/* Drop Down button styling */
+.dropdown-content li > a, .dropdown-content li > span {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+
+
+/*********** ACTIVE NAVIGATION STYLING
+
+    -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    box-shadow: inset 0 -7px 0 0 #00b0ff;
+
+
+****************************************************************/
+
+/* Section title underline */
+hr {
+    border-style: none;
+    border-width: 0;
+    margin: 33px auto 63px;
+    background-color: #bbb;
+    width: 100px;
+    height: 5px;
+}
+.complete-box {
+    border-bottom: 1px solid #c0c0c0;
+    margin: 0 30px 0 20px!important;
+}
+.team-hr {
+    border-style: none;
+    border-width: 0;
+    margin: 13px auto 10px;
+    background-color: #bbb;
+    width: 100px;
+    height: 2px;
+}
+/* Hover box shadow for skills card in about me */
+.shadow-hvr {
+    transition: box-shadow .25s;
+    -webkit-box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+    box-shadow: 0px 16px 20px -5px rgba(0,0,0,0.54);
+}
+.shadow-hvr:hover {
+    /*-webkit-box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);
+    -moz-box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);
+    box-shadow: 0px 79px 77px -20px rgba(199,199,199,1);*/
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+/*******************************************
+**           About  Styling             *
+******************************************/
+/* NOT USING AT THE MOMENT
+#fireAboutCard li {*/
+    /*opacity: 0;*/
+/*}*/
+
+/*.cap-P::first-letter{*/
+    /*font-size: 200%;*/
+    /*color: #8A2BE2;*/
+    /*margin-bottom: 0%;*/
+/*}*/
+/* About Card  -  scrollfire  */
+#aboutImg li, #aboutTitle li, #aboutParagraphs li  {
+    opacity:0;
+}
+
+/* Capital Letter - First letter of 1st paragraph in about */
+.cap-P{
+    float: left;
+    color: #3b5dad;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin: -20px 0 -20px 0;
+}
+.about-ptwo {
+    margin-top: 40px !important;
+}
+/* Capital Letter - First letter of 2nd paragraph in about */
+.cap-o{
+    float: left;
+    color: #0b9933;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    margin: -20px 0 -20px 0;
+
+}
+
+.toast {
+    border-radius: 2px;
+    top: 0;
+    width: auto;
+    clear: both;
+    margin-top: 10px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    min-height: 48px;
+    line-height: 1.5em;
+    word-break: break-all;
+    background-color: #323232;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+.Message-Header-Top {
+    margin: 30px 0 30px 0;
+    font-family: 'Titillium Web', sans-serif;
+    /* For fade in on load */
+    display: none;
+
+}
+.title-top {
+    font-size: 22px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+.top-dl-btn {
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease ;
+}
+.top-dl-btn:hover {
+    color: #2e7d32;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    -ms-transform:scale(.75);
+    -o-transform: scale(.75);
+    transform: scale(.75);
+}
+
+/*.top-head-btn{
+    color: #fff;
+    background-color: #009d03;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+    margin-top: -10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:300;
+}
+.top-head-btn:hover {
+    color: #fff;
+    background-color: #00ca03;
+}
+.top-head-btn > .top-dl-btn{
+    margin-left: 10px;
+}*/
+
+.about-section {
+    background-color: #ECECEC;
+    padding: 30px 0 60px 0;
+}
+.about-logo-container {
+    height:256px;
+    width:256px;
+}
+
+
+/*******************************************
+**          Product  Styling             *
+******************************************/
+/* Main section class */
+.product-section {
+    padding: 30px 0 60px 0;
+    background-color: #f8f8f8 !important;
+}
+/* Application Title */
+#fireApplicationTitle li, #fireApplicationDetails li, #collapseApps li,
+#uniqueCard1 li, #uniqueCard2 li, #speedDataCards li, #supportCard li,
+#speedImage li, #speedContent li, #supportImage li, #supportContent li {
+    opacity: 0;
+}
+
+.active-bdcb {
+
+}
+.apps-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #6b6b6b;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
+.apps-header:hover {
+    background-color: #919191;
+}
+span.badge.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #f3930b;
+    border-radius: 2px;
+    position: relative;
+    padding: 4px 7px 4px 4px;
+    left: 15px;
+}
+
+.app-collaps {
+    margin-bottom: 80px;
+}
+@media only screen
+and (max-width: 450px){
+    span.badge.new {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 601px)
+and (max-width: 730px){
+    span.badge.new {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 993px)
+and (max-width: 1275px){
+    span.badge.new {
+        display: none !important;
+    }
+}
+/* Unique Content Card color */
+.unique-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(255, 146, 65, 0.84)
+}
+/* Speed Content Card color */
+.speed-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(255, 75, 65, 0.84);
+}
+/* Support Content Card color */
+.support-push {
+    position: relative;
+    margin: 10% 0 0 0;
+    background-color: rgba(65, 131, 255, 0.84);
+}
+/* Speed Image Overlay */
+.uniq-card-overlay {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Speed Image Overlay:after color */
+.uniq-card-overlay:after {
+    content: '';
+    /*background-color: rgba(65, 174, 255, 0.16);*/
+    /*background-color: rgba(106, 44, 185, 0.3);*/
+    background-color: rgba(65, 174, 255, 0.16);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+/* On hover change opacity of overlay color */
+#uniqueone:hover .uniq-card-overlay:after  {
+    background-color: transparent;
+}
+/* Speed Image Overlay */
+.speed-img-overlay {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Speed Image Overlay: after color  */
+.speed-img-overlay:after {
+    content: '';
+    background-color: rgba(65, 174, 255, 0.16);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+/* On hover change opacity of overlay color */
+#speedcard:hover .speed-img-overlay:after {
+    background-color: transparent;
+}
+
+.card .card-image #righter {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+    right:0;
+    padding: 20px;
+}
+/* Support Image Overlay */
+.support-img-overlay {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Support Image Overlay: after color  */
+.support-img-overlay:after {
+    content: '';
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*background-color: rgba(20, 83, 185, 0.5);*/
+    /*background-color: rgba(106, 44, 185, 0.3);*/
+    background-color: rgba(65, 174, 255, 0.16);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+/* On hover change opacity of overlay color */
+#supprt1:hover .support-img-overlay:after {
+    background-color: transparent;
+}
+
+/* Mirror flip Support Image */
+.image-overl-card {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: "FlipH";
+}
+
+
+/* ON HOLD FOR NOW- DOESN'T BREAK ANYTHING
+.image-overl-card {*/
+    /*display: block;*/
+/*}*/
+
+/* IMAGE SCALE
+#horiz-one:hover .image-overl-card {
+    transform: scale(1.25);
+}*/
+#fireTechnologyTitle li, #techIcons1 li, #techIcons2 li  {
+    opacity:0;
+}
+/* Support row margin */
+.bottom-row {
+    margin-bottom: 60px;
+}
+/* Tool Icon row 1 */
+.tool-row-1 {
+    margin-bottom: 60px;
+}
+/* Tool Icon row 2 */
+.tool-row-2 {
+    margin-bottom: 100px;
+}
+/****************************/
+/* Icon Color Styling */
+.devicon-html5-plain.colored,.devicon-css3-plain.colored,.devicon-javascript-plain.colored,
+.devicon-jquery-plain-wordmark.colored,.devicon-bootstrap-plain.colored,.devicon-cplusplus-plain.colored,
+.devicon-csharp-plain.colored,.devicon-jetbrains-plain.colored,.devicon-git-plain.colored,
+.devicon-foundation-plain.colored,.devicon-php-plain.colored,.devicon-mysql-plain-wordmark.colored,
+.devicon-sass-original.colored,.devicon-photoshop-line.colored,.devicon-illustrator-line.colored,
+.devicon-github-plain-wordmark.colored,.devicon-dot-net-plain-wordmark.colored {
+    color: #8b8b8b !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/*  Icon Hover Styling       *
+*******************************/
+/* Visual Studio Icon */
+.vs-icon{
+    background-color:#8b8b8b;
+    height:6rem;
+    width:6rem;
+    transition: 0.3s;
+}
+.devicon-html5-plain.colored:hover {
+    color: #ef6c00 !important;
+}
+
+.devicon-css3-plain.colored:hover {
+    color: #3d8fc6 !important;
+}
+.devicon-javascript-plain.colored:hover {
+    color: #f0db4f !important;
+    background-color: #000;
+}
+.devicon-jquery-plain-wordmark.colored:hover {
+    color: #0769ad !important;
+}
+.devicon-csharp-plain.colored:hover {
+    color: #68217a !important;
+}
+.devicon-jetbrains-plain.colored:hover {
+    color: #F68B1F !important;
+}
+.devicon-php-plain.colored:hover {
+    color: #6181b6 !important;
+}
+.devicon-mysql-plain-wordmark.colored:hover {
+    color: #00618a !important;
+}
+.devicon-github-plain-wordmark.colored:hover {
+    /*color: #181616;*/
+    color: #1a0833 !important;
+}
+.devicon-dot-net-plain-wordmark.colored:hover {
+    color: #00b8d4 !important;
+}
+.vs-icon:hover {
+    background-color:#68217A;
+}
+/* END DEVICON STYLING */
+
+/* Application Cards - Unique */
+.card .card-action #uniqueLink {
+    color: #fdd09e;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #uniqueLink:hover {
+    color: #ffffff;
+}
+/* Application Cards - Data */
+.card .card-action #datalink {
+    color: #fdbdbd;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #datalink:hover {
+    color: #ffffff;
+}
+/* Application Cards - Support */
+.card .card-action #supportLink {
+    color: #c1caff;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -ms-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+}
+.card .card-action #supportLink:hover {
+    color: #ffffff;
+}
+/*******************************************
+**        Testimonials  Styling           *
+******************************************/
+/* Main section class */
+.testimonials-section {
+    background-color: #ffffff;
+    padding: 30px 0 60px 0;
+
+}
+#testimonialTitle li, #testimonialSlider li, #hiddenTestimonials li  {
+    opacity: 0;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid #417cee;
+}
+
+.card-img-container {
+    height: 200px;
+    width:182px;
+}
+
+.test-row {
+    margin-bottom: 0 !important;
+}
+
+
+/* First Carousel slide */
+.one {
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person1.png') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+.one:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+/* Second Carousel slide */
+.two {
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person2.png') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+.two:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* Third Carousel slide */
+.three {
+    background:rgba(205, 222, 255, 0.43) url('../images/images/person3.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+
+.three:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* Fourth Carousel slide */
+.four {
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person4.jpeg') no-repeat center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+
+
+}
+
+.four:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* Fifth Carousel slide */
+.five {
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person5.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+
+.five:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.first-title {
+    /* background: url("https://hd.unsplash.com/photo-1468743428993-661b9309fa2c") no-repeat;
+
+    https://hd.unsplash.com/photo-1414265247351-4afd13a3b4e6
+
+    */
+    background: rgba(205, 222, 255, 0.43) url('../images/images/city-testim.jpeg') no-repeat left center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-position: 0 0;
+    height: 100%;
+}
+
+.first-title:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.52) 47%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.52) 47%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.52) 47%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* Save for small device
+.carousel {
+    display: none !important;
+}*/
+
+.carousel.carousel-slider {
+    margin: 30px 0 100px 0 !important;
+}
+
+/* Carousel Indicator Active */
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(255, 255, 255, 0.19);
+    border: 1px solid white;
+}
+/* Carousel Indicator */
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0.87);
+    transition: background-color .3s;
+    border-radius: 50%;
+}
+/* Hover transition of background color on indivator */
+.carousel .indicators .indicator-item:hover {
+    background-color: rgb(89, 137, 255);
+    -webkit-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -ms-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+}
+@media only screen and (min-width: 1550px) {
+    blockquote {
+        margin: 20px 0;
+        padding-left: 1.5rem;
+        border-left: 5px solid #175fff;
+    }
+    .carousel .indicators .indicator-item:hover {
+        background-color: rgb(23, 95, 255);
+        -webkit-transition: background-color .4s ease-in-out;
+        -moz-transition: background-color .4s ease-in-out;
+        -ms-transition: background-color .4s ease-in-out;
+        -o-transition: background-color .4s ease-in-out;
+        transition: background-color .4s ease-in-out;
+    }
+
+}
+
+
+@media only screen and (min-width: 1220px) {
+    .carousel {
+        height: 500px !important;
+    }
+}
+/* Slide One Quote - Testimonial */
+.test-titles {
+    font-size: 10vw !important;
+    text-shadow: 2px 2px 0 #000;
+}
+
+@media only screen and (max-width: 993px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 15%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 993px)
+and (max-width: 1200px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: -5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1200px)
+and (max-width: 1350px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1351px)
+and (max-width: 1549px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 20%;
+        top: 5%;
+        width: 40%;
+    }
+}
+@media only screen
+and (min-width: 1550px)
+and (max-width: 1590px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 12%;
+        top: -5%;
+        width: 40%;
+    }
+}
+
+@media only screen
+and (min-width: 1591px)
+and (max-width: 1799px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 13%;
+        top: -5%;
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    .slider-quotebox-first {
+        position: relative;
+        left: 13%;
+        top: -16%;
+        width: 40%;
+    }
+}
+
+.slider-quotebox1 {
+    position: relative;
+    left: 50%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Two Quote - Testimonial */
+.slider-quotebox2 {
+    position: relative;
+    left: 6%;
+    top: 15%;
+    width: 40%;
+}
+/* Slide Three Quote - Testimonial */
+.slider-quotebox3 {
+    position: relative;
+    left: 63%;
+    top: 15%;
+    width: 30%;
+}
+/* Slide Four Quote - Testimonial */
+.slider-quotebox4 {
+    position: relative;
+    left: 3%;
+    top: 15%;
+    width: 30%;
+}
+/* Slide Five Quote - Testimonial */
+.slider-quotebox5 {
+    position: relative;
+    left: 10%;
+    top: 15%;
+    width: 40%;
+}
+
+.carousel .carousel-item {
+    display: none;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+/*******************************************
+**            Demo  Styling              *
+******************************************/
+/* Main section class */
+.demo-section{
+    background-color: rgb(249, 253, 251);
+    padding: 30px 0 90px 0;
+}
+#demoTitle li, #tabHeader li, #tabContent li  {
+    opacity:0;
+}
+
+/* Icons in tabs header */
+.tab-icon {
+    vertical-align: middle;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+.tabs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 48px;
+    /*    margin: 0 auto;*/
+    width: 100%;
+    white-space: nowrap;
+    margin: 0 auto 60px;
+}
+.tabs .tab a {
+    color: #289e28;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+.tabs .tab a:hover {
+    color: #32c532;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #294fea;
+    will-change: left, right;
+}
+.tabs-section {
+    margin-bottom: 100px;
+}
+/* Change the margins on large photos - will need to adjust this as it's awful on animation */
+.materialboxed.active {
+    -webkit-transition: margin-left 0.3s ease-in;
+    -moz-transition: margin-left 0.3s ease-in;
+    -ms-transition: margin-left 0.3s ease-in;
+    -o-transition: margin-left 0.3s ease-in;
+    transition: margin-left 0.3s ease-in;
+    margin-left: 160px !important;
+}
+
+
+/*******************************************
+**          Purchase/Buy  Styling        *
+******************************************/
+/* Main section class */
+.buy-section {
+    background-color: rgb(231, 235, 233);
+    padding: 30px 0 60px 0;
+}
+/* Purchase  - scrollfire */
+#purchaseTitle li, #portalCard li, #ehrCard li,
+#billingCard li, #priceOverviewCard li, #ehrOverviewCard li {
+    opacity:0;
+}
+
+table.highlight > tbody > tr:hover {
+    background-color: rgba(184, 184, 184, 0.64) !important;
+}
+
+/* Div for horizontal card overlay */
+.card-img-overlay-main {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-main:after {
+    content: '';
+    background-color: rgba(255, 35, 0, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Div for horizontal card overlay */
+.card-img-overlay-secondary {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-secondary:after {
+    content: '';
+    background-color: rgba(134, 53, 255, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Div for horizontal card overlay */
+.card-img-overlay-third {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+/* Psuedo element sets an overlay ontop of horizontal card image */
+.card-img-overlay-third:after {
+    content: '';
+    background-color: rgba(37, 73, 255, 0.73);
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.card-title-purchase {
+    font-size: 24px;
+    font-weight: 300;
+}
+.card-title-purchase {
+    color: #fff;
+    position: absolute;
+    top:35%;
+    bottom:0;
+    left: 0;
+    right: 0 !important;
+    padding: 20px;
+    font-size: 1.4vw!important;;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -moz-transition: opacity 0.6s ease-in-out;
+    -ms-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+#purchaseCard:hover .card-title-purchase {
+    opacity: 0!important;
+}
+/* Text shadow for title */
+.buy-title-main {
+    text-shadow: 2px 2px 0 #6f0202;
+}
+/* Text shadow for title */
+.buy-title-secondary {
+    text-shadow: 2px 2px 0 #1f0040;
+}
+/* Large Pricing title */
+.buy-card-price {
+    position: absolute;
+    color: #fff;
+    top:22%;
+    bottom:0;
+    left: 0;
+    right: 0 !important;
+    padding: 20px;
+    font-size: 5vw;
+    text-shadow: 2px 2px 0 #000;
+    visibility: hidden;
+    opacity: 0!important;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+.monthly-title {
+    font-size: 1.2vmax !important;
+    font-style: italic;
+    position: relative;
+}
+#purchaseCard:hover .buy-card-price {
+    opacity: 1 !important;
+    visibility: visible;
+}
+/* Id for purchase card to get rid of overlay on hover */
+#purchaseCard:hover .card-img-overlay-main:after {
+    background-color: rgba(255, 5, 5, 0.44);;
+}
+#purchaseCard:hover .card-img-overlay-secondary:after {
+    background-color: rgba(134, 53, 255, 0.44);;
+}
+#purchaseCard:hover .card-img-overlay-third:after {
+    background-color: rgba(37, 73, 255, 0.44);;
+}
+
+/* Change size of purchase title text at screen resize */
+@media only screen
+and (min-width: 850px)
+and (max-width: 1100px) {
+    .card-title-purchase {
+        top: 30%;
+        font-size: 2vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+}
+/* Change size of purchase title text at screen resize */
+@media only screen
+and (max-width: 850px){
+    .card-title-purchase {
+        top: 25%;
+        font-size: 2vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+}
+@media only screen
+and (max-width: 600px){
+    .card-title-purchase {
+        top: 35%;
+        font-size: 6vw!important;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+    .buy-card-price {
+        position: absolute;
+        color: #fff;
+        top: 22%;
+        bottom: 0;
+        left: 0;
+        right: 0 !important;
+        padding: 20px;
+        font-size: 10vw;
+    }
+}
+.buy-blocks {
+    margin: 30px 0 80px 0;
+}
+.star-icon {
+    vertical-align: middle;
+    margin-top: -5px;
+    color: #ff9b02;
+}
+/* Purchase button in purchase section */
+.purchase-btn {
+    background-color: #388e3c ;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.purchase-btn:hover {
+    background-color: #48b44d;
+}
+.money-icon {
+    margin-right: 5px !important;
+}
+/* Demo button in purchase section */
+.demo-btn {
+    background-color: #be3407;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.demo-btn:hover {
+    background-color: #e74108;
+}
+/* Spacing Section */
+.overview-table {
+    margin-bottom: 80px;
+}
+.purchase-overview {
+    margin-bottom:80px;
+}
+/*******************************************
+**           Contact  Styling             *
+******************************************/
+/* Main section class */
+.contact-section {
+    padding: 30px 0 60px 0;
+}
+/* Contact Section Scrollfire */
+#contactTitle li, #contactFrm li, #contactContainer li {
+    opacity:0;
+}
+/* Contact us form */
+.contact-form {
+    margin-bottom: 60px;
+}
+/* Paragraph & Detail box */
+.contact-details {
+    margin-bottom: 60px;
+}
+/* NOT IN USE NOW -- LEAVE */
+.card-form {
+    margin-top: 0;
+    padding: 30px;
+    overflow: auto;
+}
+.collection {
+    -webkit-transition: border 0.28s ease-in-out;
+    -moz-transition: border 0.28s ease-in-out;
+    -ms-transition: border 0.28s ease-in-out;
+    -o-transition: border 0.28s ease-in-out;
+    transition: border 0.28s ease-in-out;
+}
+.collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: none !important
+}
+
+.topper {
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.require {
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: #ff5555;
+    padding-left:10px;
+}
+.send-mail-btn {
+    background-color: #388e3c ;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.send-mail-btn:hover {
+    background-color: #48b44d;
+}
+
+/* label color */
+.input-field label {
+    color: #303030;
+    font-weight: 300;
+    /*letter-spacing: 1px;*/
+}
+/*
+label {
+    font-size: 0.8rem;
+    color: #000000;
+}*/
+/* Clears placeholder in form */
+input:focus::-webkit-input-placeholder {
+    -webkit-transition: color 0.3s ease;
+    color:transparent;
+}
+input:focus:-moz-placeholder {
+    -moz-transition: color 0.3s ease;
+    color:transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+    -moz-transition: color 0.3s ease;
+    color:transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+    -ms-transition: color 0.3s ease;
+    color:transparent;
+} /* IE 10+ */
+textarea.materialize-textarea:focus::-webkit-input-placeholder {
+    -webkit-transition: color 0.3s ease;
+    color:transparent;
+}
+textarea.materialize-textarea:focus:-moz-placeholder {
+    -moz-transition: color 0.3s ease;
+    color:transparent;
+} /* FF 4-18 */
+textarea.materialize-textarea:focus::-moz-placeholder {
+    -moz-transition: color 0.3s ease;
+    color:transparent;
+} /* FF 19+ */
+textarea.materialize-textarea:focus:-ms-input-placeholder {
+    -ms-transition: color 0.3s ease;
+    color:transparent;
+} /* IE 10+ */
+
+/*******************************************
+**          Google Map  Styling          *
+******************************************/
+/* Main section class */
+.googlemap-section {
+    background-color: #ffffff;
+    padding: 30px 0 60px 0;
+}
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+    height: 510px;
+    width: 100%;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    margin-bottom: 100px;
+}
+#googleTitle li, #googleContainer li {
+    opacity:0;
+}
+/*******************************************
+**       Developer Team  Styling          *
+******************************************/
+/* Main section class */
+.dev-section {
+    background-color: #ffffff;
+    padding: 30px 0 60px 0;
+}
+/* Dev Team  - Scrollfire */
+#devTitle li, #devOne li, #devTwo li  {
+    opacity:0;
+}
+.dev-row {
+    margin-bottom: 60px;
+}
+
+.fa {
+    margin: 0 4px;
+}
+.team-social-icons {
+    margin-bottom: 44px;
+}
+a .fa {
+    color: #ff893f !important;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+a .fa:hover {
+    color: #ff543e !important;
+}
+.team-txt {
+    color: #6d6d6d!important;
+}
+.team-titles {
+    font-size: 12px;
+    font-style: italic;
+}
+.twitter-box {
+    margin-bottom: 60px;
+}
+.twit-btn {
+    margin-bottom: 30px;
+}
+/*******************************************
+**         Social Media  Styling          *
+******************************************/
+.social-media-section {
+    padding: 30px 0 60px 0;
+}
+#socialTitle li, #socialContainer li {
+    opacity:0;
+}
+
+/*******************************************
+**           Footer  Styling             *
+******************************************/
+/* Live Chat Modal - Help Center */
+.chat-action-icon {
+    margin: 5px;
+    transition: all .7s ease-in-out;
+}
+.chat-action-icon > .material-icons:hover{
+    transition: all .3s ease-in-out;
+    color: #ff0114;
+    background-color: #eeeeee;
+}
+
+
+/* Social Media Icons in footer */
+.social-icons {
+    height: 36px;
+    width: 36px;
+    background-color: transparent;
+    border-radius: 38px;
+    border-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+}
+.social-icons:hover {
+    background-color: rgba(129, 226, 35, 0.54);
+    color: black;
+}
+
+.modal-header {
+    margin-right: -16px;
+}
+.modal-content > p.chat-header {
+    margin: 0 35px 0 35px !important;
+}
+
+.modal-footer >.btn-flat  > i.material-icons{
+    vertical-align: middle;
+}
+
+.chat-box {
+    height: 370px;
+    overflow: auto !important;
+}
+.rep-name {
+    color: #02a225;
+    font-size: larger;
+    text-decoration: underline;
+}
+.cust-name {
+    color: #2196f3;
+    font-size: larger;
+    text-decoration: underline;
+}
+div > .chat-box > .card-content {
+    overflow-y: scroll!important;
+}
+#modal-chat {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    height: 80%;
+    width: 55%;
+    margin: auto;
+    overflow: hidden!important;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow: hidden!important;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+
+.modal .modal-footer.chat-footer {
+    height: 85px !important;
+}
+
+.modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+}
+.modal.modal-fixed-footer .modal-content:not(.privacy-content) {
+    padding-top: 4px;
+    /*overflow-y: hidden !important;*/
+}
+/*
+.modal.modal-fixed-footer .modal-content .chat-content {
+    padding-top: 4px;
+    overflow: hidden !important;
+
+} &*/
+
+@media only screen
+and (min-width: 300px)
+and (max-width: 599px) {
+    .modal {
+        width: 95% !important;
+    }
+}
+@media only screen
+and (min-width: 600px)
+and (max-width: 993px) {
+    .modal {
+        width: 75% !important;
+    }
+}
+.card > .card-content > p {
+    margin-bottom: 10px !important;
+}
+input[type=text] {
+    margin: 0 0 0;
+}
+
+/* Font Awesome Icons in footer (not in use) */
+a .fa {
+    color: #9edeff;
+}
+.privacy-link {
+    margin-top: 21px;
+}
+
+footer.page-footer {
+    border-top: 1px solid #c3c3c3;
+    margin-top: 0 !important;
+    padding-top: 20px;
+    background-color: #ffffff;
+
+}
+footer.page-footer.container.foot-text h5 p {
+    color:#000000;
+}
+
+footer.page-footer .footer-copyright {
+    color: rgb(1, 1, 1);
+    background-color: rgba(51, 51, 51, 0.04);
+}
+/* Lower Left Fixed Chat Button */
+.btn-floating {
+    background-color: #2196f3;
+    -webkit-transition: background-color 0.6s ease-in-out;
+    -moz-transition: background-color 0.6s ease-in-out;
+    -ms-transition: background-color 0.6s ease-in-out;
+    -o-transition: background-color 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
+}
+.btn-floating:hover {
+    background-color: #1d67b0;
+}
+
+/*  Will animate upwards after 6 second delay */
+#fixChatBtn {
+    position: fixed;
+    bottom: -70px;
+    left: 20px;
+    z-index: 1100;
+}
+
+/* Fixed Chat Modal Button - bottom left */
+.fix-btn-transform {
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: moveUp;
+    -moz-animation-name: moveUp;
+    -o-animation-name: moveUp;
+    animation-name: moveUp;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    -o-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveUp  {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@-moz-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@-o-keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+    75% {
+        -webkit-transform: translateY(-105px);
+
+    }
+    100% {
+        -webkit-transform:translateY(-85px);
+
+    }
+}
+
+/****************************************
+ *         Landing Page Styling         *
+*****************************************/
+.loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,1);
+    z-index: 1200;
+}
+/***** CHANGE BACK WHEN LVIE!!!!!! ****************************/
+/* Entire Website
+.main-section {
+    display: none;
+}
+
+/* Stop scrolling class for overlay div
+.stop-scrolling {
+    height:100%;
+    overflow: hidden;
+}
+*/
+#fadediv {
+    display:none;
+    position: relative;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    /*margin-left: -100px;*/
+    z-index: 1050 !important;
+}
+
+
+/* Transition speed for progress bar */
+.progress {
+    position: relative;
+    top: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    height:10px;
+    display: block;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Position before transform animation */
+.logo-land {
+    position: relative;
+    top: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    height:10px;
+    display: block;
+    width: 230px;
+}
+
+.logo-transform {
+    /* Animation forwards keeps the animation stuck
+      on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: translateImg;
+    -moz-animation-name: translateImg;
+    -o-animation-name: translateImg;
+    animation-name: translateImg;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /* transform: translatex(26px) translatey(-100px); */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes translateImg  {
+    0% {
+        -webkit-transform: translateX(0px) translateY(0px);
+
+    }
+    100% {
+        -webkit-transform: translatex(26px) translatey(-100px);
+
+    }
+}
+
+@-moz-keyframes translateImg {
+    0% {
+        -moz-transform: translateX(0px) translateY(0px);
+
+    }
+    100% {
+        -moz-transform: translatex(26px) translatey(-100px);
+
+    }
+}
+
+@keyframes translateImg {
+    0% {
+        transform: translateX(0px) translateY(0px);
+
+    }
+    100% {
+        transform: translatex(26px) translatey(-100px);
+
+    }
+}
+
+
+
+
+/* Progress bar tranformation into X */
+.progress-1-transform {
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoX1;
+    -moz-animation-name: rotateIntoX1;
+    -o-animation-name: rotateIntoX1;
+    animation-name: rotateIntoX1;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*transform: rotate(45deg) translateX(50px) translateY(50px);
+    transform-origin: left;*/
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoX1  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        -webkit-transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+@-moz-keyframes rotateIntoX1 {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        -moz-transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+@keyframes rotateIntoX1 {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: right;
+    }
+    100% {
+        transform: rotate(45deg) translateX(40px) translateY(50px);
+        transform-origin: right;
+    }
+}
+
+
+/* Top Loading Bar */
+.progress-bar-1 {
+    float: left;
+    height: 100%;
+    background-color: #1565c0;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+/* Progress bar tranformation into X */
+.progress-middle-transform {
+
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoXmid;
+    -moz-animation-name: rotateIntoXmid;
+    -o-animation-name: rotateIntoXmid;
+    animation-name: rotateIntoXmid;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*    transform-origin: left;
+    transform: rotate(-45deg) translateX(10px) translatey(70px);
+    */
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoXmid  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+@-moz-keyframes rotateIntoXmid {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -moz-transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+@keyframes rotateIntoXmid {
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        transform: rotate(-45deg) translateX(10px) translatey(70px);
+        transform-origin: left;
+    }
+}
+
+/* Middle  Loading Bar will dissappear */
+.progress-bar-middle {
+    float: left;
+    height: 100%;
+    background-color: #f3930b;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+
+/* Progress bar tranformation into X */
+.progress-2-transform {
+    /* Animation forwards keeps the animation stuck
+       on its stopping point instead of reverting back to 0 */
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    /* Name of transform animation */
+    -webkit-animation-name: rotateIntoX2;
+    -moz-animation-name: rotateIntoX2;
+    -o-animation-name: rotateIntoX2;
+    animation-name: rotateIntoX2;
+
+    /* How many times the animation will take place */
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    /* Animation display/Timing */
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    /* Duration of animation */
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    /* Sets the delay for the transform animation */
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+    /*        transform: rotate(-45deg) translateX(25px) translateY(40px);
+    transform-origin: left;
+     change to display none on animation completion
+    display: none; */
+
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotateIntoX2  {
+    0% {
+        -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+
+@-moz-keyframes rotateIntoX2 {
+    0% {
+        -moz-transform:rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        -moz-transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+
+@keyframes rotateIntoX2{
+    0% {
+        transform: rotate(0deg) translateX(0px) translateY(0px);
+        transform-origin: left;
+    }
+    100% {
+        transform: rotate(-45deg) translateX(25px) translateY(40px);
+        transform-origin: left;
+    }
+}
+/* Bottom loading bar */
+.progress-bar-2 {
+    float: left;
+    height: 100%;
+    background-color: #43a047 ;
+    border-radius: 20px;
+    -webkit-transition: width 3s;
+    -o-transition: width 3s;
+    transition: width 3s;
+}
+
+
+
+/***************************************
+ *      CHECKOUT PAGE STYLING         *
+ **************************************/
+.checkout-section {
+    background-color: #f1f1f1 !important
+}
+.active-checkout {
+    -webkit-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -7px 0 0 #00b0ff;
+    box-shadow: inset 0 -7px 0 0 #00b0ff;
+    /*border-bottom: 4px solid #00b0ff;
+    border-radius: 4px;*/
+}
+.active-checkout-side {
+    -webkit-box-shadow: inset 0 -4px 0 0 #00b0ff;
+    -moz-box-shadow: inset 0 -4px 0 0 #00b0ff;
+    box-shadow: inset 0 -4px 0 0 #00b0ff;
+    /*border-bottom: 4px solid #00b0ff;
+    border-radius: 4px;*/
+}
+.chk-ehr-label {
+    color: #262626 !important;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #00b0ff;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #00b0ff;
+    z-index: 0;
+}
+
+.billing-content {
+    padding: 40px !important;
+}
+.chk-out-card {
+    background-color: #ffffff !important;
+}
+
+#chk-collection-header {
+    background-color: #f9f9f9 !important;
+}
+
+#chk-collection {
+    background-color: #ffffff !important;
+}
+/** Hide Select DOM  Required */
+select {
+    border: 1px solid #ffffff;
+    position: relative;
+    top: -30px;
+}
+.select-wrapper {
+    position: relative;
+    height: 46px !important;
+}
+
+.tos {
+    margin:20px;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #faf8ff;
+    background-color: #00b0ff;
+    z-index: 0;
+}
+/* The initial select on load */
+/*.select-wrapper input.select-dropdown {*/
+    /*color: #cac7c6 !important;*/
+/*}*/
+
+/* What is a CCV link */
+.whats-CCV {
+    margin-top: 30px;
+}
+.chk-links {
+    color: #ff8b00;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.chk-links:hover {
+    color: #ff4112;
+    text-decoration: underline;
+}
+#chkOutBtn {
+    background-color: #3b5dad;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#chkOutBtn:hover {
+    background-color: #457bd7;
+}
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* Validation styling for elements that cannot
+    validate using HTML5 ---*/
+@-webkit-keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    from, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+/*********** END OF ANIMATE.CSS   ************************/
+
+#toast-container {
+    top: 10% !important;
+    display: block;
+    z-index: 1!important;
+}
+.toast {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkout-banner{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+.banner-overlay{
+    /*background-color: rgba(59, 93, 173, 0.59);*/
+    background: -moz-linear-gradient(-45deg, rgba(59,93,173,0.65) 0%, rgba(59,93,173,0.51) 40%, rgba(219,219,85,0.3) 99%, rgba(219,219,85,0.3) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(59,93,173,0.65) 0%,rgba(59,93,173,0.51) 40%,rgba(219,219,85,0.3) 99%,rgba(219,219,85,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(59,93,173,0.65) 0%,rgba(59,93,173,0.51) 40%,rgba(219,219,85,0.3) 99%,rgba(219,219,85,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 500px;
+    width:100%;
+    z-index: 99;
+    position: absolute;
+}
+
+.checkout-bnr-img {
+    position: relative;
+    left:-15%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.modal.modal-fixed-footer .tos-contents {
+    padding-top: 4px;
+    overflow-y: scroll !important;
+}
+/****************************************
+***             PUSHPIN               **
+****************************************/
+nav .breadcrum-nav {
+    position: fixed;
+}
+/* Class for when element is above threshold */
+.pin-top {
+    position: relative;
+}
+
+/* Class for when element is below threshold */
+.pin-bottom {
+    position: relative;
+}
+
+/* Class for when element is pinned */
+.pinned {
+    position: fixed !important;
+}
+/* Checkout Font in banner-bottom */
+.chkout-co-name {
+    font-size: 6vmax;
+    color: #ffffff;
+    margin-top: 0!important;
+    text-shadow: 2px 2px 1px #000;
+}
+/* Bottom Banner of Checkout Page */
+.bottom-sec {
+    background-color: #f1f1f1 !important;
+}
+
+/******************************************
+**           Confirmation Footer         **
+********************************************/
+/* Order Confirmation Card */
+.complete-card {
+    background-color: #f1f1f1;
+}
+/* Download Program Button */
+.download-btn {
+    background-color: #ff6d00;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.download-btn:hover {
+    background-color: #496cd4;
+}
+/*.order-det-body {*/
+    /*background-color: #ffffff;*/
+/*}*/
+.order-paragraph {
+    margin:0 65px !important;
+}
+.detail-title {
+    text-decoration: underline;
+}
+.confirm-footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+}
