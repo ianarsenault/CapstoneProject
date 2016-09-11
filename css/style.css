@@ -2375,17 +2375,17 @@ footer.page-footer .footer-copyright {
     z-index: 1200;
 }
 /***** CHANGE BACK WHEN LVIE!!!!!! ****************************/
-/* Entire Website
+/* Entire Website */
 .main-section {
     display: none;
 }
 
-/* Stop scrolling class for overlay div
+/* Stop scrolling class for overlay div */
 .stop-scrolling {
     height:100%;
     overflow: hidden;
 }
-*/
+
 #fadediv {
     display:none;
     position: relative;
