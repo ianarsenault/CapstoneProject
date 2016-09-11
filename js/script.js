@@ -523,17 +523,17 @@ var sideNavTransform = function () {
 
 $(document).ready(function () {
     /** CHANGE BACK WHEN LIVE **/
-    // $(".main-section").fadeIn(10000);
+     $(".main-section").fadeIn(10000);
 
     /* Fade out overlay and loading screen */
     /** CHANGE BACK WHEN LIVE **/
-    // $(".loading-overlay").fadeIn('slow').show().delay(8000).fadeOut(500);
+     $(".loading-overlay").fadeIn('slow').show().delay(8000).fadeOut(500);
     /** CHANGE BACK WHEN LIVE **/
-    // $("#fadediv").show();
+     $("#fadediv").show();
     /** CHANGE BACK WHEN LIVE **/
     // Delay window scroll function
-    //switchScroll();
-    //mainContent();
+    switchScroll();
+    mainContent();
 
     // Fade in download demo section on page load 
     $(".Message-Header-Top").fadeIn(5000);
