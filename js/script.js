@@ -412,11 +412,11 @@ var formValidation = function () {
                     "border": "3px solid rgb(255, 143, 0)"
                 });
                 // Add animation class - Shake - to alert user even more lol -> dumb user
-                $("#validateAnimate").addClass("animated shake");
+                $("#validateAnimate").addClass(" shake");
                 // Set timeout function to remove classes to
                 // allow for the animation to continue each click until checked
                 setTimeout(function () {
-                    $("#validateAnimate").removeClass("animated shake");
+                    $("#validateAnimate").removeClass(" shake");
                 }, 1000);
             }, 500);
 
